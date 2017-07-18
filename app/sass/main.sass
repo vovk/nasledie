@@ -1,0 +1,1671 @@
+@import "bourbon"
+@import "vars"
+@import "libs"
+
+//Custom styles here
+//header
+li , .myPage-articl .top-articl-info
+	position: relative
+	&.search
+		.submenu
+			&:before
+				right: 55px
+			right: -45px
+			width: 500px!important
+			padding: 8px
+			box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2)
+			input
+				width: 100%
+				border: none
+				box-shadow: none
+				font-size: em(15px)
+				line-height: em(16px)
+				font-weight: 400
+				color: #000
+			button
+				border: none
+				box-shadow: none
+				background-color: #d7f0b4
+				+mt(.5s)
+				&:hover
+					background-color: darken(#d7f0b4 , 10%)
+				i 
+					margin-top: 3px
+					color: #fff
+					font-size: 25px
+	&.basicLink
+		.submenu
+			width: 90px
+			li
+				&:last-of-type
+					a 
+						border-bottom: 1px solid transparent
+				a  
+					border-top: 1px solid transparent
+					border-bottom: 1px solid transparent
+					background-color: #fff
+					&:hover
+						border-top: 1px solid #bcda93
+						border-bottom: 1px solid #bcda93
+						background-color: #d7f0b4	
+		&:hover
+			.submenu
+				display: block
+	&.settings
+		&:hover
+			.submenu
+				display: block
+	.submenu
+		display: none
+		z-index: 9
+		width: 200px
+		right: 15px
+		background-color: #fff 
+		padding-top: 8px
+		padding-bottom: 8px
+		padding-left: 0
+		padding-right: 0
+		list-style-type: none
+		position: absolute
+		a:link 
+			color: #000!important
+			text-decoration: none
+		a:focus
+			color: #000!important	
+		.second-submenu
+			list-style-type: none
+			padding: 0
+			margin: 0
+			li 
+				&:first-of-type
+					a 
+						border-top: 1px solid #bcda93
+				a 
+					background-color: #dfe1e0
+					border-top: none
+					border-bottom: 1px solid #ccc
+				&:last-of-type
+					a 
+						border-bottom: none
+		li 
+			display: block
+			&:last-of-type
+				a 
+					border-bottom: 1px solid #bcda93
+			a 
+				padding: 7px 30px
+				border-top: 1px solid #bcda93
+				background-color: #d7f0b4			
+				color: #000
+				font-size: em(12px)
+				line-height: em(16px)
+				font-weight: 400
+				display: block
+				&:hover
+					text-decoration: none
+					background-color: darken(#d7f0b4 , 5%)
+					color: #000!important
+					i 
+						color: #000!important
+				i 
+					position: absolute
+					left: 10px
+					top: 5px
+					font-size: 15px
+					margin-right: 8px
+					color: #4b543f
+				.arrow
+					left: auto
+					right: 10px
+					color: #95aa84
+		&:before
+			position: absolute
+			top: -20px
+			right: 0px
+			content: ''
+			z-index: 10
+			width: auto
+			height: auto
+			border: 10px solid transparent
+			border-bottom: 10px solid #fff!important
+
+
+.page-header
+	margin-bottom: 20px
+
+.wrap
+	font-family: "RobotoRegular" , $helvetica
+	padding-bottom: 50px
+
+.button
+	padding: 8px 60px
+	color: #fff
+	background-color: #79513f
+	font-size: em(18px)
+	font-weight: 400
+	line-height: 12px
+	font-family: "RobotoMedium" , $helvetica
+	text-align: center
+	display: inline-block
+	+mt(.5s)
+	&:hover
+		color: #79513f
+		background-color: #fff
+		text-decoration: none
+
+
+.icons-nav
+	li 
+		a 
+			+mt(.5s)
+			outline: none
+			font-weight: bold
+			color: #627455!important
+			font-size: em(20px)
+			&:link
+				color: #ffe600
+			&:focus
+				color: #ffe600				
+			&:hover 
+				color: #e8eae6!important
+				i 
+					color: #e8eae6
+			&.active
+				color: #ffe600!important			
+				i 
+					color: #ffe600
+			span 
+				font-size: em(13px)		
+			i 
+				font-size: 16px
+				color: #627455
+				+mt(.5s)
+
+.register
+	display: none
+
+.top-logo 
+	display: flex
+	align-items: center
+	justify-content: center
+	img
+		margin-right: 15px
+.panel-heading 
+	.btn-right
+		opacity: 1
+		background-color: transparent
+
+.panel-heading.flex.brown
+	background-color: #79513f
+	.more
+		font-weight: normal
+		margin-left: 0
+		margin-right: 50px
+.aboutPr
+	.panel 
+		background: transparent
+	.panel-heading
+		margin-bottom: 0
+		margin-top: 0!important
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4)
+	#about-text
+		background-color: #fff
+		color: #414042
+		font-weight: 400
+		font-size: em(16px)
+		padding-top: 20px
+		line-height: em(15px)
+		box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2)
+		p 
+			font-family: "RobotoRegular" , $helvetica
+		.strong
+			font-family: "RobotoMedium" , $helvetica
+			font-size: em(17px)
+			line-height: em(16px)
+		.strongB
+			font-family: "RobotoMedium" , $helvetica
+			font-weight: 600
+
+.alert.alert-danger
+	color: #fff!important
+	p 
+		margin: 0
+.mail
+	a 
+		color: #fff!important	
+		i 
+			margin-left: 10px
+			font-size: 20px
+
+.navbar
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);				
+.icons-nav
+	li 
+		a 
+			i 
+				font-size: 20px
+
+.form-wrap
+	.form-tabs 
+		.tab 
+			font-size: em(16px)
+			letter-spacing: 2px
+			&:hover
+				cursor: pointer
+			i 
+				margin-right: 5px
+	.place-wrap
+		margin-bottom: 50px
+		text-align: center
+		p
+			text-align: left
+		button.button.button-reg
+			background-color: #795137
+			padding: 10px
+			font-size: 1.5em
+			height: 40px
+			&:hover
+			    background-color: #c5bf9f
+			    padding: 10px 70px
+			    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,.4)
+			    box-shadow: 0 2px 4px rgba(0,0,0,.4)
+			    color: #795137
+
+.right-side
+	.row
+		background-color: #bfbc9b
+		&:nth-of-type(even)
+			background-color: #d6e2ce
+		img 
+			width: 100%
+			height: 100%		
+	.descr
+		padding-right: 15px
+		font-weight: 400
+		padding-left: 40px
+		.name	
+			display: block
+			font-size: em(17px)
+			line-height: 18px
+			color: #386a3a
+			font-family: "RobotoRegular" , sans-serif
+		.date
+			display: block
+			color: #231f20
+			font-size: em(16px)
+			line-height: 16px
+			font-family: "RobotoRegular" , sans-serif
+		p 
+			margin: 0
+			padding-right: 25%
+			color: #231f20
+			font-size: em(13px)
+			line-height: 16px		
+			font-family: "RobotoRegular" , sans-serif	
+	.news
+		width: 100%
+		display: block
+		background-color: #387a3a
+		color: #fff
+		line-height: 12px
+		font-weight: 400
+		font-size: 18px
+		padding: 18px 0
+		text-align: center
+	.col-md-3 , .col-md-12	, .col-md-6
+		height: 100%
+		padding-left: 0!important
+		padding-right: 0!important
+
+.adward-wrap
+	margin-top: 20px
+	.adward-item
+		background-color: #fafbf2
+		justify-content: flex-start
+		.adward-descr
+			margin-left: 10px
+			width: 50%
+			span
+				display: block
+				font-size: em(14px)
+				font-weight: 400
+				line-height: em(16px)
+				font-family: Arial, sans-serif
+				opacity: .8
+				margin-bottom: 8px
+		a 
+			text-decoration: none
+			width: 100%
+			color: #000
+			&:hover
+				text-decoration: none		
+		img
+			width: 50%
+
+.sect-remember
+	.panel
+		box-shadow: none
+	#about-remember
+		padding-bottom: 0
+		padding-top: 0
+		position: relative
+		z-index: 0
+	.panel
+		background-color: transparent!important
+	.panel-heading
+		z-index: 2
+		margin-top: 20px
+		margin-bottom: 0
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+	.right-side
+		.about-title
+			padding: 10px 7px
+			color: #714d31!important
+			background-color: #cbc5a3!important
+	.left-side
+		.about-title
+			padding: 10px 30px		
+	i 
+		color: #fff			
+	.about-wrap
+		background-color: #fff
+		padding: 20px
+		box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2)
+		.about-title
+			font-family: "RobotoRegular" , sans-serif
+			margin-bottom: 15px
+			margin-left: 30px
+			box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2)
+			display: inline-block
+			font-size: em(16px)
+			font-weight: 400
+			line-height: 12px
+			color: #fff
+			background-color: #99b086
+			text-align: center
+		.about-descr
+			list-style-type: none
+			margin: 0
+			padding-top: 0
+			padding-bottom: 0
+			padding-right: 10px
+			padding-left: 0
+			li 
+				margin-bottom: 5px
+				font-size: em(16px)
+				font-family: "RobotoRegular" , sans-serif
+				font-weight: 400
+				color: #231f20
+				align-items: flex-start
+			i 
+				display: block
+				margin-right: 10px
+				color: #99b086
+				font-size: 20px
+
+.sect-alive
+	#alive
+		padding-top: 50px
+		padding-bottom: 50px
+		background-color: #99b086
+	.panel-heading
+		justify-content: space-between
+		line-height: 0
+		margin-bottom: 0
+		margin-top: 0
+		background-color: #387a3a
+		color: #fff	
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4)
+		span:first-of-type
+			margin-left: 60px
+		.btn-right
+			position: static
+			right: 0
+		.button
+			background-color: transparent
+			color: rgba(255,255,255,.7)
+			border: none
+		input
+			font-size: 20px
+			color: #387a3a
+			width: 50%
+			// margin-left: 40px
+			border: none
+			box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);	
+		i
+			color: #c4d7c4
+	.alive-item
+		ul
+			justify-content: space-between
+			list-style-type: none
+			width: 100%
+			margin: 0
+			padding: 0
+		li 	
+			display: block
+			text-align: center
+			width: 33.33%
+			font-size: em(17px)
+			color: #fff
+			font-weight: 400
+			line-height: 24px
+			font-family: "RobotoRegular" , sans-serif	
+
+.slider
+	background-color: transparent
+	height: 150px
+	position: relative
+	.col-md-12	
+		position: relative
+	i 
+		color: #fff
+		font-size: 30px
+	li
+		border-bottom: none
+		padding: 0
+
+.btn-pre
+	outline: none
+	opacity: .6
+	position: absolute
+	top: -45%	
+	left: 50%
+	+mt(.5s)
+	font-size: 50px
+	&:hover
+		opacity: .9
+		color: #fff
+	&:focus
+		color: #fff
+		outline: none		
+	&:link
+		color: #fff	
+		outline: none					
+
+.btn-next
+	outline: none
+	+mt(.5s)
+	opacity: .6
+	position: absolute
+	bottom: -40%	
+	left: 50%
+	font-size: 50px
+	&:hover
+		opacity: .9
+		color: #fff
+	&:focus
+		outline: none	
+		color: #fff
+	&:link
+		outline: none	
+		color: #fff		
+
+.sect-enterPin
+	#enterPin , .panel
+		padding: 0
+		background-color: transparent!important
+	.panel
+		box-shadow: none
+		z-index: 1	
+	.panel-heading
+		margin-top: 0 
+		justify-content: flex-start
+		position: relative
+		z-index: 2
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4)
+		background-color: #79513f
+		margin-bottom: 0
+		span:first-of-type
+			margin-left: 60px
+			color: #fff
+		input
+			font-size: 14px
+			box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2)
+			width: 35%
+			margin-left: 40px
+			border: none	
+	.enterPin-descr
+		background-color: #c7c2a4
+		p 
+			margin-bottom: 0
+			padding: 10px 30px 20px
+			font-family: "RobotoRegular" , sans-serif
+			font-size: em(22px)
+			font-weight: 400
+			line-height: 20px
+			color: #414042
+			text-align: center	
+
+.send-info .right-side .col-md-6
+	padding-left: 15px !important
+	padding-right: 15px !important
+
+.sect-find
+	.panel
+		.find-wrap-bg
+			background-color: #79513f
+			p
+				text-align: center
+				color: #fff	
+	.years-wrap
+		justify-content: flex-end			
+	> .panel
+		background: transparent
+		margin-bottom: 0
+		.count
+			margin-left: 0!important
+	.panel
+		box-shadow: none
+
+	// background-color: #d8d5c7
+	.wrap-more  .more
+		display: inline-block
+		color: #fff
+		opacity: .7
+		+mt(.5s)
+		&:hover
+			color: #79513f
+			opacity: 1
+			outline: none
+			border: none
+			box-shadow: none
+		i 
+			font-size: 70px
+	.panel
+		background-color: transparent
+		margin-bottom: 0
+	#find
+		position: relative
+		z-index: 1
+		padding-top: 0
+		padding-bottom: 25px
+		padding-left: 15px
+		padding-right: 15px
+		// background-color: #d8d5c7
+		.row:nth-of-type(1)
+			padding-top: 25px
+			background: #c7c2a4
+		.find-people
+			p
+				font-size: 18px
+		.row.bg
+			.place-wrap-bg
+				text-align: center
+				button
+					border: none
+					margin-top: 25px
+					padding: 10px 50px
+					&:hover
+					    background-color: #c5bf9f;
+					    padding: 10px 70px;
+					    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,.4);
+					    box-shadow: 0 2px 4px rgba(0,0,0,.4);
+					    color: #795137;
+		.half1
+			width: 60%
+			float: left
+			padding: 10px
+			.flex
+				margin-bottom: 15px
+				justify-content: flex-start
+				label
+					color: #414042
+					width: 20%
+					text-align: right
+					margin-right: 25px
+					margin-bottom: 0
+				input
+					width: 100%
+					padding: 0 10px
+				.mini-input
+					width: 15%
+					padding: 0 10px
+				.mini-label
+					width: 15%
+					margin-right: 10px
+				.micro
+					width: 40%
+					text-align: right 
+					margin-right: 0
+				.mini-micro
+					color: #fff
+					font-size: 40px
+		.half2
+			padding: 10px
+			width: 37%
+			float: left
+			margin-left: 3%
+			p
+				font-family: "RobotoRegular" , sans-serif
+				font-size: 17px
+				margin: 10px auto
+			.textarea
+				width: 90%
+				height: 130px
+				padding: 8px			
+				resize: none
+				border: none
+
+	.panel-heading
+		z-index: 2
+		justify-content: space-between
+		line-height: 0
+		margin-bottom: 0
+		margin-top: 0
+		background-color: #686a8b
+		color: #fff	
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4)
+		span:first-of-type
+			margin-left: 60px
+		i
+			color: #d2d3dc
+			opacity: .8
+		.btn-right
+			position: static
+			right: 0
+		.button
+			background-color: transparent
+			color: rgba(255,255,255,.7)
+			border: none
+		input
+			font-size: 20px
+			color: #79513f
+			width: 50%
+			margin-left: 40px
+			border: none
+			box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2)
+		.more
+			font-weight: 400
+			line-height: 12px
+			font-size: 16px
+			text-transform: lowercase
+			color: #ebebeb
+			font-family: "RobotoRegular"	, sans-serif
+	.find-descr
+		text-align: left
+		font-size: 18px
+		font-family: "RobotoRegular"	, sans-serif
+		font-weight: 400
+		color: #666666	
+	.form-wrap
+		background-color: #d8d5c7
+		box-shadow: none
+		.year-alive
+			text-align: right
+			input 
+				margin-right: 25px
+		.year
+			margin-right: 0!important
+		.year
+			margin-right: 0!important	
+		input
+			color: #333
+			padding: 2px
+			margin-bottom: 20px
+		label
+			width: 50%
+			text-align: center
+			margin-bottom: 20px
+			color: #414042
+			font-family: "RobotoRegular" , sans-serif
+			font-size: 18px
+			font-weight: 400
+			line-height: 40px
+		.right-side
+			span
+				&:first-of-type
+					font-size: 18px
+				&:nth-of-type(2)
+					font-size: 16px
+				&:last-of-type
+					font-size: 16px
+			textarea
+				width: 100%
+				padding: 8px			
+				resize: none
+				border: none	
+			.button	
+				margin-top: 28px
+				font-weight: 400
+				line-height: em(16px)
+				font-size: em(16px)
+				background-color: #b1b0b2
+				color: #f5f4f5
+				padding: 13px 45px												
+		input
+			border: none
+			box-shadow: none
+		.info-filde:not(:last-of-type)	
+			input
+				width: 100%
+		.info-filde:last-of-type
+			.flex
+				justify-content: space-between
+			.number
+				width: 15%
+			.month
+				width: 25%
+			.year
+				width: 20%
+		button
+			border: none
+			background: transparent
+			i 
+				font-size: 30px
+				color: #fff
+				opacity: .7
+	.find-wrap
+		background-color: #b1b0b2
+		padding: 10px
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);		
+		p 
+			font-weight: 400
+			font-size: 18px
+			font-family: "RobotoRegular" , $helvetica
+			line-height: 20px
+			padding: 0
+			margin-bottom: 0
+			margin-left: 60px
+			color: #686a8b
+			display: block
+			width: 100%
+			text-align: left		
+	.people-find-wrap
+		padding: 20px
+		box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2)
+		font-family: "RobotoRegular" , $helvetica
+		font-size: 13px
+		color: #000	
+		background-color: #eeeadd
+		font-weight: 400
+		.people-item
+			padding-left: 45px
+			background-color: #fff
+			padding-top: 8px
+			padding-bottom: 8px
+			&:hover
+				background-color: #e7e7d4
+			a.flex.result-color
+				color: #000
+				font-weight: normal
+			a 
+				color: #686a8b
+				+mt(.5s)
+				&:hover
+					color: lighten(#000 , 50%)
+		
+		.find-more
+			font-size: 80px
+			// text-align: center
+			color: #fff
+			// width: 100%
+		.people-item:nth-of-type(2n+1)
+			background-color: #ffffff
+		.people-item:nth-of-type(2n)
+				background-color: #eeeadd
+		.col-md-3 
+			text-align: center
+		.people-main
+			font-weight: 700
+			text-align: left
+
+body
+	.panel-heading
+		span 
+			font-family: "RobotoRegular" , sans-serif 
+		.btn-right
+			margin-right: 10px
+		.button
+			padding: 0
+		i-microphone
+			font-size: 30px
+	
+.main-footer
+	background-color: #99b086
+	height: 35px//chane on padding
+	margin: 0
+	padding: 0
+				
+
+//sidebar
+.extMess
+	input 
+		width: 100%
+		display: block
+		background-color: #ebeced
+		color: #414042
+		margin-top: 10px
+		border: 1px solid #808285
+		font-size: 12px
+		padding: 7px 6px
+		font-weight: 400
+		line-height: 14px
+		margin-left: 5px
+		font-family: "RobotoRegular" , $helvetica
+
+#mesages
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2)
+	padding: 15px 0 90px
+
+.left-side	
+	.panel-heading
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4)
+
+aside.left-side  
+	.col-md-4 , .col-md-8
+		padding-left: 0!important
+
+.right-side	
+	.col-md-8
+		padding-right: 0!important
+
+aside
+	.panel
+		margin-bottom: 0
+
+.message
+	.message-date
+		margin-bottom: 10px
+	.message-body
+		p 
+			margin-right: 20px
+	p , span 	
+		font-weight: 400
+		font-family: "RobotoRegular" , $helvetica
+		display: block
+		padding-left: 20px
+	.message-title
+		color: #704b31
+		font-size: em(16px)
+		line-height: em(16px)	
+		display: block
+		margin-bottom: 5px
+	p 
+		font-size: em(15px)
+		line-height: em(20px)
+	.date
+		display: inline-block	
+
+
+///////////////////////////////////////////////Registration page /////////////////////////////////////////////////////////
+#page-registration
+	.form-info
+		h2
+			margin: 0
+			font-size: 25px
+		.list-title
+			margin: 10px 0
+		.user-list
+			list-style: none
+			li
+				margin: 10px 0
+				p
+					width: 60%
+					margin: 0 auto
+					span
+						color: #795137
+			li:nth-of-type(4)
+				p
+					width: 100%
+			li:nth-of-type(5)
+				p
+					width: 75%
+					margin: 0 auto
+		label
+			color: #58595b
+			padding-left: 40px
+
+.registration
+	.page-header
+		margin-top: 20px
+	.form-wrap	
+		background-color: #e2dfbc
+		.form-tabs
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4)
+			.tab
+				padding: 8px 0
+				border-bottom: none
+				font-size: em(24px)
+				line-height: em(14px)
+				font-weight: 700
+				color: #79513f
+				background-color: #c5bf9f
+			.active
+				background-color: #79513f
+				color: #fff
+		label
+			color: #79513f
+			display: block
+			text-align: center
+			font-size: em(18px)
+			font-weight: 400
+			line-height: em(18px)
+			font-family: "RobotoRegular" , $helvetica
+		.top-info	
+			margin: 15px 0 20px
+		a 
+			color: #79513f
+			text-decoration: underline
+			+mt(.5s)
+			&:hover
+				text-decoration: none
+				color: lighten(#79513f , 20%)
+	.register
+		padding-top: 30px			
+	.signIn		
+		text-align: center
+		.forgetPass-wrap
+			justify-content: center
+			label , span
+				color: #79513f
+				font-size: em(16px)
+				font-weight: 400
+				line-height: em(20px)	
+		.mail-wrap , .pass-wrap
+			margin-bottom: 10px
+			label
+				text-align: right
+				color: #414042
+				font-size: em(16px)
+				line-height: em(18px)
+				font-weight: 400
+				opacity: .9
+				width: 5%
+			input
+				background-color: #fff
+				width: 40%
+				box-shadow: none
+		.button
+			margin-top: 20px
+			margin-bottom: 20px
+			font-size: em(18px)
+			font-weight: 400
+			line-height: em(18px)
+			background-color: #79513f
+			color: #fff
+			display: inline-block
+			width: auto
+			&:hover
+				padding-right: 70px
+				padding-left: 70px
+				background-color: #c5bf9f
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4)
+				color: #795137 
+
+
+///////////////////////////////////////////////addPage page /////////////////////////////////////////////////////////
+
+.addPage
+	.sect-addPage
+		margin-top: 30px
+		background-color: #e2dfbc
+		h1 
+			background-color: #79513f
+			color: #fff
+			font-size: em(24px)
+			font-weight: 700
+			line-height: em(14px)
+			font-family: "RobotoBold" , $helvetica
+			text-align: center 
+			padding: 10px 0
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4)
+			margin: 0 -25px
+		.page-descr
+			margin: 20px 0
+			font-size: em(16px)
+			font-weight: 400
+			line-height: em(18px)
+			color: #58595b
+			text-align: center
+			a 
+				outline: none
+			i 	
+				background-color: transparent
+				color: #fff
+				opacity: .7
+				font-size: 30px
+				margin-right: 5px	
+		.form-title
+			box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2)
+			font-family: "RobotoBold" , $helvetica
+			font-weight: 700
+			line-height: em(14px)
+			font-size: em(18px)
+			display: block
+			text-align: center
+			padding: 8px 0
+			color: #79513f
+			background-color: #c5bf9f
+			margin: 0 -25px
+		.form-wrap		
+			padding-top: 20px
+			background-color: transparent
+			.button
+				padding: 0
+				box-shadow: none
+				border: none
+				background-color: transparent		
+				i 
+					+mt(.5s)					
+					font-size: 50px
+					color: #fff
+				&:hover
+					i 
+						color: #79513f	
+			.field-wrap
+				justify-content: flex-start
+				margin-bottom: 10px
+				input 
+					width: 75%
+					border: none
+					box-shadow: none
+					margin-left: 10px
+					padding-left: 10px
+
+				input[type="checkbox"]
+					padding-left: 0
+				.place
+					width: 36%
+					margin-left: 7px
+				.place:nth-of-type(2)
+					margin-left: 15px
+				.birth
+					border: none
+					height: 27px
+					padding-left: 10px
+					margin-right: 20px
+					width: 30%
+				.birth:nth-of-type(1)
+					margin-left: 17px
+					width: 20%
+				.birth:nth-of-type(3)
+					width: 22.5%
+					margin-right: 0
+				label
+					width: 25%
+					color: #414042
+					font-family: "RobotoRegular" , $helvetica
+					font-size: em(16px)
+					font-weight: 600
+					line-height: em(18px)
+				.css-label.lite-gray-check
+					width: 108px
+					font-weight: normal!important
+			.secondname-wrap , .name-wrap , .female-wrap
+				label 
+					width: 12%	
+				input 
+					width: 100%
+		#field-wrap
+			.css-label.lite-gray-check:nth-of-type(3)
+				margin-left: 50px
+		.form-info
+			margin-top: 20px
+			margin-bottom: 30px
+			padding: 25px
+			box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2)
+			background-color: #ffffff
+			color: #58595b
+			text-align: center
+			font-family: "RobotoRegular" , $helvetica
+			.top-info , .second-info , .list-title
+				text-align: center
+				font-size: em(18px)
+				font-weight: 400
+				line-height: em(18px)
+			.second-info
+				font-size: em(16px)
+				text-align: left
+			.list-title
+				margin-top: 20px
+				margin-bottom: 20px
+				display: block	
+			.list 
+				text-align: center
+				width: 75%
+				margin: 0 auto
+				li 
+					color: #79513f
+					font-size: em(16px)
+					line-height: em(16px)
+					margin-bottom: 10px
+					span
+						font-family: "RobotoRegular" , $helvetica
+						font-weight: 400
+						color: #58595b
+		.bottom-title
+			font-weight: 500				
+		.personal-info
+			.items
+				.col-md-2
+					span 
+						color: #414042
+						font-size: em(16px)
+						font-weight: 400
+						line-height: em(14px)
+			.bottom-descr
+				text-align: center
+				font-weight: 400
+				font-size: em(16px)
+				line-height: em(14px)
+				margin: 25px 0		
+			.bottom-list 
+				margin-bottom: 20px
+				padding: 0
+				list-style-type: none
+				li 
+					display: inline-block		
+					a 
+						color: #79513f
+						+mt(.5s)
+						background-color: #f1f3da
+						box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)
+						font-size: em(16px)
+						line-height: em(18px)
+						font-weight: 400
+						padding: 6px 30px
+						margin-right: 9px
+						&:hover	
+							text-decoration: none
+							background-color: #79513f
+							color: #f1f3da
+							box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2)
+					&:last-of-type
+						margin-right: 0	
+			.bottom-info
+				p 
+				font-size: em(16px)
+				font-weight: 400
+				line-height: em(16px)
+				opacity: 0.9	
+			.submit-wrap
+				margin-bottom: 20px
+				text-align: center
+				label 
+					font-weight: 400
+					font-size: em(14px)
+					color: #414042	
+					margin-bottom: 20px
+				.button
+					display: block
+					background-color: #79513f
+					color: #fff
+					padding: 10px 50px
+					margin-right: auto
+					margin-left: auto
+					box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2) 
+					&:hover
+						background-color: #c5bf9f
+						color: #79513f
+	
+#page-reg-new-owner
+	.top-text
+		p
+			margin: 30px auto
+			width: 85%
+			color: #86867b
+			font-size: 1.1em
+			font-family: Roboto,Helvetica,Arial,sans-serif
+		p:nth-of-type(2)
+			margin: 20px auto 0 auto
+	.form-wrap
+		.form-info
+			padding: 20px 0
+			h3
+				text-transform: uppercase
+				font-family: Roboto,Helvetica,Arial,sans-serif
+			p
+				text-align: left
+				width: 85%
+				font-size: 1.1em
+				font-family: Roboto,Helvetica,Arial,sans-serif
+				margin: 20px auto
+			.sub-title
+				margin: 30px auto		
+			.algoritm-open
+				text-align: left
+				width: 85%
+				margin: 0 auto
+				li
+					margin: 10px 0	
+					font-size: 1.1em
+					font-family: Roboto,Helvetica,Arial,sans-serif
+		.information
+			.row.flex
+				padding: 25px
+				.field-wrap.flex.home
+					float: left
+					justify-content: flex-end
+					label
+						width: auto
+					.mini-input
+						width: 40%
+				.field-wrap.flex.home:nth-of-type(6)
+					width: 43.5%
+				.field-wrap.flex.home:nth-of-type(7)
+					width: 25.5%
+				.field-wrap.flex.home:nth-of-type(8)
+					width: 31%
+			.bottom-info-middle
+				width: 60%
+				margin: 0 auto
+				color: #505149
+				font-family: Roboto,Helvetica,Arial,sans-serif
+				font-weight: bold
+				margin-top: 50px
+		.row.bg
+			padding: 0 15px
+			.col-md-12.place-wrap-bg
+				background: #c5bf9f
+				padding-top: 25px
+				input[type=checkbox].css-checkbox + label.css-label
+					color: #414042
+					font-size: 1.1em
+					font-family: Roboto,Helvetica,Arial,sans-serif
+					font-weight: normal
+				.submit-wrap
+					margin-bottom: 10px;
+////////////////////////////////////////////////////////////////////////////MyPage////////////////////////////////////////////
+
+.myPage
+	.wrap > .container
+		padding: 62px 0 15px
+	.top-info	
+		background-color: #b6af92
+		.main-descr
+			padding: 45px 60px 40px 44px
+			.user-name
+				font-size: em(20px)
+				color: #fff
+				display: block
+				font-weight: 600
+				line-height: em(20px)
+			.user-born , .user-status
+				display: block
+				margin-top: 20px
+				margin-bottom: 20px 
+				font-size: em(14px)
+				font-weight: 400
+				line-height: em(20px)
+				color: #fff	
+			.user-status
+				color: #1d1c18
+				line-height: em(25px)
+				.status-author
+					display: block
+					margin-top: 25px	
+		.col-md-6 
+			padding: 0!important
+			text-align: right
+		.col-md-3
+			padding: 0!important
+			.user-photo
+				text-align: right
+		img
+			width: 100%
+			height: 100%	
+		a 
+			display: block		
+	.myPage-navigation
+		margin-bottom: 20px
+		background-color: #fff	
+		box-shadow: 0 3px 2px rgba(0, 0, 0, 0.2)
+		display: block
+		width: 100%
+		padding-left: 40px
+		ul
+			list-style-type: none
+			margin: 0
+			padding: 0
+			li 
+				display: inline-block
+				position: relative
+				padding: 25px 0
+				margin-right: 35px
+				&:last-of-type
+					margin-right: 0
+				a 
+					font-family: "RobotoMedium", $helvetica
+					font-size: em(16px)
+					font-weight: 400
+					line-height: em(16px)
+					color: #666666
+					+mt(.4s)
+					&:hover
+						text-decoration: none
+						color: lighten(#666 , 10%)
+					&:link
+						text-decoration: none
+						outline: none	
+				&.active
+					a 
+						color: #387a3a	
+					&:before
+						position: absolute
+						content: ''
+						display: block
+						border-bottom: 10px solid #ced0b6!important
+						bottom: 0
+						left: 35%
+						border: 10px solid transparent		
+	.calendar-wrap				
+		.col-md-4
+			padding: 0!important		
+		.custom-button-wrap
+			justify-content: flex-start
+			.custom-button
+				justify-content: flex-start
+				padding: 10px
+				background-color: #fff
+				border: none
+				box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2)
+				font-size: em(14px)
+				line-height: em(14px)		
+				font-family: "RobotoBold" , $helvetica
+				margin-right: 20px
+				color: #737373
+				text-align: left
+				+mt(.5s)
+				&:hover
+					color: #000
+					box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2)
+					i 
+						color: #97aebe
+						background-color: #fff	
+				i 
+					+mt(.5s)
+					float: left
+					margin-right: 25px
+					font-size: 25px
+					color: #fff
+					background-color: #ccc			
+				&:last-of-type
+					margin-right: 0px
+					i 
+						font-size: 28px
+						background-color: #fff		
+						color: #97aebe	
+					&:hover
+						i 
+							color: #fff
+							background-color: #97aebe	 
+		.slider-wrap
+			padding-left: 20px
+			padding-right: 20px					
+		.calendar-slider	, .calendar-month
+			margin: 0
+			padding: 0
+			list-style-type: none
+			li 
+				display: inline-block
+			a 
+				padding: 7px 15px
+				display: inline-block
+				background-color: #c5be9e
+				color: #79503e
+				font-size: em(13px)
+				font-family: "RobotoBold" , $helvetica
+				line-height: em(14px)
+				&:hover
+					text-decoration: none									
+			.owl-controls
+				.owl-prev , .owl-next
+					left: -20px
+					top: 0
+					position: absolute
+					display: inline-block
+					background-color: #fff
+					border-left: 1px solid #e5e7cf
+					border-bottom: 1px solid #e5e7cf
+					i 	
+						color: #c5be9e
+						font-size: 19px
+				.owl-next
+					border-right: 1px solid #e5e7cf
+					border-left: none
+					left: auto
+					right: -20px
+		.calendar-month
+			background-color: #e1dfbc
+			border-bottom: 1px solid #d3cead
+			border-right: 1px solid #d3cead
+			border-left: 1px solid #d3cead
+			li 
+				a 
+					padding: 5px 13px
+					display: inline-block
+					text-transform: uppercase 
+					background-color: #e1dfbc	
+					&:link
+						text-decoration: none
+						outline: none
+				&.active
+					a 
+						color: #c83f19
+						border-bottom: 2px solid #c83f19
+	.sidebar
+		.vidget
+			box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2)
+			margin-bottom: 25px
+		.vidget
+			.vidget-title
+				font-size: em(14px)
+				display: block
+				padding: 15px 15px
+				color: rgba(0,0,0,.5)
+				text-transform: uppercase
+				font-weight: 400
+				line-height: em(12px)
+			.col-md-6
+				padding: 0!important
+			.col-md-4
+				padding: 0 5px!important	
+			padding: 6px
+			background-color: #fff
+			.img-wrap
+				align-items: flex-start
+			img
+				width: 100%
+			.large-image
+				margin-right: 5px
+				width: 60%
+				img 
+					border: 1px solid rgba(0,0,0,.4)
+			.small-images
+				width: 40%
+				img 
+					width: 100%
+					height: 136px
+					margin-bottom: 5px
+					border: 1px solid rgba(0,0,0,.4)
+					&:last-of-type
+						margin-bottom: 0
+		.vidget-video
+			button
+				border: none
+				background-color: transparent
+				box-shadow: none
+				left: 35%
+				top: 35%
+				position: absolute		
+				i 
+					font-size: 40px
+					color: rgba(255,255,255,1)		
+	.sidebar-wrap
+		margin-top: 20px
+		padding: 0!important	
+	.sect-main-content
+		color: #000
+		font-family: "RobotoRegular" , $helvetica
+		margin-top: 20px
+		.myPage-articl
+			margin-bottom: 40px
+			background-color: #fff
+			padding: 30px 40px 100px
+			box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2)
+			.top-articl-info
+				margin-bottom: 40px
+				.date
+					display: block
+					font-size: em(13px)
+					font-weight: 400
+					line-height: em(18px)					
+				h2
+					margin-bottom: 0
+					margin-top: 20px
+					font-size: em(22px)
+					line-height: em(18px)
+					display: inline-block
+					text-align: left
+				button
+					position: relative
+					margin-top: 20px
+					float: right
+					border: none
+					box-shadow: none
+					background-color: transparent
+					i 
+						color: #b1b5bb
+						font-size: 20px
+			.coustom-submenu
+				&:before
+					display: none
+				z-index: 100
+				right: 0
+				text-align: left
+				border-top: 1px solid #e3e3e3
+				padding: 5px 0
+				background-color: #fff
+				box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2)
+				ul
+					padding: 0
+					margin: 0
+					li 
+						a 
+							padding-left: 25px
+							border-top-color: transparent
+							border-bottom-color: transparent
+							background-color: #fff
+							&:hover
+								background-color: #d7f0b4
+								border-top: 1px solid #bcda93
+								border-bottom: 1px solid #bcda93
+			.articl-content
+				p
+					font-size: em(16px)
+					line-height: em(20px)
+					font-weight: 400
+					margin-top: 0
+					margin-bottom: 20px
+				.img-wrap
+					margin-top: 25px
+					img 
+						width: 100%
+						height: 100%	
+				.video
+					margin-top: 25px		
+
+.myPage 
+	.sidebar 	
+		.vidget-adward 
+			background-color: transparent
+			box-shadow: none
+			text-transform: unset
+			.vidget-title
+				border-bottom: 2px solid #c5be9e
+				color: #79503e
+				padding-bottom: 5px
+			.adward-wrap
+				background-color: transparent
+				.adward-item
+					margin-bottom: 20px
+					img
+						width: 40%
+			.col-md-12
+				padding: 0!important			 
+//audio vidget
+.jp-jplayer, .jp-audio
+  width: 100%
+
+.audio-wrap
+	padding: 0 15px 20px
+
+.jp-aduio-info
+	padding-bottom: 10px
+	.audio-name
+		padding-left: 0!important
+		text-transform: unset!important
+		opacity: 0.84
+		color: #010101!important
+		font-family: "RobotoRegular" , $helvetica
+		font-size: em(14px)
+		font-weight: 400
+		line-height: em(12px)
+	.jp-title , .jp-time-holder
+		display: inline-block	
+	.jp-title
+		float: left
+	.jp-time-holder
+		float: right
+		.jp-current-time
+			font-weight: 400		
+			font-size: em(14px)
+			display: block
+			color: #010101
+			text-transform: uppercase
+			font-weight: 400
+			line-height: em(12px)
+
+.jp-volume-bar
+  width: 45px
+  height: 8px
+  background-color: #dededc
+  overflow: hidden
+
+.jp-volume-bar-value
+  background-color: #c1c1be
+  height: 8px
+
+.jp-progress
+  background-color: #dededc
+  overflow: hidden 
+  width: 100%
+  margin-bottom: 15px
+
+.jp-controls , .jp-volumn-wrap ul
+	display: inline-block
+	list-style-type: none
+	margin: 0
+	padding: 0
+	li 
+		margin-right: 5px
+		display: inline-block
+		a
+			color: #000
+			i 
+				font-size: 20px
+
+.jp-controls
+	.pause
+		display: none	
+
+.jp-volumn-wrap
+	display: inline-block
+	float: right
+	.jp-volume-bar
+		display: inline-block
+.jp-controls
+	display: inline-block
+	float: left
+
+.jp-play-bar
+  height: 12px
+  background-color: #96b283
+
+
+.jp-gui
+  position: relative
+  overflow: hidden   
+
+
+@import "media"

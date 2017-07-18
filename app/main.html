@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon"  type="image/x-icon" href="img/logo.png">
+	<link rel="apple-touch-icon" href="img/logo.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/logo.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/logo.png">
+	<!-- Template Basic Images End -->
+
+	<!-- Header CSS (first screen styles from header.min.css) - inserted in the build of the project -->
+	<style>@@include('header.min.css')</style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)};function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n};function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load Fonts CSS Start -->
+	<script>
+		loadCSS( "css/fonts.min.css?ver=1.0.0", false, "all" ); // Loading fonts, if the site is located in a subfolder
+		// loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" ); // Loading fonts, if the site is at the root
+	</script>
+	<!-- Load Fonts CSS End -->
+
+	<!-- Load Custom CSS Start -->
+	<!--<Deject>--><script>loadCSS( "header.min.css?ver=1.0.0", false, "all" );</script><!--</Deject>-->
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load Custom CSS End -->
+
+	<!-- Load Custom CSS Compiled without JS Start -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+	<!-- Load Custom CSS Compiled without JS End -->
+
+	<!-- Custom Browsers Color Start -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<!-- Custom Browsers Color End -->
+
+</head>
+
+<body>
+
+
+
+
+	<div class="wrap">
+		<nav id="w0" class="navbar-top navbar-fixed-top navbar" role="navigation"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w0-collapse"><span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span></button><a class="navbar-brand top-logo" href="/"><img src="img/Toplogo.png" alt="toplogo">наследие</a></div><div id="w0-collapse" class="collapse navbar-collapse">
+			<ul id="w1" class="navbar-nav navbar-right nav icons-nav">
+<!-- <li class="active"><a href="/site/index">Home</a></li>
+<li><a href="/site/about">About</a></li>
+<li><a href="/site/contact">Contact</a></li>
+<li><a href="/site/login">Login</a></li> -->
+<li><a href="#"><i class="material-icons">&#xE8B6;</i></a></li>
+<li><a href="#"><i class="material-icons">&#xE853;</i></a></li>
+<li><a class="active" href="#"><i class="material-icons">&#xE0E1;</i></a></li>
+<li><a href="#"><span>A</span>A</a></li>
+<li><a href="#"><i class="material-icons">&#xE894;</i></a></li>
+<li><a href="#"><i class="material-icons">&#xE924;</i></a></li>
+<li><a href="#"><i class="material-icons">&#xE8B8;</i></a></li>
+</ul>
+</div></div></nav>
+<div class="container">
+	<div class="site-index">
+		<div class="row">
+			<div class="page-header flex clearfix">
+				<div class="col-md-8">
+					<div class="logo-wrap flex">
+						<img src="img/logo-full.png" alt="Logo">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-wrap">
+						<div class="form-tabs flex">
+							<span class="tab active sign"><i class="material-icons">&#xE899;</i>Вход</span>
+							<span class="tab registration"><i class="material-icons">&#xE2C8;</i>Регистрация</span>
+						</div>
+
+						<!--  -->
+
+						<form  class="signIn enter">
+
+
+
+							<div class="mail-wrap flex">
+								<label for="email"><span class="fa">@</span></label>
+								<input class="field email" type="email" placeholder="электронный адрес" name="mail">
+							</div>
+
+							<div class="pass-wrap flex">
+								<label for="password"><i class="material-icons">&#xE899;</i></label>
+								<input class="field password" type="password" placeholder="пароль" name="password">
+							</div>
+
+							<div class="forgetPass-wrap flex">
+								<label for="forgetPass">Забыли пароль?</label>
+								<input class="forgetPass" type="checkbox" name="forgetPass"><span>Запомнить пароль</span>
+							</div>
+
+							<button class="button">Вход</button>
+
+						</form>
+
+						<!--  -->
+
+						<form  class="signIn register">
+
+							<div class="mail-wrap flex">
+								<label for="text"><i class="material-icons">&#xE7FF;</i></label>
+								<input class="field text" type="text" placeholder="имя" name="name">
+							</div>
+
+							<div class="mail-wrap flex">
+								<label for="email"><span class="fa">@</span></label>
+								<input class="field email" type="email" placeholder="электронный адрес" name="mail">
+							</div>
+
+							<div class="pass-wrap flex">
+								<label for="password"><i class="material-icons">&#xE899;</i></label>
+								<input class="field password" type="password" placeholder="пароль" name="password">
+							</div>
+
+							<button class="button">Регистрация</button>
+
+						</form>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="body-content">
+			<div class="alert alert-danger">
+				<div class="row flex">
+					<div class="col-md-8">
+						<p>Внимание! Идет тестирование и отладка. Мы будем благодарны за подсказки</p>
+					</div>
+					<div class="col-md-4 text-center mail">
+						<a href="#" class="btn-mail btn btn-xs" role="button">Написать письмо<i class="material-icons">&#xE0E1;</i></a>
+					</div>
+				</div>
+			</div>
+			<section class="aboutPr">
+				<div class="row">
+					<div class="panel panel-content panel-color-yellow panel-overhead">
+						<div class="panel-heading">О проекте
+							<button type="button" class="btn-right" aria-label="Coolapse" data-toggle="collapse" data-target="#about-text"><i class="material-icons">&#xE316;</i>
+							</button>
+						</div>
+						<div id="about-text" class="panel-body collapse in">
+							<div class="row">
+								<div class="col-md-6">
+									<p class="strong">Создавая эту сеть, мы ставили перед собой только одну основную
+										цель – дать возможность навсегда сохранить память о человеке.
+										О его переживаниях и радостях. О делах и мечтах. Ведь человек –
+										это судьба, а не две даты.</p>
+										<p>Мы живём на Земле относительно недолгий период. У кого-то он
+											длиннее, у кого-то короче. Но бесконечность, увы, неизбежна. Что
+											останется после каждого из нас? Что мы помним об уже ушедших?</p>
+											<p>Эта социальная сеть даёт возможность сохранить память о тех
+												кого уже нет и оставить потомкам память о себе.</p>
+												<p>Мы помним тех, кого с нами нет. Одно из предназначений сети —
+													собрать и сохранить память об ушедших родственниках, друзьях,
+													близких людях, кумирах, знаменитостях. Здесь можно рассказать,
+													каким он был человеком, что было в его жизни, о чём мечтал, к че-
+													му стремился, чего добился, чему научил.</p>
+												</div>
+												<div class="col-md-6">
+													<p>Дополнять портрет смогут, с Вашего ведома и согласия, другие
+														участники сети. Соединяя рассказы, фотографии, воспоминания
+														разных людей, мы получим более полный образ.</p>
+														<p>Наша сеть – это ещё и возможность оставить потомкам память о
+															себе. Создайте свою страничку и выберите – сделать её открытой
+															уже сейчас или скрыть до дня смерти. Что написать, каждый ре-
+															шает для себя сам. Это может быть основной меморандум и от-
+															дельные рассказы о своей жизни. Фотографии и видеозаписи.
+															Можно записывать обращения на камеру или через микрофон
+															своего устройства.</p>
+															<p class="strong strongB">Это не сайт некрологов, мы не упиваемся горем смерти. Нас вдох-
+																новляет радость жизни, счастье переживаний и добрая грусть об
+																ушедших.</p>
+
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</section>	
+<section class="about-people">
+										<div class="row">
+											<aside class="left-side">
+												<div class="col-md-4">
+													<div class="panel panel-content panel-color-yellow">
+														<div class="panel-heading">Лента сообщений</div>
+														<div id="mesages" class="panel-body collapse in">
+															<div class="row">
+																<div class="message col-md-12">
+																	<div class="message-date">
+																		<span class="date">24 января 2016</span>
+																	</div>
+																	<div class="message-heading">
+																<i class="material-icons">&#xE315;</i>
+																		<span class="message-title">Пушков о предложениях США: замучились изолировать?</span>
+																	</div>
+																	<div class="message-body">
+																		<p> Глава комитета Госдумы по международным делам Алексей Пушков прокомментировал предложения американских партнеров в отношении террористов.</p>
+																	</div>
+																	<div class="extMess">
+																		<form action="#">
+																			<input type="text" placeholder="оставить сообщение" name="extMess" > 
+																		</form>
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="message col-md-12">
+																	<div class="message-date">
+																		<span class="date">24 января 2016</span>
+																	</div>
+																	<div class="message-heading">
+																			<i class="material-icons">&#xE315;</i>
+																		<span class="message-title">Пушков о предложениях США: замучились изолировать?</span>
+																	</div>
+																	<div class="message-body">
+																		<p> Глава комитета Госдумы по международным делам Алексей Пушков прокомментировал предложения американских партнеров в отношении террористов.</p>
+																	</div>
+																	<div class="extMess">
+																		<form action="#">
+																			<input type="text" placeholder="оставить сообщение" name="extMess" > 
+																		</form>
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="message col-md-12">
+																	<div class="message-date">
+																		<span class="date">24 января 2016</span>
+																	</div>
+																	<div class="message-heading">
+																		<i class="material-icons">&#xE315;</i>
+																		<span class="message-title">Пушков о предложениях США: замучились изолировать?</span>
+																	</div>
+																	<div class="message-body">
+																		<p> Глава комитета Госдумы по международным делам Алексей Пушков прокомментировал предложения американских партнеров в отношении террористов.</p>
+																	</div>
+																	<div class="extMess">
+																		<form action="#">
+																			<input type="text" placeholder="оставить сообщение" name="extMess" > 
+																		</form>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</aside>
+											<div class="right-side">
+												<div class="col-md-8">
+													<div class="row flex">
+														<div class="col-md-3"><img src="img/foto1.jpg" alt="photo"></div>
+														<div class="col-md-6 ">
+															<div class="descr">
+																<span class="name">Василий Васильев</span>
+																<span class="date">12.03.1980</span>
+																<p>На третий день после ссоры князь 
+																	Степан Аркадьич Облонский – 
+																	Стива, как его звали в свете, – 
+																	в обычный час, то есть в восемь часов утра, проснулся не в спальне жены, 
+																	а в своем кабинете, на сафьянном диване…</p>
+																</div>
+															</div>
+															<div class="col-md-3"><img src="img/foto1.jpg" alt="photo"></div>
+														</div>
+														<div class="row flex">
+															<div class="col-md-6 ">
+																<div class="descr">
+																	<span class="name">Василий Васильев</span>
+																	<span class="date">12.03.1980</span>
+																	<p>На третий день после ссоры князь 
+																		Степан Аркадьич Облонский – 
+																		Стива, как его звали в свете, – 
+																		в обычный час, то есть в восемь часов утра, проснулся не в спальне жены, 
+																		а в своем кабинете, на сафьянном диване…</p>
+																	</div> 
+																</div>                   
+																<div class="col-md-3"><img src="img/foto3.jpg" alt="photo"></div>
+																<div class="col-md-3"><img src="img/foto4.jpg" alt="photo"></div>
+															</div>
+															<div class="row flex">
+																<div class="col-md-3"><img src="img/foto6.jpg" alt="photo"></div>
+																<div class="col-md-3"><img src="img/foto6.jpg" alt="photo"></div>
+																<div class="col-md-6 ">
+																	<div class="descr">
+																		<span class="name">Василий Васильев</span>
+																		<span class="date">12.03.1980</span>
+																		<p>На третий день после ссоры князь 
+																			Степан Аркадьич Облонский – 
+																			Стива, как его звали в свете, – 
+																			в обычный час, то есть в восемь часов утра, проснулся не в спальне жены, 
+																			а в своем кабинете, на сафьянном диване…</p>
+																		</div>
+																	</div> 	 										
+																</div>
+																<div class="row flex">
+																	<div class="col-md-3"><img src="img/foto4.jpg" alt="photo"></div>
+																	<div class="col-md-6 ">
+																		<div class="descr">
+																			<span class="name">Василий Васильев</span>
+																			<span class="date">12.03.1980</span>
+																			<p>На третий день после ссоры князь 
+																				Степан Аркадьич Облонский – 
+																				Стива, как его звали в свете, – 
+																				в обычный час, то есть в восемь часов утра, проснулся не в спальне жены, 
+																				а в своем кабинете, на сафьянном диване…</p>
+																			</div>
+																		</div>
+																		<div class="col-md-3"><img src="img/foto1.jpg" alt="photo"></div>
+																	</div>  
+																	<div class="row">
+																		<div class="col-md-12"><span class="news">Новая подборка</span></div>
+																	</div>                                              
+																</div>
+															</div>
+														</div>
+										</section>														
+														<div class="adward-wrap clearfix">
+															<div class="row">
+																<div class="col-md-4">
+																	<div class="adward-item flex">
+																		<a href="#" class="flex">
+																			<img src="img/baner.jpg" alt="banner">
+																			<div class="adward-descr">
+																				<span>Сохранить <br> воспомниания <br> теперь просто</span>
+																				<span>Оцифровка <br> кинопленок 8 и 16</span>
+																				<span>Мульти фото <br> Всегда рядом</span>
+																			</div>
+																		</a>
+																	</div>
+																</div>
+																<div class="col-md-4 ">
+																	<div class="adward-item flex">
+																		<a href="#" class="flex">
+																			<img src="img/baner1.jpg" alt="banner">
+																			<div class="adward-descr">
+																				<span>Сохранить <br> воспомниания <br> теперь просто</span>
+																				<span>Оцифровка <br> кинопленок 8 и 16</span>
+																				<span>Мульти фото <br> Всегда рядом</span>
+																			</div>
+																		</a>
+																	</div>
+																</div>
+																<div class="col-md-4 ">
+																	<div class="adward-item flex">
+																		<a href="#" class="flex">
+																			<img src="img/baner2.jpg" alt="banner">
+																			<div class="adward-descr">
+																				<span>Сохранить <br> воспомниания <br> теперь просто</span>
+																				<span>Оцифровка <br> кинопленок 8 и 16</span>
+																				<span>Мульти фото <br> Всегда рядом</span>
+																			</div>
+																		</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+													</div>
+													<section class="sect-remember">
+														<div class="row">
+															<div class="panel panel-content panel-color-yellow panel-overhead">
+																<div class="panel-heading">Я хочу оставить память
+																	<button type="button" class="btn-right" aria-label="Coolapse" data-toggle="collapse" data-target="#about-remember"><i class="material-icons">&#xE316;</i>
+																	</button>
+																</div>
+																<div id="about-remember" class="panel-body collapse in">
+																	<div class="row">
+																		<div class="col-md-6">
+																			<div class="about-wrap left-side">
+																				<span class="about-title ">О себе</span>
+																				<ul class="about-descr">
+																					<li class="flex"><i class="material-icons">&#xE316;</i>
+																						Ваш дневник, воспоминания, напутствия, опыт, 
+																						фотографии, записи могут публиковаться сразу после написания, а могут стать доступны только после Вашей кончины. </li>
+																						<li class="flex"><i class="material-icons">&#xE316;</i>
+																							Комментировать и дополнять историю Вашей жизни другие люди смогут только с вашего ведома и согласия. Или с разрешения МОДЕРАТОРА, которого назначаете Вы сами.</li>
+																							<li class="flex"><i class="material-icons">&#xE316;</i>
+																								Заблокированная до момента Вашей кончины личная информация недоступна никому и станет открытой только после Вашей смерти.</li>
+																							</ul>
+																						</div>
+																					</div>
+																					<div class="col-md-6">
+																						<div class="about-wrap right-side">
+																							<span class="about-title">Об Ушедшем</span>
+																							<ul class="about-descr">
+																								<li class="flex"><i class="material-icons">&#xE316;</i>
+																									Ваш дневник, воспоминания, напутствия, опыт, 
+																									фотографии, записи могут публиковаться сразу после написания, а могут стать доступны только после Вашей кончины. </li>
+																									<li class="flex"><i class="material-icons">&#xE316;</i>
+																										Комментировать и дополнять историю Вашей жизни другие люди смогут только с вашего ведома и согласия. Или с разрешения МОДЕРАТОРА, которого назначаете Вы сами.</li>
+																										<li class="flex"><i class="material-icons">&#xE316;</i>
+																											Заблокированная до момента Вашей кончины личная информация недоступна никому и станет открытой только после Вашей смерти.</li>
+																										</ul>
+																									</div>                    
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</section>
+																			<section class="sect-alive">
+																				<div class="row">
+																					<div class="panel panel-content panel-color-yellow panel-overhead">
+																						<div class="panel-heading flex"><span>Пока я живой , я хочу</span>
+																							<input type="text" name="search">
+																							<button type="button" class="btn-right" aria-label="Coolapse" data-toggle="collapse" data-target="#alive"><i class="material-icons">&#xE316;</i>
+																							</button>
+																						</div>
+																						<div id="alive" class="panel-body collapse in">
+																							<div class="row">
+																								<div class="col-md-12">
+
+																									<div  class="slider">
+																										<div class="alive-item flex">
+																											<ul class="flex">
+																												<li>Понять язык китов</li>
+																												<li>Плавать с дельфинами</li>
+																												<li>Слетать на луну</li>
+																											</ul>
+																										</div>
+
+																										<div class="alive-item flex">
+																											<ul class="flex">
+																												<li>Понять язык китов</li>
+																												<li>Плавать с дельфинами</li>
+																												<li>Слетать на луну</li>
+																											</ul>
+																										</div>
+
+																										<div class="alive-item flex">
+																											<ul class="flex">
+																												<li>Понять язык китов</li>
+																												<li>Плавать с дельфинами</li>
+																												<li>Слетать на луну</li>
+																											</ul>
+																										</div>
+
+																										<div class="alive-item flex">
+																											<ul class="flex">
+																												<li>Понять язык китов</li>
+																												<li>Плавать с дельфинами</li>
+																												<li>Слетать на луну</li>
+																											</ul>
+																										</div>
+
+																										<div class="alive-item flex">
+																											<ul class="flex">
+																												<li>Понять язык китов</li>
+																												<li>Плавать с дельфинами</li>
+																												<li>Слетать на луну</li>
+																											</ul>
+																										</div>
+
+																										<div class="alive-item flex">
+																											<ul class="flex">
+																												<li>Понять язык китов</li>
+																												<li>Плавать с дельфинами</li>
+																												<li>Слетать на луну</li>
+																											</ul>
+																										</div>
+
+																										<div class="alive-item flex">
+																											<ul class="flex">
+																												<li>Понять язык китов</li>
+																												<li>Плавать с дельфинами</li>
+																												<li>Слетать на луну</li>
+																											</ul>
+																										</div>
+
+																										<div class="alive-item flex">
+																											<ul class="flex">
+																												<li>Понять язык китов</li>
+																												<li>Плавать с дельфинами</li>
+																												<li>Слетать на луну</li>
+																											</ul>
+																										</div>
+
+																										<div class="alive-item flex">
+																											<ul class="flex">
+																												<li>Понять язык китов</li>
+																												<li>Плавать с дельфинами</li>
+																												<li>Слетать на луну</li>
+																											</ul>
+																										</div>
+
+																										<div class="alive-item flex">
+																											<ul class="flex">
+																												<li>Понять язык китов</li>
+																												<li>Плавать с дельфинами</li>
+																												<li>Слетать на луну</li>
+																											</ul>
+																										</div>																																																																																																																																		
+
+																										<div class="alive-item flex">
+																											<ul class="flex">
+																												<li>Понять язык китов</li>
+																												<li>Плавать с дельфинами</li>
+																												<li>Слетать на луну</li>
+																											</ul>
+																										</div>		
+																									</div> 
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</section>
+
+<!--***************************************************** Sect End *********************************************************-->
+
+
+<!--***************************************************** Sect Start *********************************************************-->
+
+																			<section class="sect-enterPin">
+																				<div class="row">
+																					<div class="panel panel-content panel-color-yellow panel-overhead">
+																						<div class="panel-heading flex"><span>Ввести пин-код наследования</span>
+																							<input type="text" name="search">
+																						</div>
+																						<div id="enterPin" class="panel-body collapse in">
+																							<div class="row">  
+																								<div class="col-md-12">
+																									<div class="enterPin-descr">
+																										<p>Если Вы являетесь Доверенным лицом, Ваш Доверитель скончался и вы хотите открыть его страницу, 
+																											введите, пожалуйста, ПИН-КОД, предоставленный Вашим Доверителем.</p>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</section>
+																				<section class="sect-find">
+																					<div class="row">
+																						<div class="panel panel-content panel-color-yellow panel-overhead">
+																							<div class="panel-heading flex"><span>Найти человека</span>
+																								<input type="text" name="search">
+																								<button type="button" class="btn-right" aria-label="Coolapse" data-toggle="collapse" data-target="#find"><i class="material-icons">&#xE316;</i>
+																								</button>
+																							</div>
+																							<div id="find" class="panel-body collapse in">
+																								<div class="row">
+																									<div class="col-md-6">
+																										<p class="find-descr">Расширенный поиск</p>
+																										</div>
+																									</div>
+																									<div class="row">
+																										<div class="form-wrap clearfix">
+																											<form action="#" class="send-info clearfix">
+																												<div class="left-side ">
+																													<div class="col-md-6">
+
+
+																														<div class="info-filde female-wrap flex">
+																										
+																															<input type="text" placeholder="Фамилия" class="female" name="female" minlength="2" onkeyup="proverka2(this);" >
+																														</div>
+
+																														<div class="info-filde name-wrap flex">
+
+																															<input type="text" placeholder="Имя" class="name" name="name" minlength="2">
+																														</div>
+
+																														<div class="info-filde secondname-wrap flex">
+																															<input type="text" placeholder="Отчество" class="secondname" name="secondname" minlength="2">
+																														</div>	
+
+																														<div class="info-filde years-wrap flex">
+
+																																<label>Годы жизни</label>
+
+																															<div class="year-alive">
+
+
+																																
+																																<input type="text" name="number" class="number" maxlength="2" minlength="2">
+
+																																
+																																<input type="text" name="month" class="month" maxlength="10" minlength="2">
+
+																											
+																																<input type="text" name="year" class="year" maxlength="4" minlength="4">
+																																		
+																																		<br>
+
+																																<input type="text" name="number" class="number" maxlength="2" minlength="2">
+
+																																
+																																<input type="text" name="month" class="month" maxlength="10" minlength="3">
+
+																																
+																																<input type="text" name="year" class="year" maxlength="4" minlength="4">
+
+																															</div>
+
+
+																														</div>
+																													</div>
+																												</div>		
+																												<div class="right-side">
+																													<div class="col-md-6">
+<textarea maxlength="100" name="additional" class="additional" cols="50" rows="5">Любая другая доступная информация: Место учебы, место работы, города, профессия, достижения...</textarea>
+		<button class="button">Поиск</button>
+																														</div>
+																													</div>				
+
+
+																												</form>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						<div class="panel panel-content panel-color-yellow panel-overhead">
+																							<div class="panel-heading flex find-wrap">
+																									<p>Результаты поиска</p>
+																							</div>		
+																							</div>																						
+																							<div class="row">
+																								<div class="people-find-wrap">
+																									<div class="people-item clearfix">
+																										<a href="#" class="flex">
+																											<div class="col-md-3">
+																												<div class="people-main">
+																												<b>Каширский-Александровский</b> 
+																													Александр Александрович
+																												</div>
+																											</div>
+																											<div class="col-md-3">
+																												<div class="people-date">
+																													04.12.1967-15.10.2004
+																												</div>
+																											</div>
+																											<div class="col-md-3">
+																												<div class="people-place">
+																													Россия, г.Томск
+																												</div>
+																											</div>
+																											<div class="col-md-3">
+																												<div class="people-prof">
+																													учитель
+																												</div>
+																											</div>
+																										</a>
+																									</div>
+																									<div class="people-item clearfix">
+																										<a href="#" class="flex">
+																											<div class="col-md-3">
+																												<div class="people-main">
+																												<b>Каширский-Александровский</b> 
+																													Александр Александрович
+																												</div>
+																											</div>
+																											<div class="col-md-3">
+																												<div class="people-date">
+																													04.12.1967-15.10.2004
+																												</div>
+																											</div>
+																											<div class="col-md-3">
+																												<div class="people-place">
+																													Россия, г.Томск
+																												</div>
+																											</div>
+																											<div class="col-md-3">
+																												<div class="people-prof">
+																													учитель
+																												</div>
+																											</div>
+																										</a>
+																									</div>
+																									<div class="people-item clearfix">
+																										<a href="#" class="flex">
+																											<div class="col-md-3">
+																												<div class="people-main">
+																												<b>Каширский-Александровский</b> 
+																													Александр Александрович
+																												</div>
+																											</div>
+																											<div class="col-md-3">
+																												<div class="people-date">
+																													04.12.1967-15.10.2004
+																												</div>
+																											</div>
+																											<div class="col-md-3">
+																												<div class="people-place">
+																													Россия, г.Томск
+																												</div>
+																											</div>
+																											<div class="col-md-3">
+																												<div class="people-prof">
+																													учитель
+																												</div>
+																											</div>
+																										</a>
+																									</div>	
+																									<div class="people-item clearfix">
+																										<a href="#" class="flex">
+																											<div class="col-md-3">
+																												<div class="people-main">
+																												<b>Каширский-Александровский</b> 
+																													Александр Александрович
+																												</div>
+																											</div>
+																											<div class="col-md-3">
+																												<div class="people-date">
+																													04.12.1967-15.10.2004
+																												</div>
+																											</div>
+																											<div class="col-md-3">
+																												<div class="people-place">
+																													Россия, г.Томск
+																												</div>
+																											</div>
+																											<div class="col-md-3">
+																												<div class="people-prof">
+																													учитель
+																												</div>
+																											</div>
+																										</a>
+																									</div>
+																									<div class="people-item clearfix">
+																										<a href="#" class="flex">
+																											<div class="col-md-3">
+																												<div class="people-main">
+																												<b>Каширский-Александровский</b> 
+																													Александр Александрович
+																												</div>
+																											</div>
+																											<div class="col-md-3">
+																												<div class="people-date">
+																													04.12.1967-15.10.2004
+																												</div>
+																											</div>
+																											<div class="col-md-3">
+																												<div class="people-place">
+																													Россия, г.Томск
+																												</div>
+																											</div>
+																											<div class="col-md-3">
+																												<div class="people-prof">
+																													учитель
+																												</div>
+																											</div>
+																										</a>
+																									</div>																																			
+																								</div>
+																							</div>			
+																						</section>
+																					</div>
+																				</div>
+																			</div>
+
+																			<footer class="main-footer">
+																				<div class="container">
+																					<div class="row">
+																						<div class="col-md-12">
+																						</div>
+																					</div>
+																				</div>
+																			</footer>
+
+<!--                   <footer class="footer">
+                  	<div class="container">
+                  		<nav id="w2" class="navbar-footer navbar" role="navigation"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w2-collapse"><span class="sr-only">Toggle navigation</span>
+                  			<span class="icon-bar"></span>
+                  			<span class="icon-bar"></span>
+                  			<span class="icon-bar"></span></button></div><div id="w2-collapse" class="collapse navbar-collapse"><ul id="w3" class="navbar-nav navbar-left nav"><li><a href="/site/about">О Нас</a></li>
+                  			<li><a href="/site/about-project">О Проекте</a></li>
+                  			<li><a href="/site/confidential">Конфиденциальность</a></li>
+                  			<li><a href="/site/contact">Помощь</a></li></ul></div></div></nav>        <p class="pull-left">2017 &copy; Наследие </p>
+
+                  			<p class="pull-right">Работает на <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></p>
+                  		</div>
+                  	</footer> -->
+
+
+                  	<!-- Custom HTML -->
+
+                  	<!-- Optimized loading JS Start -->
+                  	<script>var scr = {"scripts":[
+                  		{"src" : "js/libs.min.js", "async" : false},
+                  		{"src" : "js/init.js", "async" : false},
+                  		{"src" : "js/site.js", "async" : false},
+                  		{"src" : "js/common.js", "async" : false}
+                  		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+                  	</script>
+                  	<!-- Optimized loading JS End -->
+                  </body>
+                  </html>

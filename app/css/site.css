@@ -1,0 +1,407 @@
+html,
+body {
+    height: 100%;
+    background-color: transparent;
+    font-size: 15px;
+    color: #414042;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto 0px;
+    padding: 0 0 0px;
+    background-color: #f1f3da;
+}
+
+.wrap > .container {
+    padding: 70px 15px 0px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    color: #999999;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+.navbar-top {
+    background-color: #96b283;
+    box-shadow: 0 3px 7px 0px rgba(122,122,122,0.5);
+    border-bottom: none;
+    color: rgba(255,255,255,0.85);
+}
+
+.navbar-top .navbar-brand {
+    color: rgba(255,255,255,0.85);
+}
+
+.navbar-top .navbar-nav > li > a {
+    color: rgba(255,255,255,0.85);
+}
+.navbar-top .navbar-nav > .active > a {
+    color: rgba(255,255,255,0.85);
+}
+
+.navbar-footer {
+    background-color: transparent;
+    margin-bottom: 0px;
+}
+.navbar-footer .navbar-nav > li > a {
+    color: #999999;
+}
+.navbar-footer .navbar-nav > li > a:focus,
+.navbar-footer .navbar-nav > li > a:hover {
+    color: #686a8b;
+    background-color: #ffffff;
+}
+.navbar-footer .navbar-nav > .active > a {
+    color: #686a8b;
+}
+.container {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.alert {
+    padding: 0px 34px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.alert-danger {
+    background-color: #a41d21 !important;
+}
+
+.alert .btn {
+    padding: 0px 20px;
+    font-size: inherit;
+    margin: 0px;
+}
+.alert .btn .material-icons {
+    margin-top: -5px;
+    padding-right: 24px;
+}
+.alert-danger .row a.btn:hover,
+.alert-danger .row a.btn:focus{
+    background-color: #c22616;
+}
+
+.panel-content > .panel-heading {
+    position: relative;
+    background-color: #96b283;
+    box-shadow: 0 3px 7px 0px rgba(122,122,122,0.5);
+    border-radius: 0px;
+    border-bottom: none;
+    height: 42px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #5b3109;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 0 0 10px 0;
+}
+.panel-content > .panel-body {
+    color: #414042;
+    font-size: 13px;
+    padding: 10px;
+}
+.row {
+    margin: 0px;
+}
+.panel-overhead > .panel-heading {
+    margin: 10px -10px;
+
+}
+
+.panel-color-yellow > .panel-heading {
+    background-color: #c7c4a6;
+}
+
+.btn-right {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    position: absolute;
+    right: 14px;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+
+
+.btn-right i {
+    font-size: 36px;
+}
+.message {
+    margin-bottom: 20px;
+}
+.message .message-heading {
+    font-size: 16px;
+    font-weight: bold;
+    color: #704b31;
+    position: relative;
+}
+.message .message-heading i {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+}
+.message .message-date{
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+.message .message-date span {
+    background-color: #387a3a;
+    padding: 5px;
+}
+.message .message-body {
+}
+.margin-lr {
+    margin: 0px 20px;
+}
+
+/*Fonts UP*/
+@font-face {
+    font-family: RobotoMedium; /* Имя шрифта */
+    src: url(../fonts/Medium/Roboto-Medium.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: RobotoRegular; /* Имя шрифта */
+    src: url(../fonts/Regular/Roboto-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+
+/***********************************************Home Page*******************************************************/
+
+.logo-wrap {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+/*Login form*/
+
+.form-wrap{
+    background-color: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.flex {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-wrap .tab {
+    font-family: "RobotoMedium", sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    width: 50%;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 12px;
+    color: #96b283;
+    border-bottom: 2px solid #96b283;
+}
+.form-wrap .tab.active {
+    background-color: #c7c4a6;
+    color: #714d31;
+    border-bottom: 2px solid #714d31;
+}
+.form-wrap .signIn {
+    padding: 8px 18px;
+    color: #414042;
+}
+.form-wrap .signIn .fa {
+    font-size: 18px;
+    color: #414042;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+}
+.form-wrap label {
+    margin-bottom: 0px;
+}
+.form-wrap .signIn > .mail-wrap  , .form-wrap .signIn > .pass-wrap {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+.form-wrap .signIn .button  {
+    margin-top: 10px;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 7px;
+    border: none;
+    width: 100%;
+    display: block;
+    background-color: #387a3a;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 12px;
+    font-family: "RobotoRegular", sans-serif;
+}
+.form-wrap .signIn .button:hover {
+    color: #ebebeb;
+    background-color: #96b283;
+}
+.form-wrap .signIn input:not([type="checkbox"]) {
+    width: 100%;
+    border: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    margin-left: 15px;
+    background-color: #f1f3da;
+    color: #414042;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 400;
+    font-family: "RobotoRegular", sans-serif;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.form-wrap .signIn .forgetPass-wrap label , .form-wrap .signIn .forgetPass-wrap span {
+    color: #414042;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    font-family: "RobotoRegular", sans-serif;
+}
+.form-wrap .signIn .forgetPass-wrap input{
+    border: 1px solid #888788;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+.form-wrap .signIn .forgetPass-wrap {
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+/*.logo-wrap  span {
+    display: block;
+}
+.logo-wrap .logo-title {
+    font-size: 42px;
+    color: #604532;
+    font-family: "Roboto" , sans-serif;
+    font-weight: 700;
+}
+.logo-wrap .logo-decr{
+    color: #94ae83;
+    font-size: 14px;
+}
+.logo-wrap .logo-qute{
+    color: #a25742;
+}*/
+/***********************************************Home Page*******************************************************/
