@@ -135,7 +135,6 @@ li , .myPage-articl .top-articl-info
 
 .wrap
 	font-family: "RobotoRegular" , $helvetica
-	padding-bottom: 50px
 	.fullpage
 		padding: 60px 15px 0
 
@@ -248,60 +247,198 @@ li , .myPage-articl .top-articl-info
 				font-size: 20px
 .navbar-top
 	margin-bottom: 0
+.fullpage
+	.row
+		.admin-page
+
 .admin-page
-	padding: 0
+	// padding: 0
+	// min-height: 890px
 	box-shadow: 0 3px 7px rgba(0,0,0,.5)
 	.wrap-block
-		margin: 25px
+		padding: 25px
 	.first
+		background-color: #e1dfbc
 		padding: 0
-		.ava-circle
-			float: left
-			margin-right: 15px
-		span
-			text-transform: uppercase
-			float: left
-			color: #887157
-			font-size: 13px
-			// font-weight: bold
-			line-height: 1.3
+		.wrap-block
+			.img-wrapper
+				float: left
+				margin-right: 15px
+				height: 47px
+				line-height: 47px
+			span
+				float: left
+				color: #a8997c
+				font-weight: bold
+				font-size: 13px
+				font-weight: normal
+				line-height: 1.3
+				height: 47px
+				display: flex
+				align-items: center
+				text-transform: uppercase
 		.direction
-			// padding: 15px 0
 			text-align: right
+			img
+				margin-right: 15px
 	.second
 		padding: 0
 		background-color: #c5be9e
-		.ava-circle
-			float: left
-			margin-right: 15px
-		span
-			float: left
-			color: #35332a
-			font-weight: bold
-			font-size: 13px
-			line-height: 1.3
+		.wrap-block
+			.img-wrapper
+				float: left
+				margin-right: 15px
+				height: 47px
+				line-height: 47px
+			span
+				float: left
+				color: #35332a
+				font-weight: bold
+				font-size: 13px
+				line-height: 1.3
+				height: 47px
+				display: flex
+				align-items: center
 		.direction
 			text-align: center
-			border-right: 2px solid #c5be9e
-			width: 105%
-			z-index: 10
 			p
 				color: #fff
 				text-transform: uppercase
+		.half1, .half2
+			width: 50%
+			float: left
+		.half2
+			background: url(../img/admin-page/Vert-Line.png) no-repeat right top
+
 	.third
 		padding: 0
 		background-color: #c5be9e
-		.ava-circle
-			float: left
-			margin-right: 15px
-		span
-			float: left
-			color: #35332a
-			font-weight: bold
-			font-size: 13px
-			line-height: 1.3
+		.wrap-block
+			.img-wrapper
+				float: left
+				margin-right: 15px
+				height: 47px
+				line-height: 47px
+			span
+				float: left
+				color: #35332a
+				font-weight: bold
+				font-size: 13px
+				line-height: 1.3
+				height: 47px
+				display: flex
+				align-items: center
 		.direction
 			text-align: center
 			p
 				color: #fff
 				text-transform: uppercase
+		.half1, .half2
+			width: 50%
+			float: left
+	.content
+		margin-top: 25px
+		padding: 0 0 50px 0
+		.left-side
+			background-color: #e6ebdb
+			padding: 0
+	.menu
+		list-style: none
+		padding: 0
+		width: 100%
+		li
+			min-height: 50px
+			line-height: 50px
+			padding: 0 0 0 15px
+			a
+				display: block
+				position: relative
+				color: #50524c
+				font-family: "RobotoRegular" , sans-serif
+				font-weight: bold
+				text-transform: uppercase
+				font-size: 13px
+				padding-left: 30px
+				text-decoration: none
+				.count-mess
+					position: absolute
+					right: 15px
+					font-size: 11px
+		li:nth-of-type(1)
+			a	
+				background: url(../img/admin-page/1.png) no-repeat left center
+		li:nth-of-type(2)
+			a	
+				background: url(../img/admin-page/2.png) no-repeat left center
+		li:nth-of-type(3)
+			a	
+				background: url(../img/admin-page/3.png) no-repeat left center
+		li:nth-of-type(4)
+			a	
+				background: url(../img/admin-page/4.png) no-repeat left center
+		li:nth-of-type(5)
+			a	
+				background: url(../img/admin-page/5.png) no-repeat left center
+		li:nth-of-type(6)
+			a	
+				background: url(../img/admin-page/6.png) no-repeat left center
+		li:nth-of-type(7)
+			a	
+				background: url(../img/admin-page/7.png) no-repeat left center
+	li.focus
+		position: relative
+		display: block
+		background: #fff
+	#live-search
+		background-color: #fff!important
+		border: none
+		color: #666666
+		font-family: "RobotoRegular" , sans-serif
+		font-weight: normal
+		font-size: 12px
+		position: absolute
+		top: 0
+		left: 100%
+		padding: 0 10px
+		width: 375px
+		input
+			background: url(../img/admin-page/search.png) no-repeat right center
+			border: none
+			width: 100%
+			padding-left: 25px
+			height: 50px
+		.wrap-block
+			border-top: 1px solid #ccc
+			padding: 15px 25px
+			.img-wrapper
+				float: left
+				margin-right: 15px
+			a
+				text-transform: none
+			span
+				float: left
+				color: #000
+				font-weight: bold
+				font-size: 13px
+				line-height: 1.3
+			&:hover
+				background-color: #f5faf0
+			&:last-child:hover
+				background-color: #fff
+			.live-pagination
+				display: flex
+				justify-content: center
+				align-items: center
+				.material-left, .material-right
+					cursor: pointer
+					float: left
+					font-size: 20px
+					&:hover
+						color: #d5d5d5
+				.digits
+					color: #5c5c5c
+					float: left
+					font-size: 13px
+					margin: 0 20px
+				.digits.active
+					color: #e18769
