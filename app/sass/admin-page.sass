@@ -132,9 +132,10 @@ li , .myPage-articl .top-articl-info
 
 .page-header
 	margin-bottom: 20px
-
 .wrap
 	font-family: "RobotoRegular" , $helvetica
+	overflow-y: auto
+	padding-bottom: 25px
 	.fullpage
 		padding: 60px 15px 0
 
@@ -247,16 +248,17 @@ li , .myPage-articl .top-articl-info
 				font-size: 20px
 .navbar-top
 	margin-bottom: 0
-.fullpage
-	.row
-		.admin-page
 
 .admin-page
-	// padding: 0
-	// min-height: 890px
-	box-shadow: 0 3px 7px rgba(0,0,0,.5)
+	// box-shadow: 0 3px 7px rgba(0,0,0,.5)
 	.wrap-block
 		padding: 15px 25px
+	.hide-block
+		display: none
+		padding: 0
+	.vision-block
+		display: block
+		padding: 0
 	.first
 		background-color: #e1dfbc
 		padding: 0
@@ -279,11 +281,44 @@ li , .myPage-articl .top-articl-info
 				text-transform: uppercase
 		.direction
 			text-align: right
-			img
-				margin-right: 10px
+			p.arr
+				background: url(../img/admin-page/Arrow-Down.png) no-repeat 90% center
+				cursor: pointer
+				float: right
+				height: 21px
+				width: 15px
+			p.arr-down
+				background: url(../img/admin-page/Arrow-Down.png) no-repeat 90% center
+				cursor: pointer
+				float: right
+				height: 21px
+				width: 15px
+			p.arr-up
+				display: none
+				background: url(../img/admin-page/Arrow-Up.png) no-repeat 90% center
+				cursor: pointer
+				float: right
+				height: 21px
+				width: 15px
+			p.add-height
+				height: 0
+				margin: 0
+			// img
+			// 	margin-right: 10px
+			// 	cursor: pointer
 	.second
 		padding: 0
 		background-color: #c5be9e
+		.over-wrap
+			overflow-x: hidden
+			overflow-y: auto
+		#scrollbar::-webkit-scrollbar
+			width: 4px
+			background-color: #F5F5F5
+
+		#scrollbar::-webkit-scrollbar-thumb
+			background-color: #e1dfbc
+			border: 2px solid #e1dfbc
 		.wrap-block
 			.img-wrapper
 				float: left
@@ -308,11 +343,20 @@ li , .myPage-articl .top-articl-info
 			width: 50%
 			float: left
 		.half2
-			background: url(../img/admin-page/Vert-Line.png) no-repeat right top
+			// background: url(../img/admin-page/Vert-Line.png) no-repeat right top
 
 	.third
 		padding: 0
 		background-color: #c5be9e
+		.over-wrap
+			overflow-x: hidden
+			overflow-y: auto
+		#scrollbar::-webkit-scrollbar
+			width: 4px
+			background-color: #F5F5F5
+		#scrollbar::-webkit-scrollbar-thumb
+			background-color: #e1dfbc
+			border: 2px solid #e1dfbc
 		.wrap-block
 			.img-wrapper
 				float: left
@@ -341,7 +385,142 @@ li , .myPage-articl .top-articl-info
 		padding: 0 0 50px 0
 		.left-side
 			background-color: #e6ebdb
+			box-shadow: 0 3px 7px rgba(0,0,0,.5)
 			padding: 0
+		.right-side
+			background-color: #fff
+			padding: 15px 0
+			.main-content
+				border-right: 1px solid #ccc
+				ul.message-type
+					padding: 0
+					list-style: none
+					li
+						float: left
+						margin: 0 10px 
+						a
+							color: #7f7f7f
+							font-weight: bold
+						a.message-type-active
+							color: #4b6840
+				ul.content-menu
+					margin-top: 15px
+					li
+						cursor: pointer
+						.wrap-block
+							padding: 0
+							.img-wrapper
+								float: left
+								margin-right: 15px
+								height: 57px
+								line-height: 57px
+							.text-wrapper
+								float: left
+								display: flex
+								flex-direction: column
+								align-items: flex-start
+								line-height: 1.4
+								p
+									margin: 0
+									font-size: 14px
+								p.author_name
+									font-weight: bold
+									color: #000
+									font-size: 15px
+						&:hover
+							background-color: #f5faf0
+					li.selected-item
+						background: #e8fad7
+			ul.content-menu
+				margin-bottom: 0
+				margin-top: 35px
+				padding: 0
+				list-style: none
+				li.live-pagination
+					display: flex
+					justify-content: center
+					align-items: center
+					padding-bottom: 0
+					.material-left, .material-right
+						cursor: pointer
+						float: left
+						font-size: 20px
+						&:hover
+							color: #d5d5d5
+					.digits
+						color: #5c5c5c
+						float: left
+						font-size: 13px
+						margin: 0 20px
+					.digits.active
+						color: #e18769
+				li
+					border-top: 1px solid #ccc
+					padding: 15px 10px
+					a
+						color: #444444
+						display: block
+						font-family: "RobotoRegular" , sans-serif
+						font-size: 14px
+						text-decoration: none
+						span
+							color: #000
+							font-weight: bold
+					&:hover
+						background-color: #f5faf0
+					&:last-child:hover
+						background-color: #fff
+			.result-content
+				overflow-y: auto
+				.author
+					margin-top: 7px
+					margin-bottom: 7px
+					span.author-name
+						color: #000
+						font-family: "RobotoRegular" , sans-serif
+						font-size: 15px
+						font-weight: bold
+				.status
+					padding: 0
+					.status-author
+						font-weight: bold
+						font-family: "RobotoRegular" , sans-serif
+						display: flex
+						justify-content: space-between
+						align-items: center
+						margin-top: 7px
+						margin-bottom: 7px
+			.content-wrapper
+				border-top: 1px solid #ccc
+				h2.title-main
+					margin-bottom: 20px
+					color: #000
+					line-height: 1.3
+					font-size: 20px
+					font-weight: bold
+				.excerpt
+					overflow-x: hidden
+					overflow-y: auto
+					height: 454px
+					padding: 0
+					color: #000
+					font-size: 15px
+					p.text
+						margin-bottom: 25px
+					p.fix
+						min-height: 354px
+						img
+							width: 100%
+				.editing
+					border-top: 1px solid #ccc
+					padding: 15px 10px
+					padding-bottom: 0
+					a
+						color: #696969
+						font-weight: bold
+						font-family: "RobotoRegular" , sans-serif
+						margin-right: 25px
+						text-decoration: none						
 	.menu
 		list-style: none
 		padding: 0

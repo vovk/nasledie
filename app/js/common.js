@@ -1,13 +1,17 @@
 $(function() {
 	$(document).ready(function(){
-		if($('li').hasClass('focus')){
-			$('.admin-page').css('min-height', '890px');
-		}
-		else
-			$('.admin-page').css('min-height', '0');
-
-		$('li.focus').append("<div id='live-search'><input type='text' placeholder='Каширский-Дмитриев Игорь Константинович'><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava1.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava2.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava3.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava4.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava5.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava6.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava7.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='live-pagination'><i class='material-icons material-left'>&#xE314;</i><span class='digits active digits-color'>1</span><span class='digits digits-color'>2</span><span class='digits digits-color'>3</span><i class='material-icons material-right'>&#xE315;</i></div></div></div></div>");
 		
+		//убрал box-shadow  .admin-page 
+		// if($('li').hasClass('focus')){
+		// 	$('.admin-page').css('min-height', '875px');
+		// }
+		// else
+		// 	$('.admin-page').css('min-height', '0');
+		
+
+		//add input with live-search
+		$('li.focus:nth-of-type(1)').append("<div id='live-search'><input type='text' placeholder='Каширский-Дмитриев Игорь Константинович'><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava1.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava2.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava3.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava4.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava5.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava6.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava7.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='live-pagination'><i class='material-icons material-left'>&#xE314;</i><span class='digits active digits-color'>1</span><span class='digits digits-color'>2</span><span class='digits digits-color'>3</span><i class='material-icons material-right'>&#xE315;</i></div></div></div></div>");
+
 		function showResult(str) {
 			if (str.length==0) { 
 				document.getElementById("live-search").innerHTML="";
@@ -29,6 +33,25 @@ $(function() {
 			xmlhttp.open("GET","livesearch.php?q="+str,true);
 			xmlhttp.send();
 		}
+
+		//top block .hide-block with authors
+		var attr = $('.hide-block');
+		var imgSrc = $('.arr-down').attr('src');
+		$('.arr-down').on("click", function(){
+			$(this).toggle(300);
+			$('.arr-up').toggle(300);
+			$('.hide-block').toggle(300);
+			$('.over-wrap').css({'height' : '231px', 'transition' : '.6s all'});
+			$('.first .direction .add-height').css({'height' : '153px', 'transition' : '.6s all'});
+
+		});
+		$('.arr-up').on("click", function(){
+			$(this).toggle(300);
+			$('.arr-down').toggle(300);
+			$('.hide-block').toggle(300);
+			$('.over-wrap').css({'height' : 'auto', 'transition' : '.6s all'});
+			$('.first .direction .add-height').css({'height' : '0', 'transition' : '.6s all'});
+		});
 	});
 	jQuery(".icons-nav li a").click(function() {
 		jQuery(".icons-nav li a").removeClass('active');
@@ -79,10 +102,10 @@ $(function() {
 	function delspace(input){
 		var value = input.value;
 		var rep = /^[ ]+$/;
-if (rep.test(value)) { // В значении только пробелы
-	value = value.replace(rep, '');
-	input.value = value;
-}
+	if (rep.test(value)) { // В значении только пробелы
+		value = value.replace(rep, '');
+		input.value = value;
+	}
 }
 
 //popup
