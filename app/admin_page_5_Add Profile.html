@@ -51,6 +51,9 @@
 	</noscript>
 	<!-- Load Custom CSS Compiled without JS End -->
 
+	<!-- CheckBox -->
+	<link rel="stylesheet" href="checkbox.css">
+
 	<!-- Custom Browsers Color Start -->
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#000">
@@ -227,123 +230,282 @@
 							<ul class="menu">
 								<li><a href="admin_page_1_Marks.html">Закладки<span></span></a></li>
 								<li><a href="admin_page_2_Edit.html">Редакция<span class="count-mess">+23</span></a></li>
-								<li class="focus"><a href="admin_page_3_Messages.html">Сообщения<span class="count-mess">+47</span></a></li>
+								<li><a href="admin_page_3_Messages.html">Сообщения<span class="count-mess">+47</span></a></li>
 								<li><a href="#">Настройки<span class="count-mess"></span></a></li>
-								<li><a href="admin_page_5_Add Profile.html">Создать профиль<span class="count-mess"></span></a></li>
+								<li class="focus"><a href="admin_page_5_Add Profile.html">Создать профиль<span class="count-mess"></span></a></li>
 								<li><a href="#">Финансы<span class="count-mess"></span></a></li>
 								<li><a href="#">Услуги<span class="count-mess"></span></a></li>
 							</ul>
 						</div>
 						<div class="col-md-10 right-side">
-							<div class="col-md-5 main-content">
-								<ul class="message-type">
-									<li><a href="#" class="message-type-active">Входящие</a></li>
-									<li><a href="#">Исходящие</a></li>
-									<li><a href="#">Корзина</a></li>
-									<li><a href="#">Архив</a></li>
-								</ul>
-								<div class="clearfix"></div>
-								<ul class="content-menu">
-									<li class="selected-item"><a href="#">
-										<div class="wrap-block clearfix">
-											<div class='img-wrapper'>
-												<img src='img/admin-page/author5.png' alt='avatar' class='img-circle ava-circle'>
-											</div>
-											<div class="text-wrapper">
-												<p class="author_name">Игорь Кашинский-Дмитриев</p>
-												<p class="message-date">> Доброго времени суток всем!</p>
-												<p class="message-date">25 октября 2016 в 13:51</p>
-											</div>
-										</div>
-									</a></li>
-									<li><a href="#">
-										<div class="wrap-block clearfix">
-											<div class='img-wrapper'>
-												<img src='img/admin-page/author5.png' alt='avatar' class='img-circle ava-circle'>
-											</div>
-											<div class="text-wrapper">
-												<p class="author_name">Игорь Кашинский-Дмитриев</p>
-												<p class="message-date">> Доброго времени суток всем!</p>
-												<p class="message-date">25 октября 2016 в 13:51</p>
-											</div>
-										</div>
-									</a></li>
-									<li><a href="#">
-										<div class="wrap-block clearfix">
-											<div class='img-wrapper'>
-												<img src='img/admin-page/author5.png' alt='avatar' class='img-circle ava-circle'>
-											</div>
-											<div class="text-wrapper">
-												<p class="author_name">Игорь Кашинский-Дмитриев</p>
-												<p class="message-date">> Доброго времени суток всем!</p>
-												<p class="message-date">25 октября 2016 в 13:51</p>
-											</div>
-										</div>
-									</a></li>
-									<li><a href="#">
-										<div class="wrap-block clearfix">
-											<div class='img-wrapper'>
-												<img src='img/admin-page/author5.png' alt='avatar' class='img-circle ava-circle'>
-											</div>
-											<div class="text-wrapper">
-												<p class="author_name">Игорь Кашинский-Дмитриев</p>
-												<p class="message-date">> Доброго времени суток всем!</p>
-												<p class="message-date">25 октября 2016 в 13:51</p>
-											</div>
-										</div>
-									</a></li>
-									<li><a href="#">
-										<div class="wrap-block clearfix">
-											<div class='img-wrapper'>
-												<img src='img/admin-page/author5.png' alt='avatar' class='img-circle ava-circle'>
-											</div>
-											<div class="text-wrapper">
-												<p class="author_name">Игорь Кашинский-Дмитриев</p>
-												<p class="message-date">> Доброго времени суток всем!</p>
-												<p class="message-date">25 октября 2016 в 13:51</p>
-											</div>
-										</div>
-									</a></li>
-									<li><a href="#">
-										<div class="wrap-block clearfix">
-											<div class='img-wrapper'>
-												<img src='img/admin-page/author5.png' alt='avatar' class='img-circle ava-circle'>
-											</div>
-											<div class="text-wrapper">
-												<p class="author_name">Игорь Кашинский-Дмитриев</p>
-												<p class="message-date">> Видал че пишут?))</p>
-												<p class="message-date">25 октября 2016 в 13:51</p>
-											</div>
-										</div>
-									</a></li>
-									<li class="live-pagination">
-										<i class='material-icons material-left'>&#xE314;</i>
-											<span class='digits active digits-color'>1</span>
-											<span class='digits digits-color'>2</span>
-											<span class='digits digits-color'>3</span>
-										<i class='material-icons material-right'>&#xE315;</i>
+							<div class="col-md-6 main-content">
+								<div class="data-block">
+									<label for="surname" class="data-info">Фамилия</label>
+									<input type="text" id="surname" class="data-name" placeholder="Краснобогатырский-Александровский">
+								</div>
+								<div class="data-block">
+									<label for="name" class="data-info">Имя</label>
+									<input type="text" id="name" class="data-name" placeholder="Александр">
+								</div>
+								<div class="data-block">
+									<label for="last-name" class="data-info">Отчество</label>
+									<input type="text" id="last-name" class="data-name" placeholder="Александрович">
+								</div>
+								<div class="data-block">
+									<label for="day" class="data-info data-select">Дата рождения</label>
+									<select name="day" id="day" class="age">
+										<option value="">День</option>
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3</option>
+									</select>
+									<select name="month" id="month" class="age">
+										<option value="">Месяц</option>
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3</option>
+									</select>
+									<select name="year" id="year" class="age">
+										<option value="">Год</option>
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3</option>
+									</select>
+								</div>
+								<div class="data-block">
+									<label for="day" class="data-info data-select">Дата смерти</label>
+									<select name="day" id="day" class="age">
+										<option value="">День</option>
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3</option>
+									</select>
+									<select name="month" id="month" class="age">
+										<option value="">Месяц</option>
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3</option>
+									</select>
+									<select name="year" id="year" class="age">
+										<option value="">Год</option>
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3</option>
+									</select>
+								</div>
+								<div class="data-block">
+									<label for="gender" class="data-info data-select gender">Пол</label>
+									<ul class="radio-list">
+										<li>
+											<input type="radio" id="f-option" name="selector2" checked>
+											<label for="f-option">Мужской</label>
+
+											<div class="check"></div>
+										</li>
+
+										<li>
+											<input type="radio" id="s-option" name="selector2">
+											<label for="s-option">Женский</label>
+
+											<div class="check"><div class="inside"></div></div>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-12 mind">
+									<p>Я хочу оставить память о <span>дедушке</span></p>
+									<div class="grand-wrap">
+										<ul class="radio-list">
+											<li class="mind-item">
+												<input type="radio" id="d-option" name="selector">
+												<label for="d-option">Прадедушка</label>
+
+												<div class="check"></div>
+											</li>
+											<li class="mind-item">
+												<input type="radio" id="q-option" name="selector">
+												<label for="q-option">Дедушка</label>
+
+												<div class="check"></div>
+											</li>
+											<li class="mind-item">
+												<input type="radio" id="w-option" name="selector">
+												<label for="w-option">Папа</label>
+
+												<div class="check"></div>
+											</li>
+										</ul>
+									</div>
+									<div class="grand-wrap">
+										<ul class="radio-list">
+											<li class="mind-item">
+												<input type="radio" id="dd-option" name="selector">
+												<label for="dd-option">Прадедушка</label>
+
+												<div class="check"></div>
+											</li>
+											<li class="mind-item">
+												<input type="radio" id="qq-option" name="selector">
+												<label for="qq-option">Дедушка</label>
+
+												<div class="check"></div>
+											</li>
+											<li class="mind-item">
+												<input type="radio" id="ww-option" name="selector">
+												<label for="ww-option">Папа</label>
+
+												<div class="check"></div>
+											</li>
+										</ul>
+									</div>
+									<div class="grand-wrap horizontal-first">
+										<ul class="radio-list">
+											<li class="mind-item">
+												<input type="radio" id="a-option" name="selector">
+												<label for="a-option">Прадедушка</label>
+
+												<div class="check"></div>
+											</li>
+											<li class="mind-item">
+												<input type="radio" id="b-option" name="selector">
+												<label for="b-option">Дедушка</label>
+
+												<div class="check"></div>
+											</li>
+										</ul>
+									</div>
+									<div class="grand-wrap img">
+										<img src="img/admin-page/ava7.png" alt="image">
+									</div>
+									<div class="grand-wrap horizontal-second">
+										<ul class="radio-list">
+											<li class="mind-item">
+												<input type="radio" id="aa-option" name="selector">
+												<label for="aa-option">Прадедушка</label>
+
+												<div class="check"></div>
+											</li>
+											<li class="mind-item">
+												<input type="radio" id="bb-option" name="selector">
+												<label for="bb-option">Дедушка</label>
+
+												<div class="check"></div>
+											</li>
+										</ul>
+									</div>
+									<div class="grand-wrap sublast">
+										<ul class="radio-list">
+											<li class="mind-item">
+												<input type="radio" id="ddd-option" name="selector" class="li-check-bg-label" checked>
+												<label for="ddd-option">Прадедушка</label>
+
+												<div class="check"></div>
+											</li>
+											<li class="mind-item">
+												<input type="radio" id="qqq-option" name="selector">
+												<label for="qqq-option">Дедушка</label>
+
+												<div class="check"></div>
+											</li>
+											<li class="mind-item">
+												<input type="radio" id="www-option" name="selector">
+												<label for="www-option">Папа</label>
+
+												<div class="check"></div>
+											</li>
+										</ul>
+									</div>
+									<div class="grand-wrap last">
+										<ul class="radio-list">
+											<li class="mind-item">
+												<input type="radio" id="dddd-option" name="selector" class="li-check-bg-label">
+												<label for="dddd-option">Прадедушка</label>
+
+												<div class="check"></div>
+											</li>
+											<li class="mind-item">
+												<input type="radio" id="qqqq-option" name="selector" class="li-check-bg-label">
+												<label for="qqqq-option">Дедушка</label>
+
+												<div class="check"></div>
+											</li>
+											<li class="mind-item">
+												<input type="radio" id="wwww-option" name="selector">
+												<label for="wwww-option">Папа</label>
+
+												<div class="check"></div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 result-content personal">
+								<p class="title-text">Персональная информация</p>
+								<span>Данные не отображаются и не используются в поиске</span>
+								<p class="title-text">Вероисповедание</p>
+								<ul class="radio-list">
+									<li class="vera">
+										<input type="radio" id="vera" name="selector3" checked>
+										<label for="vera">Атеизм</label>
+
+										<div class="check"></div>
+									</li>
+									<li class="vera">
+										<input type="radio" id="vera1-option" name="selector3">
+										<label for="vera1-option">Христианство</label>
+
+										<div class="check"></div>
+									</li>
+									<li class="vera">
+										<input type="radio" id="z-option" name="selector3">
+										<label for="z-option">Ислам</label>
+
+										<div class="check"></div>
+									</li>
+									<li class="vera">
+										<input type="radio" id="zz-option" name="selector3">
+										<label for="zz-option">Папа</label>
+
+										<div class="check"></div>
+									</li>
+									<li class="vera">
+										<input type="radio" id="xx-option" name="selector3">
+										<label for="xx-option">Папа</label>
+
+										<div class="check"></div>
+									</li>
+									<li class="vera">
+										<input type="radio" id="vv-option" name="selector3">
+										<label for="vv-option"><input type="text" placeholder="Другое" class="additional"></label>
+
+										<div class="check"></div>
 									</li>
 								</ul>
-							</div>
-							<div class="col-md-7 result-content">
-								<ul class="message-type">
-									<li><a href="#">Ответить</a></li>
-									<li><a href="#">Переслать</a></li>
-									<li><a href="#">Удалить</a></li>
-									<li><a href="#">Непрочитано</a></li>
-								</ul>
 								<div class="clearfix"></div>
-								<div class="head-top">
-									<span>25 октября 2016 в 13:51</span>
-									<h3 class="title-main">
-										Доброго времени суток! 
-									</h3>
-								</div>
-								<div class="col-md-12 content-wrapper">
-									<p class="text">
-										В 1969 году в возрасте 27 лет Муслим Магомаев получает I премию на Международном фестивале в Сопоте за исполнение песни «В этот день». Фестиваль проходил в амфитеатре на открытом воздухе «Лесная опера». <br><br>
-										«В конце лета 1969 года в курортном польском городе Сопот должен был состояться 9-й Международный фестиваль эстрадной песни. От Советского Союза было решено направить меня. Этого очень хотела Екатерина Алексеевна Фурцева, потому что поляки просили её, чтобы приехал я. Я был против своего участия в этом фестивале…» — вспоминал Муслим Магометович в книге «Любовь моя – мелодия». «… зачем мне, уже очень популярному у себя в стране певцу, куда-то ехать и соревноваться? Ни один уважающий себя певец на Западе, добившийся известности, не будет участвовать в конкурсах. Зачем, спрашивал я Екатерину Алексеевну, мне ехать в Сопот?
-									</p>
+								<p class="main-text">
+									Нажимая кнопку «РАЗМЕСТИТЬ» Вы подтверждаете, что 
+									создаваемая страница не нарушает законов Российской 
+									Федерации, моральных, нравственных, этических норм.
+								</p>
+								<p class="main-text">
+									Вы подтверждаете, что внимательно озакомились 
+									с Соглашением, регулирующим работу данного Сервиса 
+									и полностью согласны со всеми пунктами.
+								</p>
+								<p class="main-text">
+									Вы принимаете ответственность по управлению 
+									и контролю информации, размещаемой на странице.
+								</p>
+								<div class="col-md-12 bott clearfix">
+									<ul class="radio-list">
+										<li>
+											<input type="radio" id="v-option" name="selector4">
+											<label for="v-option" class="confirm">Я прочитал Соглашение и принимаю все его условия</label>
+
+											<div class="check"></div>
+
+											<button class="button button-place">Разместить</button>
+										</li>
+									</ul>
 								</div>
 							</div>
 						</div>

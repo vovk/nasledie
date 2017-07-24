@@ -342,6 +342,7 @@ li , .myPage-articl .top-articl-info
 		.half1, .half2
 			width: 50%
 			float: left
+			cursor: pointer
 		.half2
 			// background: url(../img/admin-page/Vert-Line.png) no-repeat right top
 
@@ -380,6 +381,7 @@ li , .myPage-articl .top-articl-info
 		.half1, .half2
 			width: 50%
 			float: left
+			cursor: pointer
 	.content
 		margin-top: 25px
 		padding: 0 0 50px 0
@@ -390,6 +392,8 @@ li , .myPage-articl .top-articl-info
 		.right-side
 			background-color: #fff
 			padding: 15px 0
+			.col-md-6
+				padding-right: 0
 			.main-content
 				border-right: 1px solid #ccc
 				ul.message-type
@@ -431,6 +435,91 @@ li , .myPage-articl .top-articl-info
 							background-color: #f5faf0
 					li.selected-item
 						background: #e8fad7
+				.data-block
+					margin-top: 15px
+					label.data-info
+						color: #000
+						font-weight: normal
+						font-family: "RobotoRegular" , $helvetica
+						width: 25%
+					input.data-name
+						border: 1px solid #dadfd0
+						color: #000
+						font-size: 12px
+						font-family: "RobotoRegular" , $helvetica
+						padding: 2px 10px
+						width: 70%
+					label.data-select
+						color: #000
+						font-weight: normal
+						font-family: "RobotoRegular" , $helvetica
+						width: 35%
+					select.age
+						width: 18%
+						padding: 0 5px
+						margin-right: 2%
+						font-size: 13px
+						border: 1px solid #dadfd0
+					label.gender
+						float: left
+				.mind
+					padding: 0 25px
+					margin-top: 25px
+					p
+						color: #000
+						font-size: 17px
+						font-weight: bold
+						margin-bottom: 25px
+						span
+							color: #446944
+					.grand-wrap
+						width: 45%
+						float: left
+						ul.radio-list
+							width: 100%
+							li
+								background: #e6ebdb
+								float: none
+								margin-top: 2.5px
+								width: 100%
+								label
+								    padding-top: 10px
+								    padding-bottom: 10px
+								    text-transform: uppercase
+								    color: #000
+								    font-weight: bold
+								.check
+									border: 1px solid #000
+									top: 10px
+									left: 10px
+								&:hover
+									background: #e1dfbc
+					.grand-wrap:nth-of-type(1)
+						padding-left: 50px
+						margin-right: 5%
+					.grand-wrap:nth-of-type(2)
+						padding-right: 50px	
+					.horizontal-first
+						padding-right: 50px
+						margin-top: 10px
+						margin-bottom: 10px
+					.horizontal-second
+						padding-left: 50px
+						margin-top: 10px
+						margin-bottom: 10px
+					.img
+						width: auto
+						height: 80px
+						line-height: 80px
+						margin-top: 10px
+						img
+							cursor: pointer
+					.grand-wrap.sublast
+						padding-left: 50px
+						width: 45%
+						margin-right: 5%
+					.grand-wrap.last
+						padding-right: 50px
 			ul.content-menu
 				margin-bottom: 0
 				margin-top: 35px
@@ -490,6 +579,61 @@ li , .myPage-articl .top-articl-info
 						align-items: center
 						margin-top: 7px
 						margin-bottom: 7px
+				ul.message-type
+					padding: 0
+					list-style: none
+					li
+						float: left
+						margin: 0 10px 
+						a
+							color: #7f7f7f
+							font-weight: bold
+						a.message-type-active
+							color: #4b6840
+				.head-top
+					padding: 15px 10px
+					border-top: 1px solid #ccc
+					margin-top: 15px
+					color: #000
+					.title-main
+						margin-top: 10px
+						margin-bottom: 0
+						font-weight: bold
+				.content-wrapper
+					p.text
+						margin-top: 25px
+						color: #000
+						font-size: 15px
+				p.title-text
+					color: #000
+					font-size: 15px
+					font-weight: bold
+					margin: 15px 0
+				p.main-text
+					color: #000
+					font-size: 14px
+					font-family: "RobotoRegular" , sans-serif
+					margin: 15px 0 0 0
+			.result-content.personal
+				padding-left: 50px
+				padding-right: 50px
+				ul.radio-list
+					width: 100%
+					li
+						width: 100%
+					li.vera
+						width: 50%
+						margin: 15px 0
+				.bott
+					padding: 0
+					margin-top: 25px
+					button.button-place
+						border: none
+						background: #e6ebdb
+						color: #abafa3
+						margin-top: 25px
+						padding: 10px 20px
+						text-transform: uppercase
 			.content-wrapper
 				border-top: 1px solid #ccc
 				h2.title-main
