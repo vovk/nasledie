@@ -1280,6 +1280,7 @@ aside
 				display: block
 				font-weight: 600
 				line-height: em(20px)
+				text-transform: uppercase
 			.user-born , .user-status
 				display: block
 				margin-top: 20px
@@ -1293,7 +1294,13 @@ aside
 				line-height: em(25px)
 				.status-author
 					display: block
-					margin-top: 25px	
+					margin-top: 25px
+			.cust-icons
+				cursor: pointer
+				color: #fff	
+				position: absolute
+				top: 100%
+				left: 80%
 		.col-md-6 
 			padding: 0!important
 			text-align: right
@@ -1301,6 +1308,16 @@ aside
 			padding: 0!important
 			.user-photo
 				text-align: right
+				position: relative
+		.col-md-9
+			padding: 0
+			.user-photo
+				.cust-icons2
+					position: absolute
+					top: 10%
+					left: 5%
+					color: #fff
+					cursor: pointer
 		img
 			width: 100%
 			height: 100%	
@@ -1349,8 +1366,20 @@ aside
 						left: 35%
 						border: 10px solid transparent		
 	.calendar-wrap				
+		.history-markers
+			button
+				width: 50%
+				text-transform: uppercase
+				img
+					margin-right: 25px
+				span
+					padding: 0 10px
+			button:nth-of-type(1)
+				line-height: 2
+			button:nth-of-type(2)
+				line-height: 1	
 		.col-md-4
-			padding: 0!important		
+			padding: 0!important	
 		.custom-button-wrap
 			justify-content: flex-start
 			.custom-button
@@ -1487,10 +1516,58 @@ aside
 				box-shadow: none
 				left: 35%
 				top: 35%
-				position: absolute		
+				position: absolute	
+				padding: 0	
 				i 
 					font-size: 40px
-					color: rgba(255,255,255,1)		
+					color: rgba(255,255,255,1)	
+		.vidget-redactors
+			background: #e1dfbc
+			padding: 0
+			.over-wrap
+				border-top: 1.5px solid #d3cead
+				display: none
+				margin: 0 6px
+			.vidget-title
+				color: #706f5e
+				font-weight: bold
+				margin-bottom: 0
+				width: 100%	
+				position: relative
+				p.arr-down
+					background: url(../img/admin-page/Arrow-Down.png) no-repeat 90% center
+					cursor: pointer
+					float: right
+					height: 10px
+					margin-bottom: 0
+					width: 15px
+				p.arr-up
+					display: none
+					background: url(../img/admin-page/Arrow-Up.png) no-repeat 90% center
+					cursor: pointer
+					float: right
+					height: 10px
+					margin-bottom: 0
+					width: 15px
+			.wrap-block
+				border-bottom: 1.5px solid #d3cead
+				border-top: 1.5px solid #f1f3da
+				padding: 15px 0
+				.img-wrapper
+					float: left
+					width: 30%
+					text-align: center
+					img
+						width: 40%
+				span
+					color: #79503e
+					float: left
+					line-height: 1.1
+					padding-top: 7.5px
+					vertical-align: middle
+					width: 70%
+			.wrap-block:last-child
+				border-bottom: none
 	.sidebar-wrap
 		margin-top: 20px
 		padding: 0!important	
@@ -1563,8 +1640,123 @@ aside
 						width: 100%
 						height: 100%	
 				.video
-					margin-top: 25px		
-
+					margin-top: 25px	
+		.history_page_video
+			padding: 25px
+			span.date
+				color: #79513f
+				font-size: 14px
+				font-weight: bold
+				text-transform: uppercase
+			.top-articl-info
+				margin-bottom: 20px
+				padding: 0 15px
+				.btn-admin-menu
+					padding: 0
+					margin-top: 0
+					top: -25px
+				.coustom-submenu
+					right: 15px
+					ul
+						li
+							a
+								padding-right: 0
+				.video
+					margin-top: 50px
+				.author-post
+					margin-top: 25px
+					.over-wrap
+						margin: 0
+						.wrap-block
+							// padding: 15px
+							.img-wrapper
+								float: left
+								text-align: center
+								margin-right: 25px
+								width: 50px
+								img
+									width: 100%
+							p
+								color: #487c3e
+								cursor: pointer
+								font-weight: bold
+								float: left
+								padding-top: 5px
+								span
+									color: #000
+									font-weight: normal
+		.user-bio
+			padding: 25px
+			p.main-inf
+				border-bottom: 1px solid #79513f
+				color: #79513f
+				font-weight: bold
+				margin-top: 25px
+				margin-bottom: 0
+				padding: 5px 0
+			p.user-name
+				color: #79513f
+				font-weight: bold
+				text-transform: uppercase
+			span.date
+				color: #79513f
+				font-size: 14px
+				font-weight: bold
+				text-transform: uppercase
+			.top-articl-info
+				margin-bottom: 20px
+				// padding: 0 15px
+				.item
+					display: flex
+					justify-content: space-between
+					margin-bottom: 15px
+					.item-name
+						color: #79513f
+						font-weight: bold
+						width: 35%
+					.item-value
+						color: #000
+						width: 65%
+				.item:nth-of-type(1)
+					margin-top: 10px
+				.coustom-submenu
+					ul
+						li
+							a
+								padding-right: 0
+				.additional-inf
+					.btn-admin-menu
+						padding: 0
+						margin-top: 0
+				.bio-user-submenu
+					// margin-top: -15px
+				.additional-text
+					color: #545355
+					font-weight: bold
+				.video
+					margin-top: 50px
+				.author-post
+					margin-top: 25px
+					.over-wrap
+						margin: 0
+						.wrap-block
+							// padding: 15px
+							.img-wrapper
+								float: left
+								text-align: center
+								margin-right: 25px
+								width: 50px
+								img
+									width: 100%
+							p
+								color: #487c3e
+								cursor: pointer
+								font-weight: bold
+								float: left
+								padding-top: 5px
+								span
+									color: #000
+									font-weight: normal
 .myPage 
 	.sidebar 	
 		.vidget-adward 

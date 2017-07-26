@@ -37,7 +37,7 @@ $(function() {
 		//top block .hide-block with authors
 		var attr = $('.hide-block');
 		var imgSrc = $('.arr-down').attr('src');
-		$('.arr-down').on("click", function(){
+		$('.direction .arr-down').on("click", function(){
 			$(this).toggle(300);
 			$('.arr-up').toggle(300);
 			$('.hide-block').toggle(300);
@@ -45,13 +45,26 @@ $(function() {
 			$('.first .direction .add-height').css({'height' : '153px', 'transition' : '.6s all'});
 
 		});
-		$('.arr-up').on("click", function(){
+		$('.direction .arr-up').on("click", function(){
 			$(this).toggle(300);
 			$('.arr-down').toggle(300);
 			$('.hide-block').toggle(300);
 			$('.over-wrap').css({'height' : 'auto', 'transition' : '.6s all'});
 			$('.first .direction .add-height').css({'height' : '0', 'transition' : '.6s all'});
 		});
+
+		// history_page.html редакторы
+		$('.vidget-redactors .arr-down').on("click", function(){
+			$('.vidget-redactors .arr-down').toggle(300);
+			$('.vidget-redactors .arr-up').toggle(300);
+			$('.vidget-redactors .over-wrap').toggle(300);
+		});
+		$('.vidget-redactors .arr-up').on("click", function(){
+			$('.vidget-redactors .arr-up').toggle(300);
+			$('.vidget-redactors .arr-down').toggle(300);
+			$('.vidget-redactors .over-wrap').toggle(300);
+		});
+			
 	});
 	jQuery(".icons-nav li a").click(function() {
 		jQuery(".icons-nav li a").removeClass('active');
