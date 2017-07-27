@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon"  type="image/x-icon" href="img/logo.png">
+	<link rel="apple-touch-icon" href="img/logo.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/logo.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/logo.png">
+	<!-- Template Basic Images End -->
+
+	<!-- Header CSS (first screen styles from header.min.css) - inserted in the build of the project -->
+	<style>@@include('header.min.css')</style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)};function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n};function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load Fonts CSS Start -->
+	<script>
+		loadCSS( "css/fonts.min.css?ver=1.0.0", false, "all" ); // Loading fonts, if the site is located in a subfolder
+		// loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" ); // Loading fonts, if the site is at the root
+	</script>
+	<!-- Load Fonts CSS End -->
+
+	<!-- Load Custom CSS Start -->
+	<!--<Deject>--><script>loadCSS( "header.min.css?ver=1.0.0", false, "all" );</script><!--</Deject>-->
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load Custom CSS End -->
+
+	<!-- Load Custom CSS Compiled without JS Start -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+	<!-- Load Custom CSS Compiled without JS End -->
+
+	<!-- Custom Browsers Color Start -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<!-- Custom Browsers Color End -->
+
+</head>
+
+<body class="myPage">
+
+
+
+
+	<div class="wrap">
+		<nav id="w0" class="navbar-top navbar-fixed-top navbar" role="navigation"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w0-collapse"><span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span></button><a class="navbar-brand top-logo" href="/"><img src="img/Toplogo.png" alt="toplogo">НАСЛЕДИЕ</a></div><div id="w0-collapse" class="collapse navbar-collapse">
+			<ul id="w1" class="navbar-nav navbar-right nav icons-nav">
+				<li class="search basicLink"><a href="#"><i class="material-icons">&#xE8B6;</i></a>
+				<div class="submenu">
+						<form action="#" class="top-search flex">
+							<input type="search" name="search" placeholder="Поиск . . . ">
+							<button><i class="material-icons">&#xE315;</i></button>
+						</form>
+					</div>
+				</li>
+				<li><a href="#"><i class="material-icons">&#xE853;</i></a></li>
+				<li class="language basicLink"><a class="active" href="#"><i class="material-icons">&#xE0E1;</i></a></li>
+				<li class="textSize basicLink"><a href="#"><span>A</span>A</a>
+					<ul class="submenu"> 
+						<li><a href="#"><i class="material-icons done">&#xE876;</i>100%</a></li>
+						<li><a href="#">125%</a></li>
+						<li><a href="#">150%</a></li>
+					</ul>
+				</li>
+				<li class="basicLink"><a href="#"><i class="material-icons">&#xE894;</i></a>
+					<ul class="submenu"> 
+						<li><a href="#"><i class="material-icons done">&#xE876;</i>Русский</a></li>
+						<li><a href="#">English</a></li>
+					</ul>
+				</li>
+				<li class="contrast basicLink"><a href="#"><i class="material-icons">&#xE924;</i></a>
+						<ul class="submenu ">
+								<li><a href="#">60%</a></li>
+								<li><a href="#">80%</a></li>
+								<li><a href="#">100%</a></li>
+						</ul>
+				</li>
+				<li class="settings"><a href="#"><i class="material-icons">&#xE8B8;</i></a>
+						<ul class="submenu">
+								<li class="myPage-link"><a href="#"><i class="material-icons secur">&#xE898;</i>Моя страница<i class="material-icons arrow">&#xE313;</i></a>
+									<ul class="second-submenu">
+										<li class="openAll"><a href="#"><i class="material-icons">&#xE876;</i>Открыта для всех</a></li>
+										<li class="closeAll"><a href="#"><i class="material-icons">&#xE876;</i>Закрыта для всех</a></li>
+										<li class="openAfter"><a href="#"><i class="material-icons">&#xE876;</i>Открыть после смерти</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Настройки</a></li>
+								<li><a href="#">Помощь</a></li>
+								<li><a href="#">Сообщить о проблеме</a></li>
+								<li><a href="#">Выйти</a></li>
+						</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container">
+	<div class="site-index">
+		<div class="body-content">
+
+<section class="top-info">
+	<div class="row">
+		<div class="col-md-3">
+			<div class="main-descr">
+				<span class="user-name">Русланова <br> Лидия <br> Андреевна</span>
+				<span class="user-born">1900 - 1973</span>
+				<p class="user-status">«Величайшая польза, которую
+					можно извлечь из жизни —
+					потратить жизнь на дело,
+					которое переживет нас».
+						<br>
+					<span class="status-author">Уильям Джеймс</span>
+				</p>
+				<i class="material-icons cust-icons"  data-toggle="tooltip" data-placement="right" title="Редактировать профиль">&#xE3C9;</i>
+			</div>
+		</div>
+		<!-- <div class="col-md-3">
+			<div class="user-photo">
+				<a href="#">
+					<img src="img/UserPhoto.jpg" alt="userPhoto">
+				</a>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="col-md-6">
+				<a href="#">
+					<img src="img/UserPhoto1.jpg" alt="userPhoto">
+				</a>
+			</div>
+			<div class="col-md-6">
+				<a href="#">
+					<img src="img/UserPhoto2.jpg" alt="userPhoto">
+				</a>
+			</div>
+			<div class="col-md-6">
+				<a href="#">
+					<img src="img/UserPhoto3.jpg" alt="userPhoto">
+				</a>
+			</div>
+			<div class="col-md-6">
+				<a href="#">
+					<img src="img/UserPhoto4.jpg" alt="userPhoto">
+				</a>
+			</div>		 -->	
+			<div class="col-md-9 avatar-img">
+				<div class="user-photo">
+					<a href="#">
+						<img src="img/girl.png" alt="">
+					</a>
+					<i class="material-icons cust-icons2" data-toggle="tooltip" data-placement="right" title="Обновить фото обложки">&#xE412;</i>
+				</div>
+			</div>			
+		</div>
+	</div>
+</section>
+<nav class="myPage-navigation">
+	<ul>
+		<li><a href="user_page bio.html">Биография</a></li>
+		<li><a href="history_page.html">Хроника</a></li>
+		<li><a href="history_page_photo.html">Фото</a></li>
+		<li><a href="history_page_video.html">Видео</a></li>
+		<li class="active"><a href="user_page_audio1.html">Аудио</a></li>
+	</ul>
+</nav>
+<section class="calendar-wrap">
+<div class="row">
+	<div class="col-md-4">
+		<div class="custom-button-wrap flex history-markers">
+			<button class="custom-button flex"><img src="img/markers.png" alt="icons"><span>Закладки</span></button>
+			<button class="custom-button flex"><img src="img/pen.png" alt="icons"><span>Дополнить<br>историю</span></button>
+		</div>
+	</div>
+	<div class="col-md-8">
+		<div class="slider-wrap">
+			<ul class="calendar-slider calendar-years">
+				<li><a href="#">2004</a></li>
+				<li><a href="#">2005</a></li>
+				<li><a href="#">2006</a></li>
+				<li><a href="#">2007</a></li>
+				<li><a href="#">2008</a></li>
+				<li><a href="#">2009</a></li>
+				<li><a href="#">2010</a></li>
+				<li><a href="#">2011</a></li>
+				<li><a href="#">2012</a></li>
+				<li><a href="#">2013</a></li>
+				<li><a href="#">2014</a></li>
+				<li><a href="#">2015</a></li>			
+				<li><a href="#">2016</a></li>					
+			</ul>
+			<ul class="calendar-month">
+				<li class="active"><a href="#">Янв</a></li>
+				<li><a href="#">Февр</a></li>
+				<li><a href="#">Март</a></li>
+				<li><a href="#">Апр</a></li>
+				<li><a href="#">Май</a></li>
+				<li><a href="#">Июнь</a></li>
+				<li><a href="#">Июль</a></li>
+				<li><a href="#">Авг</a></li>
+				<li><a href="#">Сент</a></li>
+				<li><a href="#">Окт</a></li>
+				<li><a href="#">Нояб</a></li>
+				<li><a href="#">Дек</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</section>
+<div class="main-content">
+<div class="row">
+	<div class="col-md-4 sidebar-wrap">
+	<aside class="sidebar sidebar-myPage">
+
+		<div class="vidget vidget-photo">
+			<span class="vidget-title">Фото</span>
+			<div class="img-wrap flex">
+					<div class="large-image">
+						<img src="img/1.jpg" alt="userPhoto">
+				</div>
+				<div class="small-images">
+					<img src="img/2.jpg" alt="userPhoto">
+					<img src="img/3.jpg" alt="userPhoto">
+				</div>
+			</div>
+		</div>
+
+		<div class="vidget vidget-video clearfix">
+			<span class="vidget-title">Видео</span>
+			<div class="video-wrap clearfix">
+				<div class="col-md-4">
+					<img src="img/video1gray.jpg" alt="video">
+					<button><i class="material-icons">&#xE038;</i></button>
+				</div>
+				<div class="col-md-4">
+					<img src="img/video2gray.jpg" alt="video">
+					<button><i class="material-icons">&#xE038;</i></button>
+				</div>
+				<div class="col-md-4">
+					<img src="img/video3gray.jpg" alt="video">
+					<button><i class="material-icons">&#xE038;</i></button>
+				</div>				
+			</div>
+		</div>
+
+		<div class="vidget vidget-audio clearfix">
+			<span class="vidget-title">Аудио</span>
+			<div class="audio-wrap clearfix">
+				<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+
+				<div id="jp_container_1" class="jp-audio">
+					<div class="jp-type-single">
+
+						<div class="jp-gui jp-interface">
+							<div class="jp-aduio-info clearfix">
+
+								<div class="jp-title">
+									<span class="audio-name">Are you ready - AC/DC</span>
+								</div>
+
+								<div class="jp-time-holder">
+									<div class="jp-current-time"></div>
+								</div>
+
+							</div>
+							<div class="jp-progress">
+								<div class="jp-seek-bar">
+									<div class="jp-play-bar"></div>
+								</div>
+							</div>
+
+
+
+							<ul class="jp-controls">    	
+								<li><a href=""><i class="material-icons">&#xE045;</i></a></li> 
+								<li class="pause"><a href="javascript:;" class="jp-pause" tabindex="1"><i class="material-icons">&#xE034;</i></a></li>
+								<li class="play active"><a href="javascript:;" class="jp-play" tabindex="1"><i class="material-icons">&#xE037;</i></a></li>
+								<li><a href=""><i class="material-icons">&#xE044;</i></a></li>
+							</ul>
+
+							<div class="jp-volumn-wrap">
+								<ul>
+									<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute"><i class="material-icons">&#xE050;</i></a></li>
+									<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute"><i class="material-icons">&#xE04F;</i></a></li>
+								</ul>    		
+								<div class="jp-volume-bar">
+									<div class="jp-volume-bar-value"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>		
+			</div>
+		</div>
+		
+		<div class="vidget vidget-redactors clearfix">
+			<div class="vidget-title">
+				Редакторы
+			
+				<p class="arr-down"></p>
+				<p class="arr-up"></p>
+			</div>
+			<div class="over-wrap">
+				<div class="wrap-block clearfix">
+					<div class='img-wrapper'>
+						<img src='img/admin-page/author3.png' alt='avatar' class='img-circle ava-circle'>
+					</div>
+					<span>Побережная-Береговская <br>Анастасия</span>
+				</div>
+				<div class="wrap-block clearfix">
+					<div class='img-wrapper'>
+						<img src='img/admin-page/author3.png' alt='avatar' class='img-circle ava-circle'>
+					</div>
+					<span>Васнецова<br>Елизавета</span>
+				</div>
+				<div class="wrap-block clearfix">
+					<div class='img-wrapper'>
+						<img src='img/admin-page/author3.png' alt='avatar' class='img-circle ava-circle'>
+					</div>
+					<span>Кравченко<br>Александра</span>
+				</div>	
+			</div>			
+		</div>
+
+		<div class="vidget vidget-adward clearfix">
+			<span class="vidget-title">Реклама</span>
+			<div class="adward-wrap clearfix">
+				<div class="row">
+				<div class="col-md-12">
+						<div class="adward-item flex">
+							<a href="#" class="flex">
+								<img src="img/baner.jpg" alt="banner">
+								<div class="adward-descr">
+									<span>Сохранить <br> воспомниания <br> теперь просто</span>
+									<span>Оцифровка <br> кинопленок 8 и 16</span>
+									<span>Мульти фото <br> Всегда рядом</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="adward-item flex">
+							<a href="#" class="flex">
+								<img src="img/baner1.jpg" alt="banner">
+								<div class="adward-descr">
+									<span>Сохранить <br> воспомниания <br> теперь просто</span>
+									<span>Оцифровка <br> кинопленок 8 и 16</span>
+									<span>Мульти фото <br> Всегда рядом</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="adward-item flex">
+							<a href="#" class="flex">
+								<img src="img/baner2.jpg" alt="banner">
+								<div class="adward-descr">
+									<span>Сохранить <br> воспомниания <br> теперь просто</span>
+									<span>Оцифровка <br> кинопленок 8 и 16</span>
+									<span>Мульти фото <br> Всегда рядом</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</aside>
+	</div>
+	<div class="col-md-8">
+		<section class="sect-main-content user_audio">
+			<article class="myPage-articl user_page_audio">
+				<span class="date">1941 год. Июнь</span>
+				<div class="top-articl-info">
+					
+					<div class="vidget vidget-audio clearfix">
+						<div class="audio-wrap clearfix">
+							<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+							<div id="jp_container_1" class="jp-audio">
+								<div class="jp-type-single">
+
+									<div class="jp-gui jp-interface">
+
+										<ul class="jp-controls">    	
+											<li><a href="#"><i class="material-icons">&#xE045;</i></a></li> 
+											<li class="pause"><a href="javascript:;" class="jp-pause" tabindex="1"><i class="material-icons">&#xE034;</i></a></li>
+											<li class="play active"><a href="javascript:;" class="jp-play" tabindex="1"><i class="material-icons">&#xE037;</i></a></li>
+											<li><a href="#"><i class="material-icons">&#xE044;</i></a></li>
+										</ul>
+
+										<div class="jp-wrapper">
+											<div class="jp-aduio-info clearfix">
+
+												<div class="jp-title">
+													<span class="audio-name">Are you ready - AC/DC</span>
+												</div>
+
+												<div class="jp-time-holder">
+													<div class="jp-current-time"></div>
+												</div>
+
+											</div>
+											<div class="jp-progress">
+												<div class="jp-seek-bar">
+													<div class="jp-play-bar"></div>
+												</div>
+											</div>
+										</div>
+
+										<div class="jp-volumn-wrap">
+											<ul>
+												<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute"><i class="material-icons">&#xE050;</i></a></li>
+												<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute"><i class="material-icons">&#xE04F;</i></a></li>
+											</ul>    		
+											<div class="jp-volume-bar">
+												<div class="jp-volume-bar-value"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+					
+					<div class="col-md-12 audio-list-wrapper">
+						<ul class="audio-list">
+							<li>
+								<a href="#">1. На Муромской дорожке (любимая песня прабабушки)</a><span>03:49</span>
+								<p class="audio-description">
+									«В земля́нке» («Землянка», «Бьётся в тесной печурке огонь…») — русская советская песня времён Великой Отечественной войны. Музыка Константина Листова, стихи Алексея Суркова. <br><br><span>Рождение песни</span><br> Сразу после начала Великой Отечественной войны журналист и поэт Алексей Сурков стал военным корреспондентом газеты «Красноармейская правда». В конце осени 1941 года оборонявшая Истру 78-я стрелковая дивизия 16-й армии получила наименование 9-й гвардейской, в связи с чем Политуправление Западного фронта пригласило корреспондентов «Красноармейской правды» осветить это событие; среди прочих поехал и Сурков. 27 ноября журналисты сначала посетили штаб дивизии, после чего отправились на командный пункт 258-го (22-го гвардейского) стрелкового полка, находившийся в деревне Кашино. По прибытии оказалось, что командный пункт отрезан от батальонов наступающей 10-й танковой дивизией Германии, а к самой деревне подходит пехота врага. Начавшийся обстрел из миномётов вынудил офицеров и журналистов засесть в блиндаже. Немцы заняли соседние дома. Тогда начальник штаба полка капитан И. К. Величкин пополз к зданиям, закидывая противника гранатами, что вызвало ослабление вражеского обстрела и дало возможность пойти на прорыв. Благополучно пройдя минное поле, все отошли к речке и переправились через неё по ещё тонкому льду — под возобновившийся миномётный обстрел — к деревне Ульяшино, в которой стоял батальон. Когда Сурков добрался до своих, то вся его шинель оказалась посечённой осколками. Тогда он сказал: «Дальше штаба полка не сделал ни шага. Ни единого… А до смерти — четыре шага». После этого оставалось только дописать: «До тебя мне дойти нелегко…»[3] После прихода в деревню штабисты и корреспонденты были размещены в землянке. Все были очень уставшими — настолько, что, по воспоминаниям Суркова, начальник штаба Величкин, сев есть суп, после второй ложки заснул, так как не спал четыре дня. Остальные устроились около печки, кто-то начал играть на гармони, чтобы снять напряжение. Сурков стал делать наброски для репортажа, но получились стихи. Ночью он вернулся в Москву, где и закончил своё знаменитое стихотворение «В землянке» (вскоре ставшее песней). Текст стихотворения Сурков поместил в письме своей жене Софье Антоновне, написав на обороте листка слова «Тебе, солнышко моё!». На следующий день письмо в солдатском треугольнике было отправлено в город Чистополь, где семья Суркова находилась в эвакуации.
+								</p>
+							</li>
+							<li>
+								<a href="#">2. Степь да степь кругом</a><span>03:58</span>
+								<p class="audio-description">
+									«В земля́нке» («Землянка», «Бьётся в тесной печурке огонь…») — русская советская песня времён Великой Отечественной войны. Музыка Константина Листова, стихи Алексея Суркова. <br><br><span>Рождение песни</span><br> Сразу после начала Великой Отечественной войны журналист и поэт Алексей Сурков стал военным корреспондентом газеты «Красноармейская правда». В конце осени 1941 года оборонявшая Истру 78-я стрелковая дивизия 16-й армии получила наименование 9-й гвардейской, в связи с чем Политуправление Западного фронта пригласило корреспондентов «Красноармейской правды» осветить это событие; среди прочих поехал и Сурков. 27 ноября журналисты сначала посетили штаб дивизии, после чего отправились на командный пункт 258-го (22-го гвардейского) стрелкового полка, находившийся в деревне Кашино. По прибытии оказалось, что командный пункт отрезан от батальонов наступающей 10-й танковой дивизией Германии, а к самой деревне подходит пехота врага. Начавшийся обстрел из миномётов вынудил офицеров и журналистов засесть в блиндаже. Немцы заняли соседние дома. Тогда начальник штаба полка капитан И. К. Величкин пополз к зданиям, закидывая противника гранатами, что вызвало ослабление вражеского обстрела и дало возможность пойти на прорыв. Благополучно пройдя минное поле, все отошли к речке и переправились через неё по ещё тонкому льду — под возобновившийся миномётный обстрел — к деревне Ульяшино, в которой стоял батальон. Когда Сурков добрался до своих, то вся его шинель оказалась посечённой осколками. Тогда он сказал: «Дальше штаба полка не сделал ни шага. Ни единого… А до смерти — четыре шага». После этого оставалось только дописать: «До тебя мне дойти нелегко…»[3] После прихода в деревню штабисты и корреспонденты были размещены в землянке. Все были очень уставшими — настолько, что, по воспоминаниям Суркова, начальник штаба Величкин, сев есть суп, после второй ложки заснул, так как не спал четыре дня. Остальные устроились около печки, кто-то начал играть на гармони, чтобы снять напряжение. Сурков стал делать наброски для репортажа, но получились стихи. Ночью он вернулся в Москву, где и закончил своё знаменитое стихотворение «В землянке» (вскоре ставшее песней). Текст стихотворения Сурков поместил в письме своей жене Софье Антоновне, написав на обороте листка слова «Тебе, солнышко моё!». На следующий день письмо в солдатском треугольнике было отправлено в город Чистополь, где семья Суркова находилась в эвакуации.
+								</p>
+							</li>
+							<li><a href="#">3. Я на горку шла</a><span>03:49</span></li>
+							<li><a href="#">4. Выходила на берег Катюша</a><span>03:49</span></li>
+							<li><a href="#">5. Коробейники</a><span>03:49</span></li>
+							<li><a href="#">6. По Муромской дорожке</a><span>03:48</span></li>
+							<li><a href="#">7. Валенки</a><span>01:57</span></li>
+							<li><a href="#">8. В землянке<br>(1942; муз. Константина Листова - ст. Алексея Суркова)</a><span>02:27</span></li>
+						</ul>
+					</div>
+
+					<!-- <div class="author-post">
+						<div class="over-wrap">
+							<div class="wrap-block clearfix">
+								<div class='img-wrapper'>
+									<img src='img/admin-page/author3.png' alt='avatar' class='img-circle ava-circle'>
+								</div>
+								<p>Маслова Варвара<br><span>14 января 2016 г.</span></p>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</article>
+		</section>
+
+	</div>
+	</div>
+</div>
+</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<footer class="main-footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!--                   <footer class="footer">
+                  	<div class="container">
+                  		<nav id="w2" class="navbar-footer navbar" role="navigation"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w2-collapse"><span class="sr-only">Toggle navigation</span>
+                  			<span class="icon-bar"></span>
+                  			<span class="icon-bar"></span>
+                  			<span class="icon-bar"></span></button></div><div id="w2-collapse" class="collapse navbar-collapse"><ul id="w3" class="navbar-nav navbar-left nav"><li><a href="/site/about">О Нас</a></li>
+                  			<li><a href="/site/about-project">О Проекте</a></li>
+                  			<li><a href="/site/confidential">Конфиденциальность</a></li>
+                  			<li><a href="/site/contact">Помощь</a></li></ul></div></div></nav>        <p class="pull-left">2017 &copy; Наследие </p>
+
+                  			<p class="pull-right">Работает на <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></p>
+                  		</div>
+                  	</footer> -->
+
+
+                  	<!-- Custom HTML -->
+
+                  	<!-- Optimized loading JS Start -->
+                  	<script>var scr = {"scripts":[
+                  		{"src" : "js/libs.min.js", "async" : false},
+                  		{"src" : "js/init.js", "async" : false},
+                  		{"src" : "js/site.js", "async" : false},
+                  		{"src" : "js/common.js", "async" : false}
+                  		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+                  	</script>
+                  	<!-- Optimized loading JS End -->
+                  </body>
+                  </html>

@@ -64,7 +64,21 @@ $(function() {
 			$('.vidget-redactors .arr-down').toggle(300);
 			$('.vidget-redactors .over-wrap').toggle(300);
 		});
+		// обновить профиль(user-page bio)
+		$('.cust-icons').tooltip();
+		// обновить фото обложки(user-page bio)
+		$('.cust-icons2').tooltip();
 			
+		$('.audio-list>li').on("click", function(){
+			$('.audio-list>li').removeClass('active');
+			$('.audio-list>li').removeClass('outside');
+			$(this).addClass('active');
+			$(this).addClass('outside');
+		});			
+		// audio text
+		$('.audio-list>li>a').on("click", function(){
+			$(this).siblings('.audio-description').toggle(300);
+		});
 	});
 	jQuery(".icons-nav li a").click(function() {
 		jQuery(".icons-nav li a").removeClass('active');
@@ -195,13 +209,26 @@ $(".btn-next").html('<i class="material-icons">&#xE313;</i>');
    navText: '',
  });
 
+
+
+
+$('#jquery_jplayer_2').jPlayer({
+	ready: function () {
+		$(this).jPlayer("setMedia", {
+			mp3: "../audio/LZ-step.mp3"
+		});
+	}
+});
+
+
 $("#jquery_jplayer_1").jPlayer({
     ready: function () {
-      $(this).jPlayer("setMedia", {
-        mp3: "../audio/ACDC.mp3",
-      });
-    },
-  });
+		$(this).jPlayer("setMedia", {
+			mp3: "../audio/ACDC.mp3",
+			// mp3: "../audio/LZ-step.mp3"
+		});
+    }
+});
 
 $(".jp-controls .play").click(function() {
 	$(".jp-controls .play").css('display', 'none');
@@ -219,16 +246,16 @@ $(".btn-admin-menu").click(function() {
 
 $(".calendar-slider .owl-controls .owl-next").html('<i class="material-icons">&#xE315;</i>');
 $(".calendar-slider .owl-controls .owl-prev").html('<i class="material-icons">&#xE314;</i>');
-/* Mobile menu Docs:
- $(document).ready(function() {
-      $("#menu").mmenu({
-      	"extensions": [
-            "effect-menu-slide",
-            "effect-listitems-drop"
-         ]
-      });
-});
-*/
+ //Mobile menu Docs:
+//  $(document).ready(function() {
+//       $("#menu").mmenu({
+//       	"extensions": [
+//             "effect-menu-slide",
+//             "effect-listitems-drop"
+//          ]
+//       });
+// });
+
 
 	//Documentation & Example: https://github.com/agragregra/uniMail
 	$("#callback-form").submit(function() { //Change
