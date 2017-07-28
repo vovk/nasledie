@@ -42,7 +42,12 @@
 		<link rel="stylesheet" href="css/fonts.min.css">
 		<link rel="stylesheet" href="css/main.min.css">
 	</noscript>
-	<!-- Load Custom CSS Compiled without JS End -->
+	<!-- Load Custom CSS Compiled without JS End -->	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+	<script src="libs/jPlayer/dist/jplayer/jquery.jplayer.js"></script>
+    <script src="libs/jPlayer/dist/jplayer/jquery.jplayer.min.js"></script>
+    <script src="libs/jPlayer/dist/add-on/jplayer.playlist.min.js"></script>
 
 	<!-- Custom Browsers Color Start -->
 	<!-- Chrome, Firefox OS and Opera -->
@@ -162,7 +167,7 @@
 				<a href="#">
 					<img src="img/UserPhoto4.jpg" alt="userPhoto">
 				</a>
-			</div>		 -->	
+			</div>       -->    
 			<div class="col-md-9 avatar-img">
 				<div class="user-photo">
 					<a href="#">
@@ -170,7 +175,7 @@
 					</a>
 					<i class="material-icons cust-icons2" data-toggle="tooltip" data-placement="right" title="Обновить фото обложки">&#xE412;</i>
 				</div>
-			</div>			
+			</div>          
 		</div>
 	</div>
 </section>
@@ -205,8 +210,8 @@
 				<li><a href="#">2012</a></li>
 				<li><a href="#">2013</a></li>
 				<li><a href="#">2014</a></li>
-				<li><a href="#">2015</a></li>			
-				<li><a href="#">2016</a></li>					
+				<li><a href="#">2015</a></li>           
+				<li><a href="#">2016</a></li>                   
 			</ul>
 			<ul class="calendar-month">
 				<li class="active"><a href="#">Янв</a></li>
@@ -258,7 +263,7 @@
 				<div class="col-md-4">
 					<img src="img/video3gray.jpg" alt="video">
 					<button><i class="material-icons">&#xE038;</i></button>
-				</div>				
+				</div>              
 			</div>
 		</div>
 
@@ -288,9 +293,7 @@
 								</div>
 							</div>
 
-
-
-							<ul class="jp-controls">    	
+							<ul class="jp-controls">        
 								<li><a href=""><i class="material-icons">&#xE045;</i></a></li> 
 								<li class="pause"><a href="javascript:;" class="jp-pause" tabindex="1"><i class="material-icons">&#xE034;</i></a></li>
 								<li class="play active"><a href="javascript:;" class="jp-play" tabindex="1"><i class="material-icons">&#xE037;</i></a></li>
@@ -301,17 +304,16 @@
 								<ul>
 									<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute"><i class="material-icons">&#xE050;</i></a></li>
 									<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute"><i class="material-icons">&#xE04F;</i></a></li>
-								</ul>    		
+								</ul>           
 								<div class="jp-volume-bar">
 									<div class="jp-volume-bar-value"></div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>		
+				</div>
 			</div>
 		</div>
-		
 		<div class="vidget vidget-redactors clearfix">
 			<div class="vidget-title">
 				Редакторы
@@ -337,8 +339,8 @@
 						<img src='img/admin-page/author3.png' alt='avatar' class='img-circle ava-circle'>
 					</div>
 					<span>Кравченко<br>Александра</span>
-				</div>	
-			</div>			
+				</div>  
+			</div>          
 		</div>
 
 		<div class="vidget vidget-adward clearfix">
@@ -390,10 +392,10 @@
 	<div class="col-md-8">
 		<section class="sect-main-content user_audio">
 			<article class="myPage-articl user_page_audio">
-				<span class="date">1941 год. Июнь</span>
-				<div class="top-articl-info">
-					
-					<div class="vidget vidget-audio clearfix">
+				<span class="date">1941 год. Июнь</span>                
+				<div class="top-articl-info"> 
+					       
+					<!-- <div class="vidget vidget-audio clearfix">
 						<div class="audio-wrap clearfix">
 							<div id="jquery_jplayer_1" class="jp-jplayer"></div>
 							<div id="jp_container_1" class="jp-audio">
@@ -401,7 +403,7 @@
 
 									<div class="jp-gui jp-interface">
 
-										<ul class="jp-controls">    	
+										<ul class="jp-controls">        
 											<li><a href="#"><i class="material-icons">&#xE045;</i></a></li> 
 											<li class="pause"><a href="javascript:;" class="jp-pause" tabindex="1"><i class="material-icons">&#xE034;</i></a></li>
 											<li class="play active"><a href="javascript:;" class="jp-play" tabindex="1"><i class="material-icons">&#xE037;</i></a></li>
@@ -431,18 +433,79 @@
 											<ul>
 												<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute"><i class="material-icons">&#xE050;</i></a></li>
 												<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute"><i class="material-icons">&#xE04F;</i></a></li>
-											</ul>    		
+											</ul>           
 											<div class="jp-volume-bar">
 												<div class="jp-volume-bar-value"></div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>	
+							</div>  
 						</div>
-					</div>
-					
-					<div class="col-md-12 audio-list-wrapper">
+					</div> -->
+					<div class="vidget vidget-audio clearfix">
+						<div class="audio-wrap clearfix">
+							<div id="jquery_jplayer_2" class="jp-jplayer"></div>
+							<div id="jp_container_2" class="jp-audio" role="application" aria-label="media player">
+								<div class="jp-type-playlist">
+									<div class="jp-gui jp-interface">
+										<div class="jp-controls-holder">
+											<ul class="jp-controls">
+												<li><a href="javascript:;" class="jp-previous" role="button" tabindex="0"><i class="material-icons">&#xE045;</i></a></li>
+												<!-- <button class="jp-previous" role="button" tabindex="0">previous</button> -->
+												<li><a href="javascript:;" class="jp-play" tabindex="0"><i class="material-icons">&#xE037;</i></a></li>
+												<!-- <button class="jp-play" role="button" tabindex="0">play</button> -->
+												<li><a href="javascript:;" class="jp-next" role="button" tabindex="0"><i class="material-icons">&#xE044;</i></a></a></li>
+												<!-- <button class="jp-next" role="button" tabindex="0">next</button> -->
+												<li><a href="javascript:;" class="jp-stop" role="button" tabindex="0"><i class="material-icons">&#xE047;</i></a></li>
+												<!-- <button class="jp-stop" role="button" tabindex="0">stop</button> -->
+											</ul>
+											<div class="progress-time-wrapper">
+												<p class="track-name">Название песни</p>
+												<div class="jp-progress">
+													<div class="jp-seek-bar">
+														<div class="jp-play-bar"></div>
+													</div>
+												</div>
+												
+												<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+												<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+											</div>
+											<div class="jp-volume-controls">
+												<ul>
+													<li><a href="javascript:;" class="jp-mute" tabindex="0" title="mute"><i class="material-icons">&#xE050;</i></a></li>
+													<li><a href="javascript:;" class="jp-unmute" tabindex="0" title="unmute"><i class="material-icons">&#xE04F;</i></a></li>
+												</ul>
+												<div class="jp-volume-bar">
+													<div class="jp-volume-bar-value"></div>
+												</div>
+											</div>
+										</div>
+										
+
+									</div>
+									<div class="jp-playlist">
+										<ul class="audio-list">
+											<li>&nbsp;<div class="hidden-music-text"></div></li>
+										</ul>
+									</div>
+									<div class="jp-no-solution">
+										<span>Update Required</span>
+										To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+									</div>
+								</div>
+							</div>
+						</div> 
+					</div>          
+					<!-- <div class="col-md-12 audio-list-wrapper">
+						<button class="btn-admin-menu"><i class="material-icons">&#xE313;</i></button>
+						<div class="coustom-submenu submenu">
+							<ul>
+								<li><a href="#">Редактировать публикацию</a></li>
+								<li><a href="#">Удалить публикацию</a></li>
+							</ul>
+						</div>
+						<div class="clearfix"></div>
 						<ul class="audio-list">
 							<li>
 								<a href="#">1. На Муромской дорожке (любимая песня прабабушки)</a><span>03:49</span>
@@ -463,7 +526,7 @@
 							<li><a href="#">7. Валенки</a><span>01:57</span></li>
 							<li><a href="#">8. В землянке<br>(1942; муз. Константина Листова - ст. Алексея Суркова)</a><span>02:27</span></li>
 						</ul>
-					</div>
+					</div> -->
 
 					<!-- <div class="author-post">
 						<div class="over-wrap">
@@ -498,30 +561,135 @@
 </footer>
 
 <!--                   <footer class="footer">
-                  	<div class="container">
-                  		<nav id="w2" class="navbar-footer navbar" role="navigation"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w2-collapse"><span class="sr-only">Toggle navigation</span>
-                  			<span class="icon-bar"></span>
-                  			<span class="icon-bar"></span>
-                  			<span class="icon-bar"></span></button></div><div id="w2-collapse" class="collapse navbar-collapse"><ul id="w3" class="navbar-nav navbar-left nav"><li><a href="/site/about">О Нас</a></li>
-                  			<li><a href="/site/about-project">О Проекте</a></li>
-                  			<li><a href="/site/confidential">Конфиденциальность</a></li>
-                  			<li><a href="/site/contact">Помощь</a></li></ul></div></div></nav>        <p class="pull-left">2017 &copy; Наследие </p>
+					<div class="container">
+						<nav id="w2" class="navbar-footer navbar" role="navigation"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w2-collapse"><span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span></button></div><div id="w2-collapse" class="collapse navbar-collapse"><ul id="w3" class="navbar-nav navbar-left nav"><li><a href="/site/about">О Нас</a></li>
+							<li><a href="/site/about-project">О Проекте</a></li>
+							<li><a href="/site/confidential">Конфиденциальность</a></li>
+							<li><a href="/site/contact">Помощь</a></li></ul></div></div></nav>        <p class="pull-left">2017 &copy; Наследие </p>
 
-                  			<p class="pull-right">Работает на <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></p>
-                  		</div>
-                  	</footer> -->
+							<p class="pull-right">Работает на <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></p>
+						</div>
+					</footer> -->
 
 
-                  	<!-- Custom HTML -->
+					<!-- Custom HTML -->
 
-                  	<!-- Optimized loading JS Start -->
-                  	<script>var scr = {"scripts":[
-                  		{"src" : "js/libs.min.js", "async" : false},
-                  		{"src" : "js/init.js", "async" : false},
-                  		{"src" : "js/site.js", "async" : false},
-                  		{"src" : "js/common.js", "async" : false}
-                  		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
-                  	</script>
-                  	<!-- Optimized loading JS End -->
-                  </body>
-                  </html>
+					<!-- Optimized loading JS Start -->
+					<script>var scr = {"scripts":[
+						{"src" : "js/libs.min.js", "async" : false},
+						{"src" : "js/init.js", "async" : false},
+						{"src" : "js/site.js", "async" : false},
+						{"src" : "js/common.js", "async" : false}
+						]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+					</script>
+					<!-- Optimized loading JS End -->
+
+
+<script>
+	
+$(document).on("click", ".audio-list>li", function(){
+	$('.audio-list>li').removeClass('active');
+	$('.audio-list>li').removeClass('outside');
+	$(this).addClass('active');
+	// $(this).addClass('outside');
+});
+	
+$(document).ready(function(){
+	var myPlaylist = new jPlayerPlaylist({
+			jPlayer: "#jquery_jplayer_2",
+			cssSelectorAncestor: "#jp_container_2"
+		}, [
+			{
+				title:"Cro Magnon Man",
+				mp3:"http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/TSP-01-Cro_magnon_man.ogg",
+			},
+			{
+				title:"Your Face",
+				mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"
+			},
+			{
+				title:"Cyber Sonnet",
+				mp3:"http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/TSP-07-Cybersonnet.ogg"
+			},
+			{
+				title:"Tempered Song",
+				mp3:"http://www.jplayer.org/audio/mp3/Miaow-01-Tempered-song.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/Miaow-01-Tempered-song.ogg"
+			},
+			{
+				title:"Hidden",
+				mp3:"http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/Miaow-02-Hidden.ogg"
+			},
+			{
+				title:"Lentement",
+				free:true,
+				mp3:"http://www.jplayer.org/audio/mp3/Miaow-03-Lentement.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/Miaow-03-Lentement.ogg"
+			},
+			{
+				title:"Lismore",
+				mp3:"http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/Miaow-04-Lismore.ogg"
+			},
+			{
+				title:"The Separation",
+				mp3:"http://www.jplayer.org/audio/mp3/Miaow-05-The-separation.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/Miaow-05-The-separation.ogg"
+			},
+			{
+				title:"Beside Me",
+				mp3:"http://www.jplayer.org/audio/mp3/Miaow-06-Beside-me.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/Miaow-06-Beside-me.ogg"
+			},
+			{
+				title:"Bubble",
+				free:true,
+				mp3:"http://www.jplayer.org/audio/mp3/Miaow-07-Bubble.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+			},
+			{
+				title:"Stirring of a Fool",
+				mp3:"http://www.jplayer.org/audio/mp3/Miaow-08-Stirring-of-a-fool.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/Miaow-08-Stirring-of-a-fool.ogg"
+			},
+			{
+				title:"Partir",
+				free: true,
+				mp3:"http://www.jplayer.org/audio/mp3/Miaow-09-Partir.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/Miaow-09-Partir.ogg"
+			},
+			{
+				title:"Thin Ice",
+				mp3:"http://www.jplayer.org/audio/mp3/Miaow-10-Thin-ice.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/Miaow-10-Thin-ice.ogg"
+			}
+		], {
+			swfPath: "../../dist/jplayer",
+			supplied: "oga, mp3",
+			wmode: "window",
+			useStateClassSkin: true,
+			autoBlur: false,
+			smoothPlayBar: true,
+			enableRemoveControls: true,
+			keyEnabled: true
+		});
+
+		// Examples of usage:
+		// var controls = myPlaylist.option("enableRemoveControls");
+		// myPlaylist.option("enableRemoveControls", true);
+
+
+		
+});
+
+</script>
+
+				  </body>
+				  </html>

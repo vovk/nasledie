@@ -21,7 +21,7 @@ package happyworm.jPlayer {
 		public static const JPLAYER_FLASHRESET:String = "jPlayer_flashreset"; // Handled in JavaScript
 		public static const JPLAYER_RESIZE:String = "jPlayer_resize"; // Handled in JavaScript
 		public static const JPLAYER_REPEAT:String = "jPlayer_repeat"; // Handled in JavaScript
-		public static const JPLAYER_CLICK:String = "jPlayer_click";
+		// public static const JPLAYER_CLICK:String = "jPlayer_click";
 		public static const JPLAYER_ERROR:String = "jPlayer_error";
 		public static const JPLAYER_WARNING:String = "jPlayer_warning"; // Currently not used by the flash solution
 

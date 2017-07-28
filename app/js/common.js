@@ -1,5 +1,9 @@
 $(function() {
 	$(document).ready(function(){
+
+		//add input with live-search
+		$('li.focus:nth-of-type(1)').append("<div id='live-search'><input type='text' placeholder='Каширский-Дмитриев Игорь Константинович'><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava1.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava2.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava3.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava4.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava5.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava6.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava7.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='live-pagination'><i class='material-icons material-left'>&#xE314;</i><span class='digits active digits-color'>1</span><span class='digits digits-color'>2</span><span class='digits digits-color'>3</span><i class='material-icons material-right'>&#xE315;</i></div></div></div></div>");
+
 		
 		//убрал box-shadow  .admin-page 
 		// if($('li').hasClass('focus')){
@@ -7,10 +11,6 @@ $(function() {
 		// }
 		// else
 		// 	$('.admin-page').css('min-height', '0');
-		
-
-		//add input with live-search
-		$('li.focus:nth-of-type(1)').append("<div id='live-search'><input type='text' placeholder='Каширский-Дмитриев Игорь Константинович'><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava1.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava2.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava3.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava4.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava5.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava6.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava7.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='live-pagination'><i class='material-icons material-left'>&#xE314;</i><span class='digits active digits-color'>1</span><span class='digits digits-color'>2</span><span class='digits digits-color'>3</span><i class='material-icons material-right'>&#xE315;</i></div></div></div></div>");
 
 		function showResult(str) {
 			if (str.length==0) { 
@@ -69,16 +69,17 @@ $(function() {
 		// обновить фото обложки(user-page bio)
 		$('.cust-icons2').tooltip();
 			
-		$('.audio-list>li').on("click", function(){
-			$('.audio-list>li').removeClass('active');
-			$('.audio-list>li').removeClass('outside');
-			$(this).addClass('active');
-			$(this).addClass('outside');
-		});			
+		// $('.audio-list>li').on("click", function(){
+		// 	$('.audio-list>li').removeClass('active');
+		// 	$('.audio-list>li').removeClass('outside');
+		// 	$(this).addClass('active');
+		// 	$(this).addClass('outside');
+		// });			
 		// audio text
-		$('.audio-list>li>a').on("click", function(){
-			$(this).siblings('.audio-description').toggle(300);
-		});
+		// $('.audio-list>li>a').on("click", function(){
+		// 	$(this).siblings('.audio-description').toggle(300);
+		// });
+
 	});
 	jQuery(".icons-nav li a").click(function() {
 		jQuery(".icons-nav li a").removeClass('active');
@@ -195,7 +196,9 @@ $(".addPage .sect-addPage .page-descr a").click(function() {
 
 });
 
-
+	$('.audio-list li').on("click", 'li', function(){
+		alert(1);
+	});
 
 
 $(".btn-pre").html('<i class="material-icons">&#xE316;</i>');
@@ -209,25 +212,19 @@ $(".btn-next").html('<i class="material-icons">&#xE313;</i>');
    navText: '',
  });
 
-
-
-
-$('#jquery_jplayer_2').jPlayer({
-	ready: function () {
-		$(this).jPlayer("setMedia", {
-			mp3: "../audio/LZ-step.mp3"
-		});
-	}
-});
-
-
 $("#jquery_jplayer_1").jPlayer({
     ready: function () {
 		$(this).jPlayer("setMedia", {
 			mp3: "../audio/ACDC.mp3",
-			// mp3: "../audio/LZ-step.mp3"
+			mp3: "../audio/LZ-step.mp3"
 		});
-    }
+    },
+    useStateClassSkin: true,
+    autoBlur: true,
+    smoothPlayBar: true,
+    keyEnabled: true,
+    remainingDuration: true,
+    toggleDuration: true
 });
 
 $(".jp-controls .play").click(function() {

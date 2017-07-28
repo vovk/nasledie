@@ -1734,8 +1734,6 @@ aside
 					.btn-admin-menu
 						padding: 0
 						margin-top: 0
-				.bio-user-submenu
-					// margin-top: -15px
 				.additional-text
 					color: #545355
 					font-weight: bold
@@ -1781,8 +1779,12 @@ aside
 							width: 50% 
 			.audio-list-wrapper
 				background: #fff
-				margin-top: 25px
+				margin-top: 5px
 				padding: 0
+				.btn-admin-menu
+					margin-top: 0
+				.coustom-submenu
+					top: 20px
 				ul.audio-list
 					position: relative
 					list-style: none
@@ -1849,10 +1851,100 @@ aside
 //audio vidget
 .jp-jplayer, .jp-audio
   	width: 100%
-
 .audio-wrap
 	padding: 0 15px 20px
-
+/*V AUDIO PLAYER*/
+.audio-wrap
+	#jp_container_2
+		.jp-controls-holder
+			width: 100%
+			display: flex
+			justify-content: space-between
+			align-items: center
+			ul.jp-controls
+				display: inline-block
+				float: left
+			.progress-time-wrapper
+				float: left
+				width: 50%
+				position: relative
+				p.track-name
+					font-size: 13px
+					margin-top: 5px
+					text-align: center
+				.jp-current-time
+					position: absolute
+					top: 25px
+					left: 0
+					font-size: 11px
+				.jp-duration
+					position: absolute
+					top: 25px
+					right: 0
+					font-size: 11px
+			.jp-progress
+				width: 100%
+				margin-bottom: 0
+				margin-top: 25px
+			.jp-volume-controls 
+				float: left;
+				display: flex
+				align-items: center
+				ul
+					display: inline-block
+					list-style: none
+					float: left
+					margin: 0
+					padding: 0
+					li 
+						margin-right: 5px
+						display: inline-block
+						float: left
+						a
+							color: #000
+							i 
+								font-size: 20px
+				.jp-volume-bar
+					float: left
+		.jp-playlist
+			ul.audio-list
+				position: relative
+				list-style: none
+				padding-left: 0
+				margin-top: 25px
+				li
+					padding: 5px 10px
+					position: relative
+					a
+						color: #000
+					// span
+					// 	float: right
+					// 	padding-right: 75px
+				li.active
+					background: #d7f0b4
+					border-top: 1px solid #bcda93
+					border-bottom: 1px solid #bcda93
+				li.outside
+					position: relative
+					&::before
+						cursor: pointer
+						position: absolute
+						content: ""
+						width: 15px
+						height: 15px
+						right: 50px
+						top: 10px
+						background: url(../img/pause.png) no-repeat
+					&::after
+						cursor: pointer
+						position: absolute
+						content: ""
+						width: 15px
+						height: 15px
+						right: 25px
+						top: 9px
+						background: url(../img/download.png) no-repeat
+/*V AUDIO PLAYER*/
 .jp-aduio-info
 	padding-bottom: 10px
 	.audio-name
