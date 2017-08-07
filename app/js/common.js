@@ -69,12 +69,7 @@ $(function() {
 		// обновить фото обложки(user-page bio)
 		$('.cust-icons2').tooltip();
 			
-		// $('.audio-list>li').on("click", function(){
-		// 	$('.audio-list>li').removeClass('active');
-		// 	$('.audio-list>li').removeClass('outside');
-		// 	$(this).addClass('active');
-		// 	$(this).addClass('outside');
-		// });			
+			
 		// audio text
 		// $('.audio-list>li>a').on("click", function(){
 		// 	$(this).siblings('.audio-description').toggle(300);
