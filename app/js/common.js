@@ -24,8 +24,7 @@ $(function() {
                   }).appendTo(image_holder).wrap("<div class='fancy-wrap clearfix'><a href="+e.target.result+" data-type='image' data-fancybox='group' data-caption='My caption' class='added-href'></a></div>")
 
               	  $('.fancy-wrap').append($('.event-img'));
-				  // $('.event-img').slideToggle(300);
-				  $('.event-img').css('display', 'block');
+				  // $('.event-img').css('display', 'block');
 
                 }
                 image_holder.show();
@@ -38,23 +37,23 @@ $(function() {
             alert("Pls select only images");
           }
         });
-		showDescription();closeDescription();
-		function showDescription(){
+		// showDescription();closeDescription();
+		// function showDescription(){
 			$('.showdescription').on("click", function(){
 
 				$(this).parents('.fancy-wrap').css({'width':'100%', 'float':'none', 'padding':'25px', 'background':'#f1f3da'});
 				$(this).parents('.fancy-wrap').find('img').css({'width':'40%', 'height':'30%', 'float':'left'});
 				$(this).parents('.fancy-wrap').find('.added-href').append("<div class='added-text'><p>texttexttexttext</p></div>");
 				//меню сдвинули при большой фотке
-				$('.coustom-submenu').css({'display':'none', 'width':'150px', 'right':'0'});
+				$('.coustom-submenu').css({'display':'none', 'right':'0'});
 
 				// меняем текст
 				$(this).toggle();
 				$(this).siblings('.image-description').toggle();
 			});
-		}
+		// }
 
-		function closeDescription(){
+		// function closeDescription(){
 
 			$('.closedescription').on("click", function(){
 
@@ -62,12 +61,15 @@ $(function() {
 				$(this).parents('.fancy-wrap').find('img').css({'width':'150px', 'height':'120px', 'float':'none'});
 
 
-				$(this).toggle();
-				$(this).siblings('.image-description').toggle().parents('.event-img').css('display', 'none');
 				$('.added-text').remove();
+				$(this).prev().css('display', 'block');
+				$(this).parents('.coustom-submenu').css('display', 'none');
+
+
+				$(this).toggle();
 
 			});
-		}
+		// }
 
 
 
@@ -78,27 +80,7 @@ $(function() {
 		// else
 		// 	$('.admin-page').css('min-height', '0');
 
-		function showResult(str) {
-			if (str.length==0) { 
-				document.getElementById("live-search").innerHTML="";
-			// document.getElementById("live-search").style.border="0px";
-				return;
-			}
-			if (window.XMLHttpRequest) {
-			// code for IE7+, Firefox, Chrome, Opera, Safari
-				xmlhttp=new XMLHttpRequest();
-			} else {  // code for IE6, IE5
-				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-			}
-			xmlhttp.onreadystatechange=function() {
-				if (this.readyState==4 && this.status==200) {
-					document.getElementById("live-search").innerHTML=this.responseText;
-					// document.getElementById("live-search").style.border="1px solid #A5ACB2";
-				}
-			}
-			xmlhttp.open("GET","livesearch.php?q="+str,true);
-			xmlhttp.send();
-		}
+
 
 		//top block .hide-block with authors
 		var attr = $('.hide-block');
