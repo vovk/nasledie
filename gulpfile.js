@@ -60,7 +60,7 @@ gulp.task('libs', function() {
 		'app/libs/owl/owl.carousel.min.js',		
 		'app/libs/jPlayer/dist/jplayer/jquery.jplayer.min.js',
             // 'app/libss/libsjs/js/jquery.custom.js',
-        'app/libs/fancybox/dist/jquery.fancybox.min.js'
+        // 'app/libs/fancybox/dist/jquery.fancybox.min.js'
         ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())

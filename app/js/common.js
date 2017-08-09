@@ -18,14 +18,15 @@ $(function() {
               {
                 var reader = new FileReader();
                 reader.onload = function(e) {
-                  var k = $("<img />", {
+                  var img = $("<img />", {
                     "src": e.target.result,
-                    "class": "img-responsive thumb-image"/*,
-                    "data-fancybox": "group",
-                    "href": e.target.result*/
+                    "class": "img-responsive thumb-image"
                   }).appendTo(image_holder).wrap("<div class='fancy-wrap'><a href="+e.target.result+" data-type='image' data-fancybox='group' data-caption='My caption'></a></div>")
+
+              	  $('.fancy-wrap').append($('.event-img'));
+				  $('.event-img').slideToggle(300);
+              	  
                 }
-// <a href='image.jpg' data-fancybox='group' data-caption='My caption'></a>
                 image_holder.show();
                 reader.readAsDataURL($(this)[0].files[i]);
               }
@@ -36,6 +37,10 @@ $(function() {
             alert("Pls select only images");
           }
         });
+
+
+
+
 
 		//убрал box-shadow  .admin-page 
 		// if($('li').hasClass('focus')){
@@ -263,9 +268,10 @@ $(".jp-controls .pause").click(function() {
 	$(".jp-controls .pause").css('display', 'none');
 	$(".jp-controls .play").css('display', 'inline-block');
 });
-
 $(".btn-admin-menu").click(function() {
-	$(".myPage .sect-main-content .myPage-articl .coustom-submenu").slideToggle(300);
+	// $(".myPage .sect-main-content .myPage-articl .coustom-submenu").slideToggle(300);
+	$(this).siblings(".myPage .coustom-submenu").slideToggle(300);
+
 });
 
 $(".calendar-slider .owl-controls .owl-next").html('<i class="material-icons">&#xE315;</i>');
