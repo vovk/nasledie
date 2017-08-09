@@ -1770,15 +1770,17 @@ aside
 				text-transform: uppercase
 			.event-img
 				display: none
+				overflow: hidden
 			.top-articl-info
 				margin: 20px 0
 				overflow: auto
 				.fancy-wrap
 					float: left
 					width: auto
+					margin-bottom: 10px
 					margin-right: 15px
-					margin-top: 15px
 					position: relative
+					overflow: hidden
 					.btn-admin-menu
 						display: none
 						position: absolute
@@ -1789,9 +1791,12 @@ aside
 						top: 20px
 						width: 150px
 						ul
+							list-style: none
 							li
 								a
 									padding: 5px 0 5px 5px
+							.closedescription
+								display: none
 					&:hover
 						.btn-admin-menu
 							display: block
@@ -1800,9 +1805,9 @@ aside
 						img
 							width: 150px
 							height: 120px
-					.img-description
-						display: none
-						float: left	
+					.added-text
+						padding: 0 25px
+						overflow: hidden
 				.fancy-wrap:last-child
 					margin-right: 0		
 		.user_page_audio

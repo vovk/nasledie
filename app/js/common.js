@@ -21,11 +21,12 @@ $(function() {
                   var img = $("<img />", {
                     "src": e.target.result,
                     "class": "img-responsive thumb-image"
-                  }).appendTo(image_holder).wrap("<div class='fancy-wrap'><a href="+e.target.result+" data-type='image' data-fancybox='group' data-caption='My caption'></a></div>")
+                  }).appendTo(image_holder).wrap("<div class='fancy-wrap clearfix'><a href="+e.target.result+" data-type='image' data-fancybox='group' data-caption='My caption' class='added-href'></a></div>")
 
               	  $('.fancy-wrap').append($('.event-img'));
-				  $('.event-img').slideToggle(300);
-              	  
+				  // $('.event-img').slideToggle(300);
+				  $('.event-img').css('display', 'block');
+
                 }
                 image_holder.show();
                 reader.readAsDataURL($(this)[0].files[i]);
@@ -37,8 +38,36 @@ $(function() {
             alert("Pls select only images");
           }
         });
+		showDescription();closeDescription();
+		function showDescription(){
+			$('.showdescription').on("click", function(){
+
+				$(this).parents('.fancy-wrap').css({'width':'100%', 'float':'none', 'padding':'25px', 'background':'#f1f3da'});
+				$(this).parents('.fancy-wrap').find('img').css({'width':'40%', 'height':'30%', 'float':'left'});
+				$(this).parents('.fancy-wrap').find('.added-href').append("<div class='added-text'><p>texttexttexttext</p></div>");
+				//меню сдвинули при большой фотке
+				$('.coustom-submenu').css({'display':'none', 'width':'150px', 'right':'0'});
+
+				// меняем текст
+				$(this).toggle();
+				$(this).siblings('.image-description').toggle();
+			});
+		}
+
+		function closeDescription(){
+
+			$('.closedescription').on("click", function(){
+
+				$(this).parents('.fancy-wrap').css({'width':'auto', 'float':'left', 'padding':'0', 'background':'none'});
+				$(this).parents('.fancy-wrap').find('img').css({'width':'150px', 'height':'120px', 'float':'none'});
 
 
+				$(this).toggle();
+				$(this).siblings('.image-description').toggle().parents('.event-img').css('display', 'none');
+				$('.added-text').remove();
+
+			});
+		}
 
 
 
