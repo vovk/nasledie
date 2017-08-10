@@ -1828,10 +1828,6 @@ aside
 						align-items: center
 						.jp-wrapper
 							width: 50% 
-			.audio-list-wrapper
-				background: #fff
-				margin-top: 5px
-				padding: 0
 				.btn-admin-menu
 					margin-top: 0
 				.coustom-submenu
@@ -1852,37 +1848,69 @@ aside
 						background: #d7f0b4
 						border-top: 1px solid #bcda93
 						border-bottom: 1px solid #bcda93
-					li.outside
-						position: relative
-						&::before
-							cursor: pointer
-							position: absolute
-							content: ""
-							width: 15px
-							height: 15px
-							right: 50px
-							top: 10px
-							background: url(../img/pause.png) no-repeat
-						&::after
-							cursor: pointer
-							position: absolute
-							content: ""
-							width: 15px
-							height: 15px
-							right: 25px
-							top: 9px
-							background: url(../img/download.png) no-repeat
-					.audio-description
-						background: #f1f3da
-						display: none
-						margin-top: 10px
-						font-size: 14px
-						padding: 20px
-						span
-							float: none
-							font-weight: bold
-			
-
+					// li.outside
+					// 	position: relative
+					// 	&::before
+					// 		cursor: pointer
+					// 		position: absolute
+					// 		content: ""
+					// 		width: 15px
+					// 		height: 15px
+					// 		right: 50px
+					// 		top: 10px
+					// 		background: url(../img/pause.png) no-repeat
+					// 	&::after
+					// 		cursor: pointer
+					// 		position: absolute
+					// 		content: ""
+					// 		width: 15px
+					// 		height: 15px
+					// 		right: 25px
+					// 		top: 9px
+					// 		background: url(../img/download.png) no-repeat
+				.audio-description
+					background: #f1f3da
+					display: none
+					margin-top: 10px
+					font-size: 14px
+					padding: 20px
+					.music-description
+						border-bottom: 1px solid #e2e1c4
+						padding-bottom: 25px
+						margin-bottom: 0
+					.title, .closeblock
+						display: block
+						font-weight: bold
+						float: none
+						margin-top: 15px
+						padding-right: 0
+					.author-post
+						border-top: 1px solid #fff
+						padding-top: 25px
+						.over-wrap
+							border: 
+							margin: 0
+							.wrap-block
+								// padding: 15px
+								.img-wrapper
+									float: left
+									text-align: center
+									margin-right: 25px
+									width: 50px
+									img
+										width: 100%
+								p
+									color: #79503e
+									cursor: pointer
+									font-weight: bold
+									float: left
+									padding-top: 5px
+									span
+										color: #79503e
+										font-weight: normal
+					.closeblock
+						cursor: pointer
+						text-align: right
 .myPage 
 	.sidebar 	
 		.vidget-adward 
@@ -1917,6 +1945,8 @@ aside
 			ul.jp-controls
 				display: inline-block
 				float: left
+				.li-pause
+					display: none
 			.progress-time-wrapper
 				float: left
 				width: 50%
@@ -1965,38 +1995,41 @@ aside
 				list-style: none
 				padding-left: 0
 				margin-top: 25px
+				margin-left: 0
 				li
 					padding: 5px 10px
 					position: relative
+					div
+						position: relative
+					div.music-text
+						background: url(../img/download.png) no-repeat right 5px
 					a
 						color: #000
-					// span
-					// 	float: right
-					// 	padding-right: 75px
 				li.active
 					background: #d7f0b4
 					border-top: 1px solid #bcda93
 					border-bottom: 1px solid #bcda93
-				li.outside
-					position: relative
-					&::before
-						cursor: pointer
-						position: absolute
-						content: ""
-						width: 15px
-						height: 15px
-						right: 50px
-						top: 10px
-						background: url(../img/pause.png) no-repeat
-					&::after
-						cursor: pointer
-						position: absolute
-						content: ""
-						width: 15px
-						height: 15px
-						right: 25px
-						top: 9px
-						background: url(../img/download.png) no-repeat
+				// li.outside
+				// 	position: relative
+				// 	&::after
+				// 		cursor: pointer
+				// 		position: absolute
+				// 		content: ""
+				// 		width: 15px
+				// 		height: 15px
+				// 		right: 25px
+				// 		top: 9px
+				// 		background: url(../img/download.png) no-repeat
+				// 	&::before
+				// 		cursor: pointer
+				// 		position: absolute
+				// 		content: ""
+				// 		width: 15px
+				// 		height: 15px
+				// 		right: 50px
+				// 		top: 10px
+				// 		background: url(../img/pause.png) no-repeat
+					
 /*V AUDIO PLAYER*/
 .jp-aduio-info
 	padding-bottom: 10px

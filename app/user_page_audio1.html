@@ -267,7 +267,7 @@
 			</div>
 		</div>
 
-		<div class="vidget vidget-audio clearfix">
+		<!--<div class="vidget vidget-audio clearfix">
 			<span class="vidget-title">Аудио</span>
 			<div class="audio-wrap clearfix">
 				<div id="jquery_jplayer_1" class="jp-jplayer"></div>
@@ -313,7 +313,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<div class="vidget vidget-redactors clearfix">
 			<div class="vidget-title">
 				Редакторы
@@ -453,11 +453,12 @@
 											<ul class="jp-controls">
 												<li><a href="javascript:;" class="jp-previous" role="button" tabindex="0"><i class="material-icons">&#xE045;</i></a></li>
 												<!-- <button class="jp-previous" role="button" tabindex="0">previous</button> -->
-												<li><a href="javascript:;" class="jp-play" tabindex="0"><i class="material-icons">&#xE037;</i></a></li>
+												<li class="play"><a href="javascript:;" class="jp-play" tabindex="0"><i class="material-icons">&#xE037;</i></a></li>
 												<!-- <button class="jp-play" role="button" tabindex="0">play</button> -->
+												<li class="pause"><a href="javascript:;" class="jp-pause" tabindex="0"><i class="material-icons">&#xE034;</i></a></li>
 												<li><a href="javascript:;" class="jp-next" role="button" tabindex="0"><i class="material-icons">&#xE044;</i></a></a></li>
 												<!-- <button class="jp-next" role="button" tabindex="0">next</button> -->
-												<li><a href="javascript:;" class="jp-stop" role="button" tabindex="0"><i class="material-icons">&#xE047;</i></a></li>
+												<!-- <li><a href="javascript:;" class="jp-stop" role="button" tabindex="0"><i class="material-icons">&#xE047;</i></a></li> -->
 												<!-- <button class="jp-stop" role="button" tabindex="0">stop</button> -->
 											</ul>
 											<div class="progress-time-wrapper">
@@ -486,7 +487,7 @@
 									</div>
 									<div class="jp-playlist">
 										<ul class="audio-list">
-											<li>&nbsp;<div class="hidden-music-text"></div></li>
+											<li>&nbsp;<div></div></li>
 										</ul>
 									</div>
 									<div class="jp-no-solution">
@@ -495,49 +496,27 @@
 									</div>
 								</div>
 							</div>
-						</div> 
-					</div>          
-					<!-- <div class="col-md-12 audio-list-wrapper">
-						<button class="btn-admin-menu"><i class="material-icons">&#xE313;</i></button>
-						<div class="coustom-submenu submenu">
-							<ul>
-								<li><a href="#">Редактировать публикацию</a></li>
-								<li><a href="#">Удалить публикацию</a></li>
-							</ul>
-						</div>
-						<div class="clearfix"></div>
-						<ul class="audio-list">
-							<li>
-								<a href="#">1. На Муромской дорожке (любимая песня прабабушки)</a><span>03:49</span>
-								<p class="audio-description">
-									«В земля́нке» («Землянка», «Бьётся в тесной печурке огонь…») — русская советская песня времён Великой Отечественной войны. Музыка Константина Листова, стихи Алексея Суркова. <br><br><span>Рождение песни</span><br> Сразу после начала Великой Отечественной войны журналист и поэт Алексей Сурков стал военным корреспондентом газеты «Красноармейская правда». В конце осени 1941 года оборонявшая Истру 78-я стрелковая дивизия 16-й армии получила наименование 9-й гвардейской, в связи с чем Политуправление Западного фронта пригласило корреспондентов «Красноармейской правды» осветить это событие; среди прочих поехал и Сурков. 27 ноября журналисты сначала посетили штаб дивизии, после чего отправились на командный пункт 258-го (22-го гвардейского) стрелкового полка, находившийся в деревне Кашино. По прибытии оказалось, что командный пункт отрезан от батальонов наступающей 10-й танковой дивизией Германии, а к самой деревне подходит пехота врага. Начавшийся обстрел из миномётов вынудил офицеров и журналистов засесть в блиндаже. Немцы заняли соседние дома. Тогда начальник штаба полка капитан И. К. Величкин пополз к зданиям, закидывая противника гранатами, что вызвало ослабление вражеского обстрела и дало возможность пойти на прорыв. Благополучно пройдя минное поле, все отошли к речке и переправились через неё по ещё тонкому льду — под возобновившийся миномётный обстрел — к деревне Ульяшино, в которой стоял батальон. Когда Сурков добрался до своих, то вся его шинель оказалась посечённой осколками. Тогда он сказал: «Дальше штаба полка не сделал ни шага. Ни единого… А до смерти — четыре шага». После этого оставалось только дописать: «До тебя мне дойти нелегко…»[3] После прихода в деревню штабисты и корреспонденты были размещены в землянке. Все были очень уставшими — настолько, что, по воспоминаниям Суркова, начальник штаба Величкин, сев есть суп, после второй ложки заснул, так как не спал четыре дня. Остальные устроились около печки, кто-то начал играть на гармони, чтобы снять напряжение. Сурков стал делать наброски для репортажа, но получились стихи. Ночью он вернулся в Москву, где и закончил своё знаменитое стихотворение «В землянке» (вскоре ставшее песней). Текст стихотворения Сурков поместил в письме своей жене Софье Антоновне, написав на обороте листка слова «Тебе, солнышко моё!». На следующий день письмо в солдатском треугольнике было отправлено в город Чистополь, где семья Суркова находилась в эвакуации.
+							<div class="audio-description">
+								<p class="music-description">«В земля́нке» («Землянка», «Бьётся в тесной печурке огонь…») — русская советская песня времён Великой Отечественной войны. Музыка Константина Листова, стихи Алексея Суркова. <span class="title">Рождение песни</span>
+								Сразу после начала Великой Отечественной войны журналист и поэт Алексей Сурков стал военным корреспондентом газеты «Красноармейская правда». В конце осени 1941 года оборонявшая Истру 78-я стрелковая дивизия 16-й армии получила наименование 9-й гвардейской, в связи с чем Политуправление Западного фронта пригласило корреспондентов «Красноармейской правды» осветить это событие; среди прочих поехал и Сурков. 27 ноября журналисты сначала посетили штаб дивизии, после чего отправились на командный пункт 258-го (22-го гвардейского) стрелкового полка, находившийся в деревне Кашино. По прибытии оказалось, что командный пункт отрезан от батальонов наступающей 10-й танковой дивизией Германии, а к самой деревне подходит пехота врага. Начавшийся обстрел из миномётов вынудил офицеров и журналистов засесть в блиндаже. Немцы заняли соседние дома. Тогда начальник штаба полка капитан И. К. Величкин пополз к зданиям, закидывая противника гранатами, что вызвало ослабление вражеского обстрела и дало возможность пойти на прорыв. Благополучно пройдя минное поле, все отошли к речке и переправились через неё по ещё тонкому льду — под возобновившийся миномётный обстрел — к деревне Ульяшино, в которой стоял батальон. Когда Сурков добрался до своих, то вся его шинель оказалась посечённой осколками. Тогда он сказал: «Дальше штаба полка не сделал ни шага. Ни единого… А до смерти — четыре шага». После этого оставалось только дописать: «До тебя мне дойти нелегко…»[3] После прихода в деревню штабисты и корреспонденты были размещены в землянке. Все были очень уставшими — настолько, что, по воспоминаниям Суркова, начальник штаба Величкин, сев есть суп, после второй ложки заснул, так как не спал четыре дня. Остальные устроились около печки, кто-то начал играть на гармони, чтобы снять напряжение. Сурков стал делать наброски для репортажа, но получились стихи. Ночью он вернулся в Москву, где и закончил своё знаменитое стихотворение «В землянке» (вскоре ставшее песней). Текст стихотворения Сурков поместил в письме своей жене Софье Антоновне, написав на обороте листка слова «Тебе, солнышко моё!». На следующий день письмо в солдатском треугольнике было отправлено в город Чистополь, где семья Суркова находилась в эвакуации.
 								</p>
-							</li>
-							<li>
-								<a href="#">2. Степь да степь кругом</a><span>03:58</span>
-								<p class="audio-description">
-									«В земля́нке» («Землянка», «Бьётся в тесной печурке огонь…») — русская советская песня времён Великой Отечественной войны. Музыка Константина Листова, стихи Алексея Суркова. <br><br><span>Рождение песни</span><br> Сразу после начала Великой Отечественной войны журналист и поэт Алексей Сурков стал военным корреспондентом газеты «Красноармейская правда». В конце осени 1941 года оборонявшая Истру 78-я стрелковая дивизия 16-й армии получила наименование 9-й гвардейской, в связи с чем Политуправление Западного фронта пригласило корреспондентов «Красноармейской правды» осветить это событие; среди прочих поехал и Сурков. 27 ноября журналисты сначала посетили штаб дивизии, после чего отправились на командный пункт 258-го (22-го гвардейского) стрелкового полка, находившийся в деревне Кашино. По прибытии оказалось, что командный пункт отрезан от батальонов наступающей 10-й танковой дивизией Германии, а к самой деревне подходит пехота врага. Начавшийся обстрел из миномётов вынудил офицеров и журналистов засесть в блиндаже. Немцы заняли соседние дома. Тогда начальник штаба полка капитан И. К. Величкин пополз к зданиям, закидывая противника гранатами, что вызвало ослабление вражеского обстрела и дало возможность пойти на прорыв. Благополучно пройдя минное поле, все отошли к речке и переправились через неё по ещё тонкому льду — под возобновившийся миномётный обстрел — к деревне Ульяшино, в которой стоял батальон. Когда Сурков добрался до своих, то вся его шинель оказалась посечённой осколками. Тогда он сказал: «Дальше штаба полка не сделал ни шага. Ни единого… А до смерти — четыре шага». После этого оставалось только дописать: «До тебя мне дойти нелегко…»[3] После прихода в деревню штабисты и корреспонденты были размещены в землянке. Все были очень уставшими — настолько, что, по воспоминаниям Суркова, начальник штаба Величкин, сев есть суп, после второй ложки заснул, так как не спал четыре дня. Остальные устроились около печки, кто-то начал играть на гармони, чтобы снять напряжение. Сурков стал делать наброски для репортажа, но получились стихи. Ночью он вернулся в Москву, где и закончил своё знаменитое стихотворение «В землянке» (вскоре ставшее песней). Текст стихотворения Сурков поместил в письме своей жене Софье Антоновне, написав на обороте листка слова «Тебе, солнышко моё!». На следующий день письмо в солдатском треугольнике было отправлено в город Чистополь, где семья Суркова находилась в эвакуации.
-								</p>
-							</li>
-							<li><a href="#">3. Я на горку шла</a><span>03:49</span></li>
-							<li><a href="#">4. Выходила на берег Катюша</a><span>03:49</span></li>
-							<li><a href="#">5. Коробейники</a><span>03:49</span></li>
-							<li><a href="#">6. По Муромской дорожке</a><span>03:48</span></li>
-							<li><a href="#">7. Валенки</a><span>01:57</span></li>
-							<li><a href="#">8. В землянке<br>(1942; муз. Константина Листова - ст. Алексея Суркова)</a><span>02:27</span></li>
-						</ul>
-					</div> -->
-
-					<!-- <div class="author-post">
-						<div class="over-wrap">
-							<div class="wrap-block clearfix">
-								<div class='img-wrapper'>
-									<img src='img/admin-page/author3.png' alt='avatar' class='img-circle ava-circle'>
+								<div class="author-post">
+									<div class="over-wrap">
+										<div class="wrap-block clearfix">
+											<div class='img-wrapper'>
+												<img src='img/admin-page/author3.png' alt='avatar' class='img-circle ava-circle'>
+											</div>
+											<p>Маслова Варвара<br><span>14 января 2016 г.</span></p>
+										</div>
+									</div>
 								</div>
-								<p>Маслова Варвара<br><span>14 января 2016 г.</span></p>
+
+								<span class="closeblock">x</span>
 							</div>
-						</div>
-					</div> -->
+
+						</div> 
+					</div>
+					
 				</div>
 			</article>
 		</section>
@@ -593,80 +572,112 @@
 $(document).on("click", ".audio-list>li", function(){
 	$('.audio-list>li').removeClass('active');
 	$('.audio-list>li').removeClass('outside');
-	// $(this).addClass('active');
-	// $(this).addClass('outside');
+	$('.audio-list>li>div').removeClass('music-text');
+	$(this).addClass('active');
+	// $(this).addClass('outside'); поставил бг у child-дива вместо li
+
+
+
+	// if($(this).hasClass('active')){
+	// 	$(this).find('div').addClass('music-text'); //класс со стрелочкой
+	// }
 });
-	
+
+
+	// $('.audio-list li.active').on("click", function(){
+	// 	$(this).append($('.audio-description'));
+	// 	$('.audio-description').css('display', 'block');
+	// });
+
+$(document).on("click", ".audio-list>li.active", function(){
+	$(this).append($('.audio-description'));
+	$('.audio-description').css('display', 'block');
+});
+
+$(document).on("click", ".audio-list>li a:nth-of-type(2)", function(){
+	$('.play').css('display', 'none');
+	$('.pause').toggle();
+	$('.pause').css('display', 'inline-block');
+});
+
+
 $(document).ready(function(){
+
+	
+	$('.closeblock').on("click", function(){
+		$(this).parent().toggle(300);
+	});
+
+
 	var myPlaylist = new jPlayerPlaylist({
 			jPlayer: "#jquery_jplayer_2",
 			cssSelectorAncestor: "#jp_container_2"
 		}, [
 			{
-				title:"Cro Magnon Man",
+				title:"1. Cro Magnon Man",
 				mp3:"http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3",
 				oga:"http://www.jplayer.org/audio/ogg/TSP-01-Cro_magnon_man.ogg",
 			},
 			{
-				title:"Your Face",
+				title:"2. Your Face",
 				mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
 				oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"
 			},
 			{
-				title:"Cyber Sonnet",
+				title:"3. Cyber Sonnet",
 				mp3:"http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3",
 				oga:"http://www.jplayer.org/audio/ogg/TSP-07-Cybersonnet.ogg"
 			},
 			{
-				title:"Tempered Song",
+				title:"4. Tempered Song",
 				mp3:"http://www.jplayer.org/audio/mp3/Miaow-01-Tempered-song.mp3",
 				oga:"http://www.jplayer.org/audio/ogg/Miaow-01-Tempered-song.ogg"
 			},
 			{
-				title:"Hidden",
+				title:"5. Hidden",
 				mp3:"http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3",
 				oga:"http://www.jplayer.org/audio/ogg/Miaow-02-Hidden.ogg"
 			},
 			{
-				title:"Lentement",
-				free:true,
+				title:"6. Lentement",
+				// free:true,
 				mp3:"http://www.jplayer.org/audio/mp3/Miaow-03-Lentement.mp3",
 				oga:"http://www.jplayer.org/audio/ogg/Miaow-03-Lentement.ogg"
 			},
 			{
-				title:"Lismore",
+				title:"7. Lismore",
 				mp3:"http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3",
 				oga:"http://www.jplayer.org/audio/ogg/Miaow-04-Lismore.ogg"
 			},
 			{
-				title:"The Separation",
+				title:"8. The Separation",
 				mp3:"http://www.jplayer.org/audio/mp3/Miaow-05-The-separation.mp3",
 				oga:"http://www.jplayer.org/audio/ogg/Miaow-05-The-separation.ogg"
 			},
 			{
-				title:"Beside Me",
+				title:"9. Beside Me",
 				mp3:"http://www.jplayer.org/audio/mp3/Miaow-06-Beside-me.mp3",
 				oga:"http://www.jplayer.org/audio/ogg/Miaow-06-Beside-me.ogg"
 			},
 			{
-				title:"Bubble",
-				free:true,
+				title:"10. Bubble",
+				// free:true,
 				mp3:"http://www.jplayer.org/audio/mp3/Miaow-07-Bubble.mp3",
 				oga:"http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
 			},
 			{
-				title:"Stirring of a Fool",
+				title:"11. Stirring of a Fool",
 				mp3:"http://www.jplayer.org/audio/mp3/Miaow-08-Stirring-of-a-fool.mp3",
 				oga:"http://www.jplayer.org/audio/ogg/Miaow-08-Stirring-of-a-fool.ogg"
 			},
 			{
-				title:"Partir",
-				free: true,
+				title:"12. Partir",
+				// free: true,
 				mp3:"http://www.jplayer.org/audio/mp3/Miaow-09-Partir.mp3",
 				oga:"http://www.jplayer.org/audio/ogg/Miaow-09-Partir.ogg"
 			},
 			{
-				title:"Thin Ice",
+				title:"13. Thin Ice",
 				mp3:"http://www.jplayer.org/audio/mp3/Miaow-10-Thin-ice.mp3",
 				oga:"http://www.jplayer.org/audio/ogg/Miaow-10-Thin-ice.ogg"
 			}
@@ -681,12 +692,10 @@ $(document).ready(function(){
 			keyEnabled: true
 		});
 
-		// Examples of usage:
-		// var controls = myPlaylist.option("enableRemoveControls");
-		// myPlaylist.option("enableRemoveControls", true);
+	// Examples of usage:
+	// var controls = myPlaylist.option("enableRemoveControls");
+	// myPlaylist.option("enableRemoveControls", true);
 
-
-		
 });
 
 </script>

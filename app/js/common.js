@@ -16,11 +16,15 @@ $(function() {
               //loop for each file selected for uploaded.
               for (var i = 0; i < countFiles; i++) 
               {
+                var count = 0;
+
                 var reader = new FileReader();
                 reader.onload = function(e) {
+                  count++;
                   var img = $("<img />", {
                     "src": e.target.result,
-                    "class": "img-responsive thumb-image"
+                    "class": "img-responsive thumb-image",
+                    "data-attr": "image"+count
                   }).appendTo(image_holder).wrap("<div class='fancy-wrap clearfix'><a href="+e.target.result+" data-type='image' data-fancybox='group' data-caption='My caption' class='added-href'></a></div>")
 
               	  $('.fancy-wrap').append($('.event-img'));
@@ -37,23 +41,25 @@ $(function() {
             alert("Pls select only images");
           }
         });
-		// showDescription();closeDescription();
-		// function showDescription(){
+		showDescription();closeDescription();
+		function showDescription(){
 			$('.showdescription').on("click", function(){
 
 				$(this).parents('.fancy-wrap').css({'width':'100%', 'float':'none', 'padding':'25px', 'background':'#f1f3da'});
 				$(this).parents('.fancy-wrap').find('img').css({'width':'40%', 'height':'30%', 'float':'left'});
-				$(this).parents('.fancy-wrap').find('.added-href').append("<div class='added-text'><p>texttexttexttext</p></div>");
+				$(this).parents('.fancy-wrap').find('.added-href').append("<div class='added-text'><p>texttexttexttext</p><p class='author-post'></p></div>");
 				//меню сдвинули при большой фотке
 				$('.coustom-submenu').css({'display':'none', 'right':'0'});
 
 				// меняем текст
 				$(this).toggle();
 				$(this).siblings('.image-description').toggle();
-			});
-		// }
 
-		// function closeDescription(){
+
+			});
+		}
+
+		function closeDescription(){
 
 			$('.closedescription').on("click", function(){
 
@@ -69,7 +75,7 @@ $(function() {
 				$(this).toggle();
 
 			});
-		// }
+		}
 
 
 
@@ -239,10 +245,6 @@ $(".addPage .sect-addPage .page-descr a").click(function() {
 
 });
 
-	$('.audio-list li').on("click", 'li', function(){
-		alert(1);
-	});
-
 
 $(".btn-pre").html('<i class="material-icons">&#xE316;</i>');
 $(".btn-next").html('<i class="material-icons">&#xE313;</i>');
@@ -258,8 +260,8 @@ $(".btn-next").html('<i class="material-icons">&#xE313;</i>');
 $("#jquery_jplayer_1").jPlayer({
     ready: function () {
 		$(this).jPlayer("setMedia", {
-			mp3: "../audio/ACDC.mp3",
-			mp3: "../audio/LZ-step.mp3"
+			mp3: "../audio/ACDC.mp3"
+
 		});
     },
     useStateClassSkin: true,
