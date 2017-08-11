@@ -462,7 +462,7 @@
 												<!-- <button class="jp-stop" role="button" tabindex="0">stop</button> -->
 											</ul>
 											<div class="progress-time-wrapper">
-												<p class="track-name">Название песни</p>
+												<p class="track-name"></p>
 												<div class="jp-progress">
 													<div class="jp-seek-bar">
 														<div class="jp-play-bar"></div>
@@ -511,7 +511,7 @@
 									</div>
 								</div>
 
-								<span class="closeblock">x</span>
+								<!-- <span class="closeblock">x</span> -->
 							</div>
 
 						</div> 
@@ -576,24 +576,26 @@ $(document).on("click", ".audio-list>li", function(){
 	$(this).addClass('active');
 	// $(this).addClass('outside'); поставил бг у child-дива вместо li
 
-
-
 	// if($(this).hasClass('active')){
 	// 	$(this).find('div').addClass('music-text'); //класс со стрелочкой
 	// }
 });
-
-
-	// $('.audio-list li.active').on("click", function(){
-	// 	$(this).append($('.audio-description'));
-	// 	$('.audio-description').css('display', 'block');
-	// });
-
+//обавляет блок описания песен
 $(document).on("click", ".audio-list>li.active", function(){
 	$(this).append($('.audio-description'));
-	$('.audio-description').css('display', 'block');
-});
+	// $('.audio-description').css('display', 'block');
+	$('.audio-description').slideToggle(300);
 
+});
+//название трека
+$(document).on("click", ".audio-list>li.jp-playlist-current a.jp-playlist-current", function(){
+	
+	var musicval = $(this).html(); 
+
+	$('.track-name').html(musicval);
+
+});
+//старт - пауза
 $(document).on("click", ".audio-list>li a:nth-of-type(2)", function(){
 	$('.play').css('display', 'none');
 	$('.pause').toggle();
@@ -602,13 +604,12 @@ $(document).on("click", ".audio-list>li a:nth-of-type(2)", function(){
 
 
 $(document).ready(function(){
+	//кнопка закрытия текста песни --- убрал, поставил toggle
+	// $('.closeblock').on("click", function(){
+	// 	$(this).parent().toggle(300);
+	// });
 
-	
-	$('.closeblock').on("click", function(){
-		$(this).parent().toggle(300);
-	});
-
-
+	//плеер
 	var myPlaylist = new jPlayerPlaylist({
 			jPlayer: "#jquery_jplayer_2",
 			cssSelectorAncestor: "#jp_container_2"
