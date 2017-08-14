@@ -1,4 +1,30 @@
 $(function() {
+	$(document).on("click", ".btn-admin-menu", function(){
+		$(this).siblings(".event-img .coustom-submenu").slideToggle(300);
+	});
+	$(document).on("click", ".showdescription", function(){
+		$(this).parents('.fancy-wrap').css({'width':'100%', 'float':'none', 'padding':'25px', 'background':'#f1f3da'});
+		$(this).parents('.fancy-wrap').find('img').css({'width':'40%', 'height':'30%', 'float':'left'});
+		$(this).parents('.fancy-wrap').find('.added-href').append("<div class='added-text'><p>texttexttexttext</p><p class='author-post'></p></div>");
+		//меню сдвинули при большой фотке
+		$('.coustom-submenu').css({'display':'none', 'right':'0'});
+
+		// меняем текст
+		$(this).toggle();
+		$(this).siblings('.image-description').toggle();
+	});
+	$(document).on("click", ".closedescription", function(){
+		$(this).parents('.fancy-wrap').css({'width':'auto', 'float':'left', 'padding':'0', 'background':'none'});
+		$(this).parents('.fancy-wrap').find('img').css({'width':'150px', 'height':'120px', 'float':'none'});
+
+
+		$('.added-text').remove();
+		$(this).prev().css('display', 'block');
+		$(this).parents('.coustom-submenu').css('display', 'none');
+
+
+		$(this).toggle();
+	});
 	$(document).ready(function(){
 
 		//add input with live-search
@@ -27,7 +53,9 @@ $(function() {
                     "data-attr": "image"+count
                   }).appendTo(image_holder).wrap("<div class='fancy-wrap clearfix'><a href="+e.target.result+" data-type='image' data-fancybox='group' data-caption='My caption' class='added-href'></a></div>")
 
-              	  $('.fancy-wrap').append($('.event-img'));
+
+              	  var clone_block = $('.event-img').clone();
+              	  $('.fancy-wrap').append(clone_block);
 				  // $('.event-img').css('display', 'block');
 
                 }
@@ -41,7 +69,7 @@ $(function() {
             alert("Pls select only images");
           }
         });
-		showDescription();closeDescription();
+		// showDescription();closeDescription();
 		function showDescription(){
 			$('.showdescription').on("click", function(){
 

@@ -886,7 +886,36 @@ aside
 	.date
 		display: inline-block	
 
-
+// main.html
+.about-people
+	.right-side
+		.randomize-image
+			.description-img
+				display: none
+				position: absolute
+				left: 0
+				top: 0
+				width: 200px
+				padding: 20px
+			.some-img
+				position:relative
+				&:hover
+					.description-img
+						display: block
+						cursor: pointer
+						left: 186px
+						z-index: 1
+						background: #bfbc9b
+						.descr
+							padding: 0
+							p
+								padding: 0
+								span
+									width: 100% 
+				img
+					cursor: pointer
+			
+// main.html
 ///////////////////////////////////////////////Registration page /////////////////////////////////////////////////////////
 #page-registration
 	.form-info
@@ -1509,9 +1538,11 @@ aside
 				width: 60%
 				img 
 					border: 1px solid rgba(0,0,0,.4)
+					cursor: pointer
 			.small-images
 				width: 40%
-				img 
+				img
+					cursor: pointer 
 					width: 100%
 					height: 136px
 					margin-bottom: 5px
