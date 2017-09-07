@@ -895,22 +895,32 @@ aside
 				position: absolute
 				left: 0
 				top: 0
-				width: 200px
-				padding: 20px
+				padding: 10px 20px
+				width: 100%
+				min-height: 100%
 			.some-img
 				position:relative
 				&:hover
 					.description-img
 						display: block
 						cursor: pointer
-						left: 186px
+						left: 0
 						z-index: 1
 						background: #bfbc9b
+						opacity: .8
 						.descr
 							padding: 0
 							p
+								color: #608b58
+								text-transform: uppercase
 								padding: 0
+								font-weight: bold
+								font-size: 14pt
 								span
+									font-size: 14pt
+									display: inline-block
+									margin-bottom: 25px
+									text-transform: none
 									width: 100% 
 				img
 					cursor: pointer
@@ -2144,6 +2154,110 @@ aside
 .jp-gui
   position: relative
   overflow: hidden   
+.write-mess
+	overflow: hidden
+	label
+		color: #000
+		font-family: "RobotoRegular" , $helvetica
+		margin-right: 15px
+	label.textar
+		display: block
+	.newdate
+		select
+			padding: 5px
+			text-align: left
+		select#digits
+			background: url(../img/admin-page/Arrow-Down.png) no-repeat 90% center;
+			width: 75px
+		select#month
+			background: url(../img/admin-page/Arrow-Down.png) no-repeat 90% center;			
+			width: 125px
+		select#year
+			background: url(../img/admin-page/Arrow-Down.png) no-repeat 90% center;
+			width: 100px
+	.newtitle
+		input
+			padding: 5px 10px
+		input#zagolovok
+			width: 84.8%
+	.newtext
+		textarea#area
+			color: #000
+			padding: 10px 20px
+			width: 100%
+			height: 150px
+	.foot
+		margin: 0
+		p.atach
+			background: url(../img/screpa.png) no-repeat left center
+			cursor: pointer
+			font-family: "RobotoRegular" , $helvetica
+			margin-bottom: 0!important
+			padding-left: 25px
+			min-height: 20px
+			line-height: 20px
+		.button
+			border: unset
+			background-color: #79513f
+			color: #fff
+			font-family: "RobotoRegular" , $helvetica
+			padding: 10px 50px
+			margin-right: auto
+			margin-left: auto
+			box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2)
+			min-height: 40px 
+			&:hover
+				background-color: #c5bf9f
+				color: #79513f
 
-
+#all
+	.panel
+		padding-left: 15px
+		padding-right: 15px
+		p.panel-name
+			margin-top: 15px
+			color: #414042
+			font-family: "RobotoRegular"
+			font-weight: 400
+		p.radio
+			display: inline-block
+			margin-right: 25px
+		select
+			background: url(../img/admin-page/Arrow-Down.png) no-repeat 92% center
+			width: 100%
+			-webkit-appearance: none
+			-moz-appearance: none
+			appearance: none
+			padding: 5px 10px
+			text-align-last: center
+			width: 100%	
+		.reach
+			overflow: hidden
+			.select-wrap
+				display: inline-block
+				position: relative
+				width: 40%
+			.select-wrap:nth-of-type(1)
+				&:before
+					content: "от"
+					color: #000
+					font-family: "RobotoRegular" , $helvetica
+					position: absolute
+					left: 15px
+					top: 5px
+			.select-wrap:nth-of-type(2)
+				&:before
+					content: "до"
+					color: #000
+					font-family: "RobotoRegular" , $helvetica
+					position: absolute
+					left: 15px
+					top: 5px
+		.select-wrap.country
+			select
+				text-align-last: left
+		span
+			display: inline-block
+			text-align: center
+			width: 17.7%
 @import "media"
