@@ -225,7 +225,11 @@ li , .myPage-articl .top-articl-info
 		.strongB
 			font-family: "RobotoMedium" , $helvetica
 			font-weight: 600
-
+.aboutPr.memorial
+	.panel-heading
+		background: #96b283
+		span
+			color: #fff
 .alert.alert-danger
 	color: #fff!important
 	p 
@@ -921,10 +925,10 @@ aside
 									display: inline-block
 									margin-bottom: 25px
 									text-transform: none
-									width: 100% 
+									width: 100%
 				img
 					cursor: pointer
-			
+					max-height: 173.5px
 // main.html
 ///////////////////////////////////////////////Registration page /////////////////////////////////////////////////////////
 #page-registration
@@ -1627,6 +1631,8 @@ aside
 		color: #000
 		font-family: "RobotoRegular" , $helvetica
 		margin-top: 20px
+		.myPage-articl.edit-publications
+			display: none
 		.myPage-articl
 			margin-bottom: 40px
 			background-color: #fff
@@ -2214,14 +2220,17 @@ aside
 	.panel
 		padding-left: 15px
 		padding-right: 15px
+		padding-bottom: 25px
+		box-shadow: 0 2px 4px rgba(0,0,0,.4);
 		p.panel-name
-			margin-top: 15px
+			margin: 25px 0 15px 0
 			color: #414042
 			font-family: "RobotoRegular"
-			font-weight: 400
+			font-weight: 600
 		p.radio
 			display: inline-block
 			margin-right: 25px
+			margin-top: 0
 		select
 			background: url(../img/admin-page/Arrow-Down.png) no-repeat 92% center
 			width: 100%
@@ -2256,8 +2265,30 @@ aside
 		.select-wrap.country
 			select
 				text-align-last: left
+		.select-wrap.country.city
+			margin-top: 10px
 		span
 			display: inline-block
 			text-align: center
 			width: 17.7%
+	.vidget-adward 
+		background-color: transparent
+		box-shadow: none
+		margin-top: 50px
+		text-transform: unset
+		.vidget-title
+			border-bottom: 2px solid #c5be9e
+			color: #79503e
+			display: block
+			padding-bottom: 5px
+		.adward-wrap
+			background-color: transparent
+			.adward-item
+				margin-bottom: 20px
+				img
+					width: 40%
+		.col-md-12
+			padding: 0!important
+
+
 @import "media"
