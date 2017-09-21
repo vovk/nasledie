@@ -890,7 +890,125 @@ aside
 	.date
 		display: inline-block	
 
+#art
+	margin-bottom: 25px
+	.top-info
+		.main-descr
+			padding: 50px 25px
+		h3
+			color: #fff
+			font-family: "RobotoRegular" , $helvetica
+			font-size: 18px
+			margin: 0
+		span
+			color: #000
+			font-family: "RobotoRegular" , $helvetica
+			font-weight: bold
+			font-size: 13px
+			display: block
+			padding: 0 25px
+		span.comments
+			background: url(../img/chat.png) no-repeat left center
+			cursor: pointer
+			margin-left: 25px
+			margin-top: 25px
+.art-post
+	span
+		margin-top: 15px
+	span.date
+		margin-left: 0
+		padding: 0
+.article-posts
+	padding: 0 20px
+	article
+		background: #fff
+		overflow: hidden
+		padding: 20px
+	article:not(:first-child)
+		margin-top: 20px
+	.photo, .info
+		float: left
+	.photo
+		margin-right: 20px
+		img
+			min-height: 136px
+	.info
+		color: #000
+		font-family: "RobotoRegular" , $helvetica
+		width: 70%
+	h3
+		color: #000
+		font-size: 20px
+		margin: 0
+	p
+		font-size: 14px
+		margin: 20px 0
+		font-weight: bold
+	p.article-text
+		color: #000
+	p.t-comments
+		font-size: 18px
+		margin-top: 0
+	button.article-read
+		border: none
+		background-color: #96b283
+		font-family: "RobotoRegular" , $helvetica
+		font-size: 13px
+		padding: 10px 25px
+		&:hover
+			background-color: #85b283
+			color: #fff
+	span
+		color: #000
+		font-family: "RobotoRegular" , $helvetica
+		font-weight: bold
+		font-size: 13px
+		display: inline-block
+		padding: 0 20px
+		margin-left: 20px
+	span.comments
+		background: url(../img/chat.png) no-repeat left center
+		cursor: pointer
+	div.face
+		padding: 0
+		img
+			width: 100%
+	.c-text
+		span
+			color: #79503e
+			margin: 0
+			padding: 0
+		span.name
+			float: left
+		span.edit
+			cursor: pointer
+			float: right
+		span.reply
+			cursor: pointer
+			margin-left: 25px
+		p
+			margin-top: 10px
+	.reply-block
+		margin-top: 30px
+.article-wrap
+	overflow: hidden
+.article-wrap:not(:nth-of-type(1))
+	margin-top: 50px
+.lost-comments
+	background: #fff
+	margin-top: 25px
+	padding: 20px
+	overflow: hidden
+	#comments-area
+		min-width: 100%
+		max-width: 100%
+		min-height: 150px
+		max-height: 150px
+	button.send
+		float: right
+		margin-top: 15px
 // main.html
+// all.html ...
 .about-people
 	.right-side
 		.randomize-image
@@ -921,6 +1039,7 @@ aside
 								font-weight: bold
 								font-size: 14pt
 								span
+									color: #000
 									font-size: 14pt
 									display: inline-block
 									margin-bottom: 25px
@@ -2215,7 +2334,25 @@ aside
 			&:hover
 				background-color: #c5bf9f
 				color: #79513f
-
+#article
+	.vidget-adward 
+		background-color: transparent
+		box-shadow: none
+		margin-top: 0
+		text-transform: unset
+		.vidget-title
+			border-bottom: 2px solid #c5be9e
+			color: #79503e
+			display: block
+			padding-bottom: 5px
+		.adward-wrap
+			background-color: transparent
+			.adward-item
+				margin-bottom: 20px
+				img
+					width: 40%
+		.col-md-12
+			padding: 0!important
 #all
 	.panel
 		padding-left: 15px

@@ -1,6 +1,7 @@
 $(function() {
 	$(document).on("click", ".btn-admin-menu", function(){
 		$(this).siblings(".event-img .coustom-submenu").slideToggle(300);
+
 	});
 	$(document).on("click", ".showdescription", function(){
 		$(this).parents('.fancy-wrap').css({'width':'100%', 'float':'none', 'padding':'25px', 'background':'#f1f3da'});
@@ -26,6 +27,17 @@ $(function() {
 		$(this).toggle();
 	});
 	$(document).ready(function(){
+
+
+		$('.editing').on("click", function(){
+			console.log(1);
+			$(this).closest('.myPage-articl').toggle();
+			$(this).closest('.myPage-articl').prev('.edit-publications').toggle();
+
+		});
+
+
+
 
 		//add input with live-search
 		$('li.focus:nth-of-type(1)').append("<div id='live-search'><input type='text' placeholder='Каширский-Дмитриев Игорь Константинович'><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava1.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava2.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava3.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava4.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava5.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava6.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='img-wrapper'><img src='img/admin-page/ava7.png' alt='avatar' class='img-circle ava-circle'></div><a href='#'><span>Каширский-Дмитриев<br>Игорь<br>Константинович</span></a></div><div class='wrap-block clearfix'><div class='live-pagination'><i class='material-icons material-left'>&#xE314;</i><span class='digits active digits-color'>1</span><span class='digits digits-color'>2</span><span class='digits digits-color'>3</span><i class='material-icons material-right'>&#xE315;</i></div></div></div></div>");
@@ -357,6 +369,8 @@ $(".calendar-slider .owl-controls .owl-prev").html('<i class="material-icons">&#
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 	//$(".preloader-container").fadeOut();
+
+
 });
 
 
