@@ -181,10 +181,10 @@ $(function() {
 		jQuery(".enter").show(300);
 	});
 	jQuery(".form-tabs .registration").click(function() {
-		jQuery(".form-tabs .tab").removeClass('active');
+		/*jQuery(".form-tabs .tab").removeClass('active');
 		jQuery(this).addClass('active')	
 		jQuery(".enter").hide(300);
-		jQuery(".register").show(300);
+		jQuery(".register").show(300);*/
 	});
 
    	function proverka1(input) {
